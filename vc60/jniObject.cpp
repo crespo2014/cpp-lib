@@ -1,0 +1,24 @@
+// jniObject.cpp: implementation of the CjniObject class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "jniObject.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CjniObject::CjniObject()
+{
+	m_jobj = NULL;
+}
+
+CjniObject::~CjniObject()
+{
+	Delete();
+}
+
+void CjniObject::Delete()
+{
+	if (m_jobj != NULL) JVM.m_env->DeleteLocalRef(m_jobj);
+}
