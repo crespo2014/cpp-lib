@@ -1,0 +1,89 @@
+id = 02
+name = La Habana    
+dbname = LA HABANA
+abrev = LHA
+cod = 02
+
+id = 03
+name = Ciudad Habana
+dbname = C. HABANA
+abrev = CHA
+cod = 03
+
+id = 04
+name = Matanzas  
+dbname = MATANZAS
+abrev = MAT
+cod = 04
+
+id = 06
+name = Cienfuegos
+dbname = CIENFUEGOS
+abrev = CFG
+cod = 06
+
+id = 08
+name = Ciego de Avila  
+dbname = CIEGO DE AVILA
+abrev = CAV
+cod = 08
+
+id = 07
+name = Santi Spiritus
+dbname = SANCTI SPIRITUS
+abrev = SSP
+cod = 07
+
+id = 09
+name = Camaguey 
+dbname = CAMAGUEY
+abrev = CAM
+cod = 09
+
+id = 10
+name = Las Tunas
+dbname = LAS TUNAS
+abrev = LTU
+cod = 10
+
+id = 12
+name = Granma
+dbname = GRANMA
+abrev = GRA
+cod = 12
+
+id = 13
+name = Santiago de Cuba   
+dbname = STGO DE CUBA
+abrev = STG
+cod = 13
+
+id = 14
+name = Guantanamo
+dbname = GUANTANAMO
+abrev = GTO
+cod = 14
+
+id = 15
+name = Isla de la Juventud
+dbname = ISLA DE LA JUVE
+abrev = ISL
+cod = 15
+
+id = 11
+name = Holguin
+dbname = HOLGUIN
+abrev = HOL
+cod = 11
+
+id = 5
+name = Villa Clara
+dbname = V. CLARA
+abrev = VCA
+cod = 05
+
+id = 1
+name = Pinar del rio
+dbname = PINAR DEL RIO
+abrev = PRO
+cod = 01

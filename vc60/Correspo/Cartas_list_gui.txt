@@ -1,0 +1,15 @@
+[Font]
+lfFaceName=MS Sans Serif
+lfHeight=-11;
+lfWidth=0;
+lfWeight=400;				FW_NORMAL
+lfOutPrecision=3;
+lfClipPrecision=2;
+lfQuality=1;
+lfPitchAndFamily=34;
+lfCharSet=0;				ANSI_CHARSET
+lfItalic=0;					false
+[Control]
+id=1;						Grid id
+type=7;						CTRL_CUSTOM
+.

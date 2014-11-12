@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AsmFilter - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/AsmFilter.res" /d "_DEBUG" /d "_AFXDLL" "D:\Proyectos VC60\Personales\C++\AsmFilter\AsmFilter.rc"" 
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP17C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/AsmFilter.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Proyectos VC60\Personales\C++\AsmFilter\AsmFilter.cpp"
+"D:\Proyectos VC60\Personales\C++\AsmFilter\AsmFilterDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP17C.tmp" 
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP17D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/AsmFilter.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Proyectos VC60\Personales\C++\AsmFilter\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP17D.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/AsmFilter.pdb" /debug /machine:I386 /out:"Debug/AsmFilter.exe" /pdbtype:sept  ".\Debug\AsmFilter.obj" ".\Debug\AsmFilterDlg.obj" ".\Debug\StdAfx.obj" ".\Debug\AsmFilter.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AsmFilter.cpp
+AsmFilterDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+AsmFilter.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

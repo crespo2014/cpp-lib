@@ -1,0 +1,103 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: G3D - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x80a /fo"Debug/G3D.res" /d "_DEBUG" /d "_AFXDLL" "D:\Proyectos VC60\Personales\C++\G3D\G3D.rc"" 
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSPEA.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MCB" /D "_AFXEXT" /Fp"Debug/G3D.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Proyectos VC60\Personales\C++\G3D\Dlg03.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Dlg04.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Dlg05.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Formas.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\G3D.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\GamDlg.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Glbmp.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\GlClass.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Glfont.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\GLString1.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Joystick.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Level1Dlg.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Level_1.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Myfilter.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Texture.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\TovaParams.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Trayectoria.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Video.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Video01.cpp"
+"D:\Proyectos VC60\Personales\C++\G3D\Video02.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSPEA.tmp" 
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSPEB.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MCB" /D "_AFXEXT" /Fp"Debug/G3D.pch" /Yc /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Proyectos VC60\Personales\C++\G3D\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSPEB.tmp" 
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSPEC.tmp" with contents
+[
+winmm.lib opengl32.lib glu32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/G3D.pdb" /debug /machine:I386 /def:".\G3D.def" /out:"c:\windows\system\G3D.dll" /implib:"c:\windows\system\G3D.lib" /pdbtype:sept 
+".\Debug\Dlg03.obj"
+".\Debug\Dlg04.obj"
+".\Debug\Dlg05.obj"
+".\Debug\Formas.obj"
+".\Debug\G3D.obj"
+".\Debug\GamDlg.obj"
+".\Debug\Glbmp.obj"
+".\Debug\GlClass.obj"
+".\Debug\Glfont.obj"
+".\Debug\GLString1.obj"
+".\Debug\Joystick.obj"
+".\Debug\Level1Dlg.obj"
+".\Debug\Level_1.obj"
+".\Debug\Myfilter.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Texture.obj"
+".\Debug\TovaParams.obj"
+".\Debug\Trayectoria.obj"
+".\Debug\Video.obj"
+".\Debug\Video01.obj"
+".\Debug\Video02.obj"
+".\Debug\G3D.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSPEC.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Dlg03.cpp
+Dlg04.cpp
+Dlg05.cpp
+Formas.cpp
+G3D.cpp
+GamDlg.cpp
+Glbmp.cpp
+GlClass.cpp
+Glfont.cpp
+GLString1.cpp
+Joystick.cpp
+Level1Dlg.cpp
+Level_1.cpp
+Myfilter.cpp
+Texture.cpp
+TovaParams.cpp
+Trayectoria.cpp
+Video.cpp
+Video01.cpp
+Video02.cpp
+Generating Code...
+Linking...
+   Creating library c:\windows\system\G3D.lib and object c:\windows\system\G3D.exp
+
+
+
+<h3>Results</h3>
+G3D.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

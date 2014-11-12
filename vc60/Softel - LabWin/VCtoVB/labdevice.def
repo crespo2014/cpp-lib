@@ -1,0 +1,14 @@
+EXPORTS
+Init
+LabDevice_Load
+LabDevice_UnLoad
+LabDevice_GetName
+LabDevice_GetPortConfiguration
+LabDevice_SetPortConfiguration
+LabDevice_Initialize
+LabDevice_Connect
+LabDevice_Disconnect
+LabDevice_SetPort
+LabDevice_GetResults
+LabDevice_ClearResults
+LabDevice_ProcessFile

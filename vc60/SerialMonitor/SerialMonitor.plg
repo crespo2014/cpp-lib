@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SerialMonitor - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP108.tmp" with contents
+[
+/nologo /MLd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/SerialMonitor.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\users\Lester\Visual C++ 6.0\SerialMonitor\SerialMonitor.cpp"
+"H:\users\Lester\Visual C++ 6.0\Clases\TrafficWind.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP108.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP109.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/SerialMonitor.pdb" /debug /machine:I386 /out:"Debug/SerialMonitor.exe" /pdbtype:sept 
+".\Debug\BinaryWnd.obj"
+".\Debug\MessageEvent.obj"
+".\Debug\SerialMonitor.obj"
+".\Debug\SerialPort.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TrafficWind.obj"
+".\Debug\VirtualMemory.obj"
+".\Debug\Wind.obj"
+".\Debug\SerialMonitor.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP109.tmp"
+<h3>Output Window</h3>
+Compiling...
+SerialMonitor.cpp
+h:\users\lester\visual c++ 6.0\clases\virtualmemory.h(15) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+H:\users\Lester\Visual C++ 6.0\SerialMonitor\SerialMonitor.cpp(27) : warning C4100: 'lpCmdLine' : unreferenced formal parameter
+H:\users\Lester\Visual C++ 6.0\SerialMonitor\SerialMonitor.cpp(26) : warning C4100: 'hPrevInstance' : unreferenced formal parameter
+H:\users\Lester\Visual C++ 6.0\SerialMonitor\SerialMonitor.cpp(123) : error C2248: 'Create' : cannot access protected member declared in class 'CWind'
+        h:\users\lester\visual c++ 6.0\clases\wind.h(33) : see declaration of 'Create'
+H:\users\Lester\Visual C++ 6.0\SerialMonitor\SerialMonitor.cpp(128) : error C2248: 'Create' : cannot access protected member declared in class 'CWind'
+        h:\users\lester\visual c++ 6.0\clases\wind.h(33) : see declaration of 'Create'
+TrafficWind.cpp
+h:\users\lester\visual c++ 6.0\clases\virtualmemory.h(15) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+H:\users\Lester\Visual C++ 6.0\Clases\TrafficWind.cpp(121) : warning C4244: '=' : conversion from 'int' to 'char', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Clases\TrafficWind.cpp(122) : warning C4244: '=' : conversion from 'int' to 'char', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Clases\TrafficWind.cpp(168) : warning C4100: 'dwSize' : unreferenced formal parameter
+H:\users\Lester\Visual C++ 6.0\Clases\TrafficWind.cpp(231) : warning C4100: 'lParam' : unreferenced formal parameter
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+SerialMonitor.exe - 2 error(s), 8 warning(s)
+</pre>
+</body>
+</html>

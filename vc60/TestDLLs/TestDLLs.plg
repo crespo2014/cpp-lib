@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TestDLLs - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/TestDLLs.res" /d "_DEBUG" /d "_AFXDLL" "D:\Users\Lester\Visual C++ 6.0\TestDLLs\TestDLLs.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP502.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/TestDLLs.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\Lester\Visual C++ 6.0\SRC\ClassFactory.cpp"
+"D:\Users\Lester\Visual C++ 6.0\TestDLLs\TestDLLs.cpp"
+"D:\Users\Lester\Visual C++ 6.0\TestDLLs\TestDLLsDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP502.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP503.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/TestDLLs.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\Lester\Visual C++ 6.0\TestDLLs\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP503.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP504.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/TestDLLs.pdb" /debug /machine:I386 /out:"Debug/TestDLLs.exe" /pdbtype:sept 
+".\Debug\ClassFactory.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TestDLLs.obj"
+".\Debug\TestDLLsDlg.obj"
+".\Debug\TestDLLs.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP504.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ClassFactory.cpp
+TestDLLs.cpp
+TestDLLsDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+TestDLLs.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

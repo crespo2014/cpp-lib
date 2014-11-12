@@ -1,0 +1,7 @@
+; G3D.def : Declares the module parameters for the DLL.
+
+LIBRARY      "G3D"
+DESCRIPTION  'G3D Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

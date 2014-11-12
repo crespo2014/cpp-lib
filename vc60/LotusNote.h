@@ -9,6 +9,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
+#include "imem.h"
 #include "lotusdb.h"
 
 #define SIG_LONG	0
@@ -94,8 +95,11 @@ private:
 	DWORD Error_Handle(char *function) { return SetError(false,ERR_HANDLE,"%s failed the note is not open yet (handle is NULL)",function); };
 
 public:
+	DWORD getText(char* item,char** val,WORD* size,WORD* count,IMem* pmem);
+	DWORD getItemText(char* iname,char** value,IMem* pmem);
+	DWORD getAttachmentInfo(char* file_name,WORD* index, BLOCKID *blockid = NULL, DWORD *file_size = NULL, WORD *file_attr = NULL, WORD *host_type = NULL, TIMEDATE *date_create = NULL, TIMEDATE *date_modified = NULL);
 	
-	
+	DWORD getID() { return m_note_id; };
 	DWORD ItemQuery(BLOCKID  item_bid,char *name,WORD  name_max,WORD *pname_len,WORD *pflags,WORD *pvalue_type,BLOCKID *pvalue_bid,DWORD *pvalue_len);
 	DWORD ItemInfoNext(BLOCKID  prevItem,char *name,BLOCKID *pblockid,WORD *ptype,BLOCKID *pvalue_blockid,DWORD *pvalue_len);
 	DWORD ProfileUpdate();
@@ -104,6 +108,7 @@ public:
 	DWORD Item_GetAllListEntries(char *item_name, char *ptext, WORD max_size,WORD* text_size = NULL);
 	void Clean()
 	{
+		m_ver = "Class CLotusNote " CLASS_VER;
 		m_hnote = NULL;
 		m_note_id = 0;
 		m_noteid_type = 0;

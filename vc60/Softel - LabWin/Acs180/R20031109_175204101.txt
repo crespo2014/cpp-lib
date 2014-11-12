@@ -1,0 +1,459 @@
+Report File ...
+Device : Tecnigen Bayer ACS:180
+CLabDevice initialize OK ...
+Processing file ... : C:\windows\system\04070005.ACS
+
+Received : <02>1H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B9<0D><0A><20><20><20><02>2P|1||||SALAS^FERNANDO^||||||||||||||||||||<0D><0A><03>5C<0D><0A><20><20><20><02>3O|1|100||^^^T4|||||||||||||||||||||F<0D><0A><03>58<0D><0A><20><20><20><02>4R|1|^^^T4|4.6|ug/dL||||F||||200106081710<0D><0A><03>2C<0D><0A><20><20><20><02>
+
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : SALASFERNANDO
+Analysis : T4
+Value : 4.600000 ug/dL
+Error: Result record break 
+
+Received : 5L|1|<0D><0A><03>BA<0D><0A><20><20><20><02>6H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BE<0D><0A><20><20><20><02>7P|1||||||||||||||||||||||||<0D><0A><03>E4<0D><0A><20><20><20><02>0O|1|CONTROL1||^^^TSH3|||||||||||||||||||||F<0D><0A><03>B0<0D><0A><20><20><20><02>1R|1|^^^TSH3|0.581|uIU/mL||||F||||20010608164
+
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Received : 0<0D><0A><03>69<0D><0A><20><20><20><02>2L|1|<0D><0A><03>B7<0D><0A><20><20><20><02>3H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BB<0D><0A><20><20><20><02>4P|1||||||||||||||||||||||||<0D><0A><03>E1<0D><0A><20><20><20><02>5O|1|CONTROL2||^^^TSH3|||||||||||||||||||||F<0D><0A><03>B6<0D><0A><20><20><20><02>6R|1|^^^TSH3|4.815|uIU/mL||||F|||
+
+
+Analysis Add ...
+Patient : 
+Analysis : TSH3
+Value : 0.581000 uIU/mL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Received : |200106081640<0D><0A><03>72<0D><0A><20><20><20><02>7L|1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1||||||||||||||||||||||||<0D><0A><03>DE<0D><0A><20><20><20><02>2O|1|CONTROL3||^^^TSH3|||||||||||||||||||||F<0D><0A><03>B4<0D><0A><20><20><20><02>3R|1|^^^TSH3|16.929|u
+
+
+Analysis Add ...
+Patient : 
+Analysis : TSH3
+Value : 4.815000 uIU/mL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Received : IU/mL||||F||||200106081641<0D><0A><03>A9<0D><0A><20><20><20><02>4L|1|<0D><0A><03>B9<0D><0A><20><20><20><02>5H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BD<0D><0A><20><20><20><02>6P|1||||GOMEZ^CARMEN^||||||||||||||||||||<0D><0A><03>D7<0D><0A><20><20><20><02>7O|1|200||^^^TSH3|||||||||||||||||||||F<0D><0A><03>F7<0D><0A><20><20><20><02>
+
+
+Analysis Add ...
+Patient : 
+Analysis : TSH3
+Value : 16.929001 uIU/mL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+
+Received : 0R|1|^^^TSH3|4.837|uIU/mL||||F||||200106081712<0D><0A><03>70<0D><0A><20><20><20><02>1L|1|<0D><0A><03>B6<0D><0A><20><20><20><02>2H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BA<0D><0A><20><20><20><02>3P|1||||GOMEZ^CARMEN^||||||||||||||||||||<0D><0A><03>D4<0D><0A><20><20><20><02>4O|1|200||^^^T3|||||||||||||||
+
+Result Block received
+
+Analysis Add ...
+Patient : GOMEZCARMEN
+Analysis : TSH3
+Value : 4.837000 uIU/mL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+
+Received : ||||||F<0D><0A><03>59<0D><0A><20><20><20><02>5R|1|^^^T3|1.81|ng/mL||||F||||200106081711<0D><0A><03>5F<0D><0A><20><20><20><02>6L|1|<0D><0A><03>BB<0D><0A><20><20><20><02>7H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BF<0D><0A><20><20><20><02>0P|1||||GOMEZ^CARMEN^||||||||||||||||||||<0D><0A><03>D1<0D><0A><20><20><20><02>1O|1|200||^^^T4|
+
+Result Block received
+
+Analysis Add ...
+Patient : GOMEZCARMEN
+Analysis : T3
+Value : 1.810000 ng/mL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+
+Received : ||||||||||||||||||||F<0D><0A><03>57<0D><0A><20><20><20><02>2R|1|^^^T4|6.3|ug/dL||||F||||200106081711<0D><0A><03>2A<0D><0A><20><20><20><02>3L|1|<0D><0A><03>B8<0D><0A><20><20><20><02>4H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BC<0D><0A><20><20><20><02>5P|1||||CACERES^CECILIA^||||||||||||||||||||<0D><0A><03>7E<0D><0A><20><20><20><02>
+
+Result Block received
+
+Analysis Add ...
+Patient : GOMEZCARMEN
+Analysis : T4
+Value : 6.300000 ug/dL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+
+Received : 6O|1|300||^^^T4|||||||||||||||||||||F<0D><0A><03>5D<0D><0A><20><20><20><02>7R|1|^^^T4|10.8|ug/dL||||F||||200106081712<0D><0A><03>60<0D><0A><20><20><20><02>0L|1|<0D><0A><03>B5<0D><0A><20><20><20><02>1H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B9<0D><0A><20><20><20><02>2P|1||||||||||||||||||||||||<0D><0A><03>DF<0D><0A><20><20><20>
+
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : CACERESCECILIA
+Analysis : T4
+Value : 10.800000 ug/dL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+
+Received : <02>3O|1|lig1||^^^TSH3|||||||||||||||||||||F<0D><0A><03>CE<0D><0A><20><20><20><02>4R|1|^^^TSH3|<<<|uIU/mL||<||F||||200106111219<0D><0A><03>5C<0D><0A><20><20><20><02>5L|1|<0D><0A><03>BA<0D><0A><20><20><20><02>6H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BE<0D><0A><20><20><20><02>7P|1||||||||||||||||||||||||<0D><0A><03>
+
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : TSH3
+Value : 0.000000 uIU/mL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+
+Received : E4<0D><0A><20><20><20><02>0O|1|lig1||^^^T3|||||||||||||||||||||F<0D><0A><03>30<0D><0A><20><20><20><02>1R|1|^^^T3|0.63|ng/mL||||F||||200106111218<0D><0A><03>56<0D><0A><20><20><20><02>2L|1|<0D><0A><03>B7<0D><0A><20><20><20><02>3H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BB<0D><0A><20><20><20><02>4P|1||||||||||||||||||||||||<0D>
+
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T3
+Value : 0.630000 ng/mL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+
+Received : <0A><03>E1<0D><0A><20><20><20><02>5O|1|lig2||^^^TSH3|||||||||||||||||||||F<0D><0A><03>D1<0D><0A><20><20><20><02>6R|1|^^^TSH3|<<<|uIU/mL||<||F||||200106111220<0D><0A><03>56<0D><0A><20><20><20><02>7L|1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1||||||||||||||||||
+
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : TSH3
+Value : 0.000000 uIU/mL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+
+Received : ||||||<0D><0A><03>DE<0D><0A><20><20><20><02>2O|1|lig2||^^^T3|||||||||||||||||||||F<0D><0A><03>33<0D><0A><20><20><20><02>3R|1|^^^T3|1.47|ng/mL||||F||||200106111220<0D><0A><03>54<0D><0A><20><20><20><02>4L|1|<0D><0A><03>B9<0D><0A><20><20><20><02>5H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BD<0D><0A><20><20><20><02>6P|1||||||||||||||||
+
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T3
+Value : 1.470000 ng/mL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+
+Received : ||||||||<0D><0A><03>E3<0D><0A><20><20><20><02>7O|1|lig3||^^^T3|||||||||||||||||||||F<0D><0A><03>39<0D><0A><20><20><20><02>0R|1|^^^T3|2.76|ng/mL||||F||||200106111221<0D><0A><03>55<0D><0A><20><20><20><02>1L|1|<0D><0A><03>B6<0D><0A><20><20><20><02>2H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BA<0D><0A><20><20><20><02>3P|1|||||||U||||||
+
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T3
+Value : 2.760000 ng/mL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+
+Received : |||||||||||<0D><0A><03>35<0D><0A><20><20><20><02>4O|1|CONT1||^^^T4|||||||||||||||||||||F<0D><0A><03>2D<0D><0A><20><20><20><02>5R|1|^^^T4|4.0|ug/dL||||F||||200106081109<0D><0A><03>29<0D><0A><20><20><20><02>6C|1||Reschedule|G<0D><0A><03>F5<0D><0A><20><20><20><02>7L|1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||
+
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T4
+Value : 4.000000 ug/dL
+Error: Result record break 
+Unknown Block received
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+
+Received : P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1|||||||U|||||||||||||||||<0D><0A><03>33<0D><0A><20><20><20><02>2O|1|CONT1||^^^T3|||||||||||||||||||||F<0D><0A><03>2A<0D><0A><20><20><20><02>3R|1|^^^T3|0.80|ng/mL||||F||||200106081110<0D><0A><03>54<0D><0A><20><20><20><02>4C|1||Reschedule|G<0D><0A><03>F3<0D><0A><20><20><20><02>5L|1|<0D><0A><03>BA<0D><0A><20><20>
+
+Patient Block received
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T3
+Value : 0.800000 ng/mL
+Error: Result record break 
+Unknown Block received
+Last Block received
+
+Received : <20><02>6H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BE<0D><0A><20><20><20><02>7P|1||||||||||||||||||||||||<0D><0A><03>E4<0D><0A><20><20><20><02>0O|1|lig3||^^^TSH3|||||||||||||||||||||F<0D><0A><03>CD<0D><0A><20><20><20><02>1R|1|^^^TSH3|0.058|uIU/mL||||F||||200106111222<0D><0A><03>5E<0D><0A><20><20><20><02>2L|1|<0D>
+
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : TSH3
+Value : 0.058000 uIU/mL
+Error: Result record break 
+Last Block received
+
+Received : <0A><03>B7<0D><0A><20><20><20><02>3H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BB<0D><0A><20><20><20><02>4P|1|||||||U|||||||||||||||||<0D><0A><03>36<0D><0A><20><20><20><02>5O|1|CONT2||^^^T3|||||||||||||||||||||F<0D><0A><03>2E<0D><0A><20><20><20><02>6R|1|^^^T3|1.73|ng/mL||||F||||200106081112<0D><0A><03>5C<0D><0A><20><20><20><02>7L
+
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T3
+Value : 1.730000 ng/mL
+Error: Result record break 
+Last Block received
+
+Received : |1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1|||||||U|||||||||||||||||<0D><0A><03>33<0D><0A><20><20><20><02>2O|1|CONT2||^^^T4|||||||||||||||||||||F<0D><0A><03>2C<0D><0A><20><20><20><02>3R|1|^^^T4|6.6|ug/dL||||F||||200106081111<0D><0A><03>28<0D><0A><20><20><20>
+
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T4
+Value : 6.600000 ug/dL
+Error: Result record break 
+
+Received : <02>4L|1|<0D><0A><03>B9<0D><0A><20><20><20><02>5H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BD<0D><0A><20><20><20><02>6P|1|||||||U|||||||||||||||||<0D><0A><03>38<0D><0A><20><20><20><02>7O|1|CONT3||^^^T3|||||||||||||||||||||F<0D><0A><03>31<0D><0A><20><20><20><02>0R|1|^^^T3|3.14|ng/mL||||F||||200106081113<0D><0A><03>54<0D>
+
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T3
+Value : 3.140000 ng/mL
+Error: Result record break 
+
+Received : <0A><20><20><20><02>1L|1|<0D><0A><03>B6<0D><0A><20><20><20><02>2H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BA<0D><0A><20><20><20><02>3P|1|||||||U|||||||||||||||||<0D><0A><03>35<0D><0A><20><20><20><02>4O|1|CONT3||^^^T4|||||||||||||||||||||F<0D><0A><03>2F<0D><0A><20><20><20><02>5R|1|^^^T4|11.5|ug/dL||||F||||200106081113<0D><0A>
+
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T4
+Value : 11.500000 ug/dL
+Error: Result record break 
+
+Received : <03>57<0D><0A><20><20><20><02>6L|1|<0D><0A><03>BB<0D><0A><20><20><20><02>7H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BF<0D><0A><20><20><20><02>0P|1||||||||||||||||||||||||<0D><0A><03>DD<0D><0A><20><20><20><02>1O|1|1||^^^T4|||||||||||||||||||||F<0D><0A><03>F6<0D><0A><20><20><20><02>2R|1|^^^T4|4.5|ug/dL||||F||||200106111257<0D><0A><03>2
+
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T4
+Value : 4.500000 ug/dL
+Error: Result record break 
+
+Received : 9<0D><0A><20><20><20><02>3L|1|<0D><0A><03>B8<0D><0A><20><20><20><02>4H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BC<0D><0A><20><20><20><02>5P|1||||||||||||||||||||||||<0D><0A><03>E2<0D><0A><20><20><20><02>6O|1|1||^^^TSH3|||||||||||||||||||||F<0D><0A><03>95<0D><0A><20><20><20><02>7R|1|^^^TSH3|<<<|uIU/mL||<||F||||200106111258
+
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Received : <0D><0A><03>62<0D><0A><20><20><20><02>0L|1|<0D><0A><03>B5<0D><0A><20><20><20><02>1H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B9<0D><0A><20><20><20><02>2P|1||||||||||||||||||||||||<0D><0A><03>DF<0D><0A><20><20><20><02>3O|1|2||^^^T3|||||||||||||||||||||F<0D><0A><03>F8<0D><0A><20><20><20><02>4R|1|^^^T3|1.68|ng/mL||||F||||200106111259<0D>
+
+
+Analysis Add ...
+Patient : 
+Analysis : TSH3
+Value : 0.000000 uIU/mL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T3
+Value : 1.680000 ng/mL
+
+Received : <0A><03>64<0D><0A><20><20><20><02>5L|1|<0D><0A><03>BA<0D><0A><20><20><20><02>6H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BE<0D><0A><20><20><20><02>7P|1||||||||||||||||||||||||<0D><0A><03>E4<0D><0A><20><20><20><02>0O|1|2||^^^T4|||||||||||||||||||||F<0D><0A><03>F6<0D><0A><20><20><20><02>1R|1|^^^T4|2.5|ug/dL||||F||||200106111259<0D><0A><03>
+
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T4
+Value : 2.500000 ug/dL
+Error: Result record break 
+
+Received : 28<0D><0A><20><20><20><02>2L|1|<0D><0A><03>B7<0D><0A><20><20><20><02>3H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BB<0D><0A><20><20><20><02>4P|1||||||||||||||||||||||||<0D><0A><03>E1<0D><0A><20><20><20><02>5O|1|2||^^^TSH3|||||||||||||||||||||F<0D><0A><03>95<0D><0A><20><20><20><02>6R|1|^^^TSH3|<<<|uIU/mL||<||F||||20010611130
+
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Received : 0<0D><0A><03>55<0D><0A><20><20><20><02>7L|1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1||||||||||||||||||||||||<0D><0A><03>DE<0D><0A><20><20><20><02>2O|1|3||^^^T4|||||||||||||||||||||F<0D><0A><03>F9<0D><0A><20><20><20><02>3R|1|^^^T4|11.4|ug/dL||||F||||200106111300
+
+
+Analysis Add ...
+Patient : 
+Analysis : TSH3
+Value : 0.000000 uIU/mL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Received : <0D><0A><03>4C<0D><0A><20><20><20><02>4L|1|<0D><0A><03>B9<0D><0A><20><20><20><02>5H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BD<0D><0A><20><20><20><02>6P|1||||||||||||||||||||||||<0D><0A><03>E3<0D><0A><20><20><20><02>7O|1|3||^^^T3|||||||||||||||||||||F<0D><0A><03>FD<0D><0A><20><20><20><02>0R|1|^^^T3|2.95|ng/mL||||F||||200106111301<0D>
+
+
+Analysis Add ...
+Patient : 
+Analysis : T4
+Value : 11.400000 ug/dL
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Analysis Add ...
+Patient : 
+Analysis : T3
+Value : 2.950000 ng/mL
+
+Received : <0A><03>55<0D><0A><20><20><20><02>1L|1|<0D><0A><03>B6<0D><0A><20><20><20><02>2H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BA<0D><0A><20><20><20><02>3P|1||||||||||||||||||||||||<0D><0A><03>E0<0D><0A><20><20><20><02>4O|1|3||^^^TSH3|||||||||||||||||||||F<0D><0A><03>95<0D><0A><20><20><20><02>5R|1|^^^TSH3|<<<|uIU/mL||<||F||||200106111
+
+Error: Result record break 
+Last Block received
+Warning: Header record received without last record
+
+Header Block received
+Patient Block received
+Operation Block received
+Result Block received
+
+Received : 301<0D><0A><03>55<0D><0A><20><20><20><02>6L|1|<0D><0A><03>BB<0D><0A><20><20><20>
+
+
+Analysis Add ...
+Patient : 
+Analysis : TSH3
+Value : 0.000000 uIU/mL
+Error: Result record break 
+Last Block received

@@ -1,0 +1,275 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+COM_PROPERTIES DIALOG DISCARDABLE  0, 0, 461, 73
+STYLE DS_MODALFRAME | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_PORT_CMB,45,5,70,81,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Port",IDC_STATIC,5,5,14,12,SS_CENTERIMAGE
+    LTEXT           "Baud rate",IDC_STATIC,5,20,32,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_BR_CMB,45,20,70,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Check parity ",IDC_PARITY,"Button",BS_AUTOCHECKBOX | 
+                    BS_VCENTER | WS_TABSTOP,230,5,60,8
+    COMBOBOX        IDC_PAR_CMB,45,50,70,59,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Stop bits",IDC_STATIC,120,5,28,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_SB_CMB,150,5,70,44,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "DSR input flow control",IDC_DSR_OFC,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | WS_TABSTOP,230,
+                    25,86,8
+    CONTROL         "CTS output flow control",IDC_CTS_OFC,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | WS_TABSTOP,230,
+                    15,88,8
+    COMBOBOX        IDC_DTR_CMB,150,20,70,65,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "DTR",IDC_STATIC,120,20,16,12,SS_CENTERIMAGE
+    LTEXT           "RTS",IDC_STATIC,120,35,16,15,SS_CENTERIMAGE
+    COMBOBOX        IDC_RTS_CMB,150,35,70,66,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RADIOBUTTON     "RLSD",IDC_RLSD,320,5,40,8,BS_LEFT | BS_VCENTER | 
+                    WS_GROUP
+    RADIOBUTTON     "CTS",IDC_CTS,320,25,40,8,BS_LEFT | BS_VCENTER | 
+                    WS_GROUP
+    RADIOBUTTON     "DSR",IDC_DSR,320,15,40,8,BS_LEFT | BS_VCENTER | 
+                    WS_GROUP
+    RADIOBUTTON     "RING",IDC_RING,320,35,40,8,BS_LEFT | BS_VCENTER | 
+                    WS_GROUP
+    CONTROL         "DTR",IDC_DTR,"Button",BS_AUTOCHECKBOX | BS_LEFT | 
+                    BS_VCENTER | WS_GROUP | WS_TABSTOP,360,5,31,8
+    CONTROL         "RTS",IDC_RTS,"Button",BS_AUTOCHECKBOX | BS_LEFT | 
+                    BS_VCENTER | WS_GROUP | WS_TABSTOP,360,15,31,8
+    CONTROL         "BREAK",IDC_BREAK,"Button",BS_AUTOCHECKBOX | BS_LEFT | 
+                    BS_VCENTER | WS_GROUP | WS_TABSTOP,360,25,40,8
+    PUSHBUTTON      "Connect",IDC_CONNECT,402,5,54,14,BS_CENTER | BS_VCENTER
+    PUSHBUTTON      "Disconnect",IDC_DISCONNECT,402,20,54,14,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "Configure",BTN_CONFIGURE,402,35,54,14,BS_CENTER | 
+                    BS_VCENTER
+    LTEXT           "Byte size",IDC_STATIC,5,35,30,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_CBS_CMB,45,35,70,59,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Parity",IDC_STATIC,5,50,18,11,SS_CENTERIMAGE
+END
+
+BRG_INFO DIALOG DISCARDABLE  0, 0, 461, 170
+STYLE DS_MODALFRAME | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Output file",BTN_SETOUTFILE,306,3,45,14
+    PUSHBUTTON      "Close file",BTN_CLOSEFILE,353,3,45,14
+    LTEXT           "Commands",IDC_STATIC,5,5,36,8
+    CONTROL         "05",CHK_05,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,45,5,
+                    24,8
+    CONTROL         "06",CHK_06,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,5,
+                    24,8
+    CONTROL         "07",CHK_07,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,95,5,
+                    24,8
+    CONTROL         "08",CHK_08,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,120,5,
+                    24,8
+    CONTROL         "0F",CHK_0F,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,170,5,
+                    24,8
+    CONTROL         "10",CHK_10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,5,
+                    24,8
+    CONTROL         "12",CHK_12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,195,5,
+                    24,8
+    CONTROL         "13",CHK_13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,220,5,
+                    24,8
+    CONTROL         "14",CHK_14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,245,5,
+                    24,8
+    CONTROL         "BUSY",CHK_BUSY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    270,5,35,8
+    LISTBOX         LB_TRAFFIC,5,20,275,141,LBS_NOINTEGRALHEIGHT | 
+                    LBS_MULTICOLUMN | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Clear",BTN_CLEAR,401,3,45,14
+    LISTBOX         LB_RESULT,285,20,171,141,WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "COM_PROPERTIES", DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 456
+        VERTGUIDE, 45
+        VERTGUIDE, 115
+        VERTGUIDE, 120
+        VERTGUIDE, 150
+        VERTGUIDE, 220
+        VERTGUIDE, 230
+        VERTGUIDE, 320
+        VERTGUIDE, 360
+        VERTGUIDE, 402
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 68
+        HORZGUIDE, 20
+        HORZGUIDE, 35
+        HORZGUIDE, 50
+        HORZGUIDE, 65
+    END
+
+    "BRG_INFO", DIALOG
+    BEGIN
+        VERTGUIDE, 5
+        VERTGUIDE, 456
+        BOTTOMMARGIN, 169
+        HORZGUIDE, 20
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+COMMBRIDGE_ICON1        ICON    DISCARDABLE     "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+COMMBRIDGE_MENU1 MENU DISCARDABLE 
+BEGIN
+    MENUITEM "File",                        65535
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Mexican) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080a04b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Unknown\0"
+            VALUE "FileDescription", "CommBridge\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CommBridge\0"
+            VALUE "LegalCopyright", "Copyright © 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CommBridge.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Unknown CommBridge\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x80a, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Spanish (Mexican) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

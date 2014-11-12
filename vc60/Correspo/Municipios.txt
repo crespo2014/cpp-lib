@@ -1,0 +1,519 @@
+id = 10
+name = Sandino
+prov_id = 1
+cod = 01
+
+id = 11
+name = Mantua
+prov_id = 1
+cod = 02
+
+id = 12
+name = "Minas de Matahambre"
+prov_id = 1
+cod = 03
+
+id = 13
+name = Viñales
+prov_id = 1
+cod = 04
+
+id = 14
+name = "Bahia Honda"
+prov_id = 1
+cod = 06
+
+id = 15
+name = Candelaria
+prov_id = 1
+cod = 07
+
+id = 16
+name = "San Cristobal"
+prov_id = 1
+cod = 08
+
+id = 17
+name = "Los Palacios"
+prov_id = 1
+cod = 09
+
+id = 18
+name = "Consolacion del Sur"
+prov_id = 1
+cod = 10
+
+id = 19
+name = Pinar del Rio
+prov_id = 1
+cod = 11
+
+id = 20
+name = "San Luis"
+prov_id = 1
+cod = 12
+
+id = 21
+name = "San Juan y Martinez"
+prov_id = 1
+cod = 13
+
+id = 22
+name = Guane
+prov_id = 1
+cod = 14
+
+id = 23
+name = Mariel
+prov_id = 2
+cod = 01
+
+id = 24
+name = Guanajay
+prov_id = 2
+cod = 2
+
+id = 25
+name = Caimito
+prov_id = 2
+cod = 3
+
+id = 26
+name = Bauta
+prov_id = 2
+cod = 4
+
+id = 27
+name = "San Antonio de los Baños"
+prov_id = 2
+cod = 5
+
+id = 28
+name = Bejucal
+prov_id = 2
+cod = 6
+
+id = 29
+name = "San Jose de las Lajas"
+prov_id = 2
+cod = 7
+
+id = 30
+name = Jaruco
+prov_id = 2
+cod = 8
+
+id = 31
+name = "Santa Cruz del Norte"
+prov_id = 2
+cod = 9
+
+id = 32
+name = Madrugal
+prov_id = 2
+cod = 10
+
+id = 33
+name = "Nueva Paz"
+prov_id = 2
+cod = 11
+
+id = 34
+name = "San Nicolas"
+prov_id = 2
+cod = 12
+
+id = 35
+name = Guines
+prov_id = 2
+cod = 13
+
+id = 36
+name = "Melena del sur"
+prov_id = 2
+cod = 14
+
+id = 37
+name = Batabano
+prov_id = 2
+cod = 15
+
+id = 38
+name = Quivican
+prov_id = 2
+cod = 16
+
+id = 39
+name = "Guira de Melena"
+prov_id = 2
+cod = 17
+
+id = 40
+name = Alquizar
+prov_id = 2
+cod = 18
+
+id = 41
+name = Artemisa
+prov_id = 2
+cod = 19
+
+id = 42
+name = "cte Atencion"
+prov_id = 2
+cod = 20
+
+id = 43
+name = Playa
+prov_id = 3
+cod = 1
+
+id = 44
+name = "Plaza de la Revolucion"
+prov_id = 3
+cod = 2
+
+id = 45
+name = "Centro Habana"
+prov_id = 3
+cod = 3
+
+id = 46
+name = "La Habana Vieja"
+prov_id = 3
+cod = 4
+
+id = 47
+name = Regla
+prov_id = 3
+cod = 5
+
+id = 48
+name = "La Habana del Este"
+prov_id = 3
+cod = 6
+
+id = 49
+name = Guanabacoa
+prov_id = 3
+cod = 7
+
+id = 50
+name = "San Miguel del Padrón"
+prov_id = 3
+cod = 8
+
+id = 51
+name = "Diez de Octubre"
+prov_id = 3
+cod = 9
+
+id = 52
+name = Cerro
+prov_id = 3
+cod = 10
+
+id = 53
+name = Marianao
+prov_id = 3
+cod = 11
+
+id = 54
+name = "La Lisa"
+prov_id = 3
+cod = 12
+
+id = 55
+name = Boyeros
+prov_id = 3
+cod = 13
+
+id = 56
+name = "Arroyo Naranjo"
+prov_id = 3
+cod = 14
+
+id = 57
+name = Cotorro
+prov_id = 3
+cod = 15
+
+id = 58
+name = Matanzas
+prov_id = 4
+cod = 1
+
+id = 59
+name = Cardenas
+prov_id = 4
+cod = 2
+
+id = 60
+name = Varadero
+prov_id = 4
+cod = 3
+
+id = 61
+name = Martí
+prov_id = 4
+cod = 4
+
+id = 62
+name = Colon
+prov_id = 4
+cod = 5
+
+id = 63
+name = Perico
+prov_id = 4
+cod = 6
+
+id = 64
+name = Jovellanos
+prov_id = 4
+cod = 7
+
+id = 65
+name = "Pedro Betancourt"
+prov_id = 4
+cod = 8
+
+id = 66
+name = Limonar
+prov_id = 2
+cod = 9
+
+id = 67
+name = "Union de Reyes"
+prov_id = 2
+cod = 10
+
+id = 68
+name = "Cienaga de Zapata"
+prov_id = 2
+cod = 11
+
+id = 69
+name = "Jaguey Grande"
+prov_id = 2
+cod = 12
+
+id = 70
+name = Calimete
+prov_id = 2
+cod = 13
+
+id = 71
+name = "Los Arabos"
+prov_id = 2
+cod = 14
+
+id = 72
+name = Corralillo
+prov_id = 5
+cod = 1
+
+id = 73
+name = "Quemado de Guines"
+prov_id = 5
+cod = 2
+
+id = 74
+name = "Sagua la grande"
+prov_id = 5
+cod = 3
+
+id = 75
+name = Encrucijada
+prov_id = 5
+cod = 4
+
+id = 76
+name = Camajuani
+prov_id = 5
+cod = 5
+
+id = 77
+name = Caibarien
+prov_id = 5
+cod = 6
+
+id = 78
+name = Remedios
+prov_id = 5
+cod = 7
+
+id = 79
+name = Placetas
+prov_id = 5
+cod = 8
+
+id = 80
+name = Santa Clara
+prov_id = 5
+cod = 9
+
+id = 81
+name = Cifuentes
+prov_id = 5
+cod = 10
+
+id = 82
+name = Santo Domingo
+prov_id = 5
+cod = 11
+
+id = 83
+name = Ranchuelo
+prov_id = 5
+cod = 12
+
+id = 84
+name = Manicaragua
+prov_id = 5
+cod = 13
+
+id = 85
+name = Aguada de Pasajeros
+prov_id = 6
+cod = 1
+
+id = 86
+name = Rodas
+prov_id = 6
+cod = 2
+
+id = 87
+name = Palmira
+prov_id = 6
+cod = 3
+
+id = 88
+name = Lajas
+prov_id = 6
+cod = 4
+
+id = 89
+name = Cruces
+prov_id = 6
+cod = 5
+
+id = 90
+name = Cumanayagua
+prov_id = 6
+cod = 6
+
+id = 91
+name = Cienfuegos
+prov_id = 6
+cod = 7
+
+id = 92
+name = Abreus
+prov_id = 6
+cod = 8
+
+id = 93
+name = Yaguajay
+prov_id = 7
+cod = 1
+
+id = 94
+name = Jatibonico
+prov_id = 7
+cod = 2
+
+id = 95
+name = Taguasco
+prov_id = 7
+cod = 3
+
+id = 96
+name = Cabaiguan
+prov_id = 7
+cod = 4
+
+id = 97
+name = Fomento
+prov_id = 7
+cod = 5
+
+id = 98
+name = Trinidad
+prov_id = 7
+cod = 6
+
+id = 99
+name = Santi Spiritus
+prov_id = 7
+cod = 7
+
+id = 100
+name = La Sierpe
+prov_id = 7
+cod = 8
+
+id = 101
+name = Chambas
+prov_id = 8
+cod = 1
+
+id = 102
+name = Moron
+prov_id = 8
+cod = 2
+
+id = 103
+name = Bolivia
+prov_id = 8
+cod = 3
+
+id = 104
+name = Primero de Enero
+prov_id = 8
+cod = 4
+
+id = 105
+name = Ciro Redondo
+prov_id = 8
+cod = 5
+
+id = 106
+name = Florencia
+prov_id = 8
+cod = 6
+
+id = 107
+name = Majagua
+prov_id = 8
+cod = 7
+
+id = 108
+name = Ciego de Avila
+prov_id = 8
+cod = 8
+
+id = 109
+name = Venezuela
+prov_id = 8
+cod = 9
+
+id = 110
+name = Baragua
+prov_id = 8
+cod = 10
+
+id = 111
+name = Carlos Manuel de Cespedez
+prov_id = 8
+cod = 1
+
+id = 112
+name = Esmeralda
+prov_id = 8
+cod = 2
+
+id = 113
+name = Sierra de Cubitas
+prov_id = 8
+cod = 3

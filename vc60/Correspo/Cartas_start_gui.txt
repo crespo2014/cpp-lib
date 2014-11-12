@@ -1,0 +1,66 @@
+[Font]
+lfFaceName=MS Sans Serif
+lfHeight=-13;
+lfWidth=0;
+lfWeight=700;				FW_BOLD             
+lfOutPrecision=3;
+lfClipPrecision=2;
+lfQuality=1;
+lfPitchAndFamily=34;
+lfCharSet=0;				ANSI_CHARSET
+lfItalic=0;					false
+[Control]					ventana principal
+x=20
+y=20
+width=500
+height=300  
+type=7
+style = 0x50000000
+exstyle = 1
+id=2000;					
+[Control]
+caption = "< - Operaciones disponibles ->"
+x=143
+y=24
+width=213
+height=16
+type=2
+parentid = 2000
+style = 0x5000000B
+[Control]
+caption = Entrada y actualización de cartas
+x=75
+y=56
+width=350
+height=25
+type=8
+style = 0x50010000
+exstyle = 0
+id=2001;
+parentid = 2000
+[Control]
+caption = Listado de cartas
+x=75
+y=104
+width=350
+height=25
+type=8
+style = 0x50010000
+exstyle = 0
+id=2002;
+parentid = 2000
+[Control]
+caption = Terminar
+x=75
+y=244
+width=350
+height=25
+type=8
+style = 0x50010000
+exstyle = 0
+id=2003;
+parentid = 2000
+.
+
+WS_TABSTOP
+DB_E_NOAGGREGATION 

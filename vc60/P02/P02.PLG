@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: P02 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP1A0.tmp" with contents
+[
+lfc10.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/P02.pdb" /debug /machine:I386 /out:"Debug/P02.exe" /pdbtype:sept /libpath:"c:\lib" 
+".\Debug\Dialog01.obj"
+".\Debug\LFC10C05.OBJ"
+".\Debug\LFC10C06.OBJ"
+".\Debug\P02.obj"
+".\Debug\Page.obj"
+".\Debug\ReGrid.obj"
+".\Debug\StdAfx.obj"
+".\Debug\P02.res"
+"c:\lib\LFC10.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP1A0.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+P02.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

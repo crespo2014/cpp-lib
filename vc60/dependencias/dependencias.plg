@@ -1,0 +1,98 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dependencias - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSPBC.tmp" with contents
+[
+/nologo /MLd /W4 /Zi /Od /I "..\inc" /I "D:\home\projects\inc" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D "LOTUS8" /D "NT" /FR"..\..\..\Debug/" /Fo"..\..\..\Debug/" /Fd"..\..\..\Debug/" /FD /GF /c 
+"D:\home\Dropbox\c++\dependencias\CodePage.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSPBC.tmp" 
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSPBD.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winhttp.lib Comdlg32.lib /nologo /subsystem:console /incremental:yes /pdb:"..\..\..\Debug/app.pdb" /debug /machine:I386 /nodefaultlib:"comsupp.lib libcd.lib oldnames.lib" /out:"debug\app.exe" /pdbtype:sept /libpath:"D:\home\projects\inc\lotus\v8\lib" /libpath:"..\bin" /verbose:lib 
+"\home\Debug\b64.obj"
+"\home\Debug\bApp.obj"
+"\home\Debug\bDlg.obj"
+"\home\Debug\BlockMem.obj"
+"\home\Debug\bObject.obj"
+"\home\Debug\BSTR.obj"
+"\home\Debug\cmdLineParser.obj"
+"\home\Debug\ConfigParser.obj"
+"\home\Debug\Crypter.obj"
+"\home\Debug\dependencias.obj"
+"\home\Debug\HttpReq.obj"
+"\home\Debug\LogClient.obj"
+"\home\Debug\memarray.obj"
+"\home\Debug\StaticMem.obj"
+"\home\Debug\Tube.obj"
+"\home\Debug\Utils.obj"
+"\home\Debug\CodePage.obj"
+"\home\Debug\HtmlCoder.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSPBD.tmp"
+<h3>Output Window</h3>
+Compiling...
+CodePage.cpp
+D:\home\Dropbox\c++\dependencias\CodePage.cpp(22) : warning C4100: 'codePage' : unreferenced formal parameter
+Linking...
+
+Searching Libraries
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\kernel32.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\user32.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\gdi32.lib:
+    Searching winhttp.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\Comdlg32.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\uuid.lib:
+    Searching C:\Archivos de programa\Microsoft Visual Studio\VC98\LIB\comsupp.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\ole32.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\oleaut32.lib:
+    Searching C:\Archivos de programa\Microsoft Visual Studio\VC98\LIB\LIBCD.lib:
+    Searching C:\Archivos de programa\Microsoft Visual Studio\VC98\LIB\OLDNAMES.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\kernel32.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\user32.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\gdi32.lib:
+    Searching winhttp.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\Comdlg32.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\uuid.lib:
+    Searching C:\Archivos de programa\Microsoft Visual Studio\VC98\LIB\comsupp.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\ole32.lib:
+    Searching D:\program_files\MicrosoftPlatformSDK\Lib\oleaut32.lib:
+
+Done Searching Libraries
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSPBF.tmp" with contents
+[
+/nologo /o"..\..\..\Debug/dependencias.bsc" 
+"\home\Debug\b64.sbr"
+"\home\Debug\bApp.sbr"
+"\home\Debug\bDlg.sbr"
+"\home\Debug\BlockMem.sbr"
+"\home\Debug\bObject.sbr"
+"\home\Debug\BSTR.sbr"
+"\home\Debug\cmdLineParser.sbr"
+"\home\Debug\ConfigParser.sbr"
+"\home\Debug\Crypter.sbr"
+"\home\Debug\dependencias.sbr"
+"\home\Debug\HttpReq.sbr"
+"\home\Debug\LogClient.sbr"
+"\home\Debug\memarray.sbr"
+"\home\Debug\StaticMem.sbr"
+"\home\Debug\Tube.sbr"
+"\home\Debug\Utils.sbr"
+"\home\Debug\CodePage.sbr"
+"\home\Debug\HtmlCoder.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSPBF.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+app.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,402 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+FONT_DLGBAR DIALOGEX 0, 0, 211, 166
+STYLE WS_CHILD
+FONT 8, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "",IDC_CLOSE,1,1,12,11,BS_BITMAP
+    LTEXT           "&Name",IDC_STATIC,19,5,19,8,0,WS_EX_TRANSPARENT
+    COMBOBOX        FONT_COMBOBOX,18,15,73,54,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Size",IDC_STATIC,93,5,15,8
+    COMBOBOX        FONT_HEIGHT_COMBOBOX,93,15,33,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Italic",ITALIC_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,28,31,10
+    CONTROL         "&Bold",BOLD_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    59,29,30,10
+    LTEXT           "&Title",IDC_STATIC,18,47,14,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_GRAPH_NAME,18,55,107,12,ES_AUTOHSCROLL
+    LTEXT           "Samples &Cant",IDC_STATIC,18,68,44,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_SAMPLES_CANT,18,76,50,42,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&MiliVolts/Div",IDC_STATIC,73,68,40,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        VOLT_POR_DIV_COMBO,71,76,55,45,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Edge Pos",IDC_STATIC,18,90,31,8,SS_CENTERIMAGE,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_EDGE_POS,18,99,50,49,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Range",IDC_STATIC,72,90,22,8
+    COMBOBOX        IDC_FILTER,72,99,54,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Grid",IDC_EDGE_COLOR,22,122,24,11
+    PUSHBUTTON      "Signal",IDC_SIGNAL_COLOR,46,122,24,11
+    PUSHBUTTON      "Back",IDC_BACK_COLOR,22,133,24,11
+    CONTROL         "Sh&ow",IDC_SHOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    81,119,35,10
+    PUSHBUTTON      "Prev",IDC_PREV,16,151,27,10
+    PUSHBUTTON      "Start",IDC_DEVICESTART,44,151,27,10
+    PUSHBUTTON      "Stop",IDC_DEVICESTOP,72,151,27,10
+    PUSHBUTTON      "Next",IDC_NEXT,100,151,27,10
+    LTEXT           "&Port",IDC_STATIC,150,7,14,8,SS_CENTERIMAGE,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_PORT,150,15,54,51,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "B&yte Size",IDC_STATIC,150,28,32,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_BYTESIZE,150,36,54,63,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "St&op bits",IDC_STATIC,150,50,28,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_STOPBITS,150,59,54,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Parity",IDC_STATIC,150,72,24,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_PARITY,150,81,54,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "B&aud Rate",IDC_STATIC,150,94,40,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_BAUDRATE,150,103,54,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Open",IDC_PORT_OPEN,150,119,53,10
+    PUSHBUTTON      "Close",IDC_PORT_CLOSE,150,130,53,10
+    PUSHBUTTON      "Apply",IDC_PORT_APPLY,150,141,53,10
+    CONTROL         1010,IDC_OPEN_CLOSE,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_REALSIZEIMAGE,2,13,9,50,WS_EX_TRANSPARENT
+    GROUPBOX        "Graph ",IDC_GRAPH,15,41,113,108,BS_CENTER,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Font ",IDC_STATIC,15,0,113,41,BS_CENTER,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Colors",IDC_STATIC,18,113,56,33,BS_CENTER,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Comunication",IDC_STATIC,145,0,63,157,BS_CENTER,
+                    WS_EX_TRANSPARENT
+    CONTROL         1011,IDC_STATIC,"Static",SS_BITMAP,132,13,10,70,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_OPEN_CLOSE2,131,1,12,11,BS_BITMAP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+FONT_DLGBAR DLGINIT
+BEGIN
+    FONT_HEIGHT_COMBOBOX, 0x403, 2, 0
+0x0038, 
+    FONT_HEIGHT_COMBOBOX, 0x403, 2, 0
+0x0039, 
+    FONT_HEIGHT_COMBOBOX, 0x403, 3, 0
+0x3031, "\000" 
+    FONT_HEIGHT_COMBOBOX, 0x403, 3, 0
+0x3131, "\000" 
+    FONT_HEIGHT_COMBOBOX, 0x403, 3, 0
+0x3231, "\000" 
+    FONT_HEIGHT_COMBOBOX, 0x403, 3, 0
+0x3331, "\000" 
+    FONT_HEIGHT_COMBOBOX, 0x403, 3, 0
+0x3431, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+OPEN_BITMAP             BITMAP  DISCARDABLE     "bitmap1.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Mexican) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+LFC10_CONFIG DIALOG DISCARDABLE  0, 0, 153, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Port Propierties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,24,112,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,86,112,50,14
+    LTEXT           "Bits per seconds",IDC_STATIC,14,30,54,12,SS_CENTERIMAGE
+    LTEXT           "Data bits",IDC_STATIC,14,49,29,12,SS_CENTERIMAGE
+    LTEXT           "Parity",IDC_STATIC,14,90,39,12,SS_CENTERIMAGE
+    LTEXT           "Stop bits",IDC_STATIC,14,70,28,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_BITS,74,30,62,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DATA,74,49,62,63,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_STOP,74,70,62,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_PARITY,74,90,62,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Port",IDC_STATIC,14,10,14,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_PORT,74,10,62,51,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+LFC10_CONFIG DLGINIT
+BEGIN
+    IDC_BITS, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_BITS, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_BITS, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_BITS, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_BITS, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_BITS, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_BITS, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_BITS, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_BITS, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_BITS, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_DATA, 0x403, 2, 0
+0x0035, 
+    IDC_DATA, 0x403, 2, 0
+0x0036, 
+    IDC_DATA, 0x403, 2, 0
+0x0037, 
+    IDC_DATA, 0x403, 2, 0
+0x0038, 
+    IDC_STOP, 0x403, 2, 0
+0x0031, 
+    IDC_STOP, 0x403, 4, 0
+0x2e31, 0x0035, 
+    IDC_STOP, 0x403, 2, 0
+0x0032, 
+    IDC_PARITY, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_PARITY, 0x403, 4, 0
+0x644f, 0x0064, 
+    IDC_PARITY, 0x403, 5, 0
+0x7645, 0x6e65, "\000" 
+    IDC_PARITY, 0x403, 5, 0
+0x614d, 0x6b72, "\000" 
+    IDC_PORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_PORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_PORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_PORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+Bitmap2                 BITMAP  DISCARDABLE     "bmp00001.bmp"
+Bitmap3                 BITMAP  DISCARDABLE     "bitmap3.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\LFC10.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.esp\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    LFC10_CONFIG, DIALOG
+    BEGIN
+        VERTGUIDE, 14
+        VERTGUIDE, 74
+        VERTGUIDE, 136
+        HORZGUIDE, 10
+        HORZGUIDE, 30
+        HORZGUIDE, 49
+        HORZGUIDE, 70
+        HORZGUIDE, 90
+        HORZGUIDE, 126
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish (Mexican) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Modern) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0C0A04B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "LFC10 DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "LFC10\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "LFC10.DLL\0"
+            VALUE "ProductName", "LFC10 Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Error al inicializar zócalos de Windows."
+    IDS_OPENCOMMERROR       "No se pudo abrir el puerto de comuicacion"
+END
+
+#endif    // Spanish (Modern) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\LFC10.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.esp\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

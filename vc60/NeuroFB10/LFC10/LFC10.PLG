@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LFC10 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x80a /fo"Debug/LFC10.res" /d "_DEBUG" /d "_AFXDLL" "E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\LFC10\LFC10.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP9004.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXEXT" /D "_WINDLL" /D "_AFXDLL" /Fp"Debug/LFC10.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\LFC10\LFC10.cpp"
+"E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\LFC10C01.cpp"
+"E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\LFC10C02.cpp"
+"E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\LFC10C03.cpp"
+"E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\lfc10c04.cpp"
+"E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\LFC10C05.cpp"
+"E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\LFC10C06.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP9004.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP9005.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXEXT" /D "_WINDLL" /D "_AFXDLL" /Fp"Debug/LFC10.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\LFC10\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP9005.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP9006.TMP" with contents
+[
+neurofbdll.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/LFC10.pdb" /debug /machine:I386 /def:".\LFC10.def" /out:"c:\windows\system\LFC10.dll" /implib:"..\lib\LFC10.lib" /pdbtype:sept 
+.\debug\LFC10.obj
+.\debug\LFC10C01.obj
+.\debug\LFC10C02.obj
+.\debug\LFC10C03.obj
+.\debug\lfc10c04.obj
+.\debug\LFC10C05.obj
+.\debug\LFC10C06.obj
+.\debug\StdAfx.obj
+.\debug\LFC10.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP9006.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+LFC10.cpp
+LFC10C01.cpp
+LFC10C02.cpp
+LFC10C03.cpp
+E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\LFC10C03.cpp(575) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\LFC10C03.cpp(599) : warning C4018: '==' : signed/unsigned mismatch
+E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\LFC10C03.cpp(604) : warning C4018: '==' : signed/unsigned mismatch
+E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\LFC10C03.cpp(608) : warning C4018: '>' : signed/unsigned mismatch
+E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\LFC10C03.cpp(655) : warning C4018: '==' : signed/unsigned mismatch
+lfc10c04.cpp
+E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\lfc10c04.cpp(679) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\lfc10c04.cpp(694) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\lfc10c04.cpp(695) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\lfc10c04.cpp(1680) : warning C4018: '<' : signed/unsigned mismatch
+E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\Lfc10\lfc10c04.cpp(1681) : warning C4018: '<' : signed/unsigned mismatch
+LFC10C05.cpp
+LFC10C06.cpp
+Generating Code...
+Linking...
+LINK : LNK6006: program database E:\Win95\Users\Lester\VC6_15_2\NeuroFB10\LFC10\Debug\LFC10.pdb missing; performing full link
+   Creating library ..\lib\LFC10.lib and object ..\lib\LFC10.exp
+
+
+
+<h3>Results</h3>
+LFC10.dll - 0 error(s), 10 warning(s)
+</pre>
+</body>
+</html>

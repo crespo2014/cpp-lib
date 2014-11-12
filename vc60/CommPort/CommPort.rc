@@ -1,0 +1,207 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+COM_PROPERTIES DIALOG DISCARDABLE  0, 0, 432, 94
+STYLE DS_MODALFRAME | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_PORT_CMB,45,5,70,81,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Port",IDC_STATIC,5,5,14,12,SS_CENTERIMAGE
+    LTEXT           "Baud rate",IDC_STATIC,5,20,32,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_BR_CMB,45,20,70,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Check parity ",IDC_PARITY,"Button",BS_AUTOCHECKBOX | 
+                    BS_VCENTER | WS_TABSTOP,125,35,91,12
+    COMBOBOX        IDC_PAR_CMB,45,35,70,59,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Stop bits",IDC_STATIC,5,50,28,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_SB_CMB,45,50,70,44,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "DSR output flow control",IDC_DSR_OFC,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | WS_TABSTOP,125,
+                    5,109,12
+    CONTROL         "CTS output flow control",IDC_CTS_OFC,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | WS_TABSTOP,125,
+                    20,109,12
+    COMBOBOX        IDC_DTR_CMB,150,65,84,65,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "DTR",IDC_STATIC,125,65,16,12,SS_CENTERIMAGE
+    LTEXT           "RTS",IDC_STATIC,125,50,16,15,SS_CENTERIMAGE
+    COMBOBOX        IDC_RTS_CMB,150,50,84,66,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RADIOBUTTON     "RLSD",IDC_RLSD,244,5,41,12,BS_LEFT | BS_VCENTER | 
+                    WS_DISABLED | WS_GROUP
+    RADIOBUTTON     "CTS",IDC_CTS,244,35,41,12,BS_LEFT | BS_VCENTER | 
+                    WS_DISABLED | WS_GROUP
+    RADIOBUTTON     "DSR",IDC_DSR,244,20,41,12,BS_LEFT | BS_VCENTER | 
+                    WS_DISABLED | WS_GROUP
+    RADIOBUTTON     "RING",IDC_RING,244,50,41,15,BS_LEFT | BS_VCENTER | 
+                    WS_DISABLED | WS_GROUP
+    CONTROL         "DTR",IDC_DTR,"Button",BS_AUTOCHECKBOX | BS_LEFT | 
+                    BS_VCENTER | WS_GROUP | WS_TABSTOP,285,5,31,12
+    CONTROL         "RTS",IDC_CRTS,"Button",BS_AUTOCHECKBOX | BS_LEFT | 
+                    BS_VCENTER | WS_GROUP | WS_TABSTOP,285,20,31,12
+    CONTROL         "BREAK",IDC_BREAK,"Button",BS_AUTOCHECKBOX | BS_LEFT | 
+                    BS_VCENTER | WS_GROUP | WS_TABSTOP,285,35,40,12
+    PUSHBUTTON      "Connect",IDC_CONNECT,330,5,50,14,BS_CENTER | BS_VCENTER
+    PUSHBUTTON      "Disconnect",IDC_DISCONNECT,330,20,50,14,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "Configure",IDC_CONFIGURE,330,35,50,14,BS_CENTER | 
+                    BS_VCENTER
+    LTEXT           "Byte Size",IDC_STATIC,5,65,30,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_CBS_CMB,45,65,70,59,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Parity",IDC_STATIC,5,35,18,11,SS_CENTERIMAGE
+END
+
+COM_ACTIONS DIALOG DISCARDABLE  0, 0, 374, 54
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Clear on send",IDC_CLR_SND,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | BS_VCENTER | WS_TABSTOP,255,5,59,14
+    PUSHBUTTON      "Send",IDC_SEND,195,5,55,14,BS_CENTER | BS_VCENTER
+    CONTROL         "Show last row",IDC_SLR,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | BS_VCENTER | WS_TABSTOP,255,20,60,14
+    EDITTEXT        IDC_COMMENT,5,20,186,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add comment",IDC_ADD_CMT,195,20,55,14,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "Clear All",CLEAR_HISTORY,195,35,55,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+COMMPORT_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Exit",                        ID_EXIT
+        MENUITEM "Add Buffer",                  ID_ADDBUFFER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+COMMPORT_ICON1          ICON    DISCARDABLE     "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "COM_PROPERTIES", DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 427
+        VERTGUIDE, 45
+        VERTGUIDE, 115
+        VERTGUIDE, 125
+        VERTGUIDE, 150
+        VERTGUIDE, 234
+        VERTGUIDE, 244
+        VERTGUIDE, 285
+        VERTGUIDE, 330
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 89
+        HORZGUIDE, 20
+        HORZGUIDE, 35
+        HORZGUIDE, 50
+        HORZGUIDE, 65
+    END
+
+    "COM_ACTIONS", DIALOG
+    BEGIN
+        RIGHTMARGIN, 373
+        VERTGUIDE, 5
+        VERTGUIDE, 75
+        VERTGUIDE, 195
+        VERTGUIDE, 250
+        VERTGUIDE, 255
+        BOTTOMMARGIN, 53
+        HORZGUIDE, 5
+        HORZGUIDE, 20
+        HORZGUIDE, 35
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

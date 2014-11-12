@@ -1,0 +1,2001 @@
+Report File ...
+Device : Tecnigen Bayer ACS:180
+CLabDevice initialize OK ...
+Processing file ... : C:\windows\system\04070005.ACS
+
+Received : <02>1H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B9<0D><0A><20><20><20><02>2P|1||||SALAS^FERNANDO^||||||||||||||||||||<0D><0A><03>5C<0D><0A><20><20><20><02>3O|1|100||^^^T4|||||||||||||||||||||F<0D><0A><03>58<0D><0A><20><20><20><02>4R|1|^^^T4|4.6|ug/dL||||F||||200106081710<0D><0A><03>2C<0D><0A><20><20><20><02>
+
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : 5L|1|<0D><0A><03>BA<0D><0A><20><20><20><02>6H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BE<0D><0A><20><20><20><02>7P|1||||||||||||||||||||||||<0D><0A><03>E4<0D><0A><20><20><20><02>0O|1|CONTROL1||^^^TSH3|||||||||||||||||||||F<0D><0A><03>B0<0D><0A><20><20><20><02>1R|1|^^^TSH3|0.581|uIU/mL||||F||||20010608164
+
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : 0<0D><0A><03>69<0D><0A><20><20><20><02>2L|1|<0D><0A><03>B7<0D><0A><20><20><20><02>3H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BB<0D><0A><20><20><20><02>4P|1||||||||||||||||||||||||<0D><0A><03>E1<0D><0A><20><20><20><02>5O|1|CONTROL2||^^^TSH3|||||||||||||||||||||F<0D><0A><03>B6<0D><0A><20><20><20><02>6R|1|^^^TSH3|4.815|uIU/mL||||F|||
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : |200106081640<0D><0A><03>72<0D><0A><20><20><20><02>7L|1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1||||||||||||||||||||||||<0D><0A><03>DE<0D><0A><20><20><20><02>2O|1|CONTROL3||^^^TSH3|||||||||||||||||||||F<0D><0A><03>B4<0D><0A><20><20><20><02>3R|1|^^^TSH3|16.929|u
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : IU/mL||||F||||200106081641<0D><0A><03>A9<0D><0A><20><20><20><02>4L|1|<0D><0A><03>B9<0D><0A><20><20><20><02>5H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BD<0D><0A><20><20><20><02>6P|1||||GOMEZ^CARMEN^||||||||||||||||||||<0D><0A><03>D7<0D><0A><20><20><20><02>7O|1|200||^^^TSH3|||||||||||||||||||||F<0D><0A><03>F7<0D><0A><20><20><20><02>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : 0R|1|^^^TSH3|4.837|uIU/mL||||F||||200106081712<0D><0A><03>70<0D><0A><20><20><20><02>1L|1|<0D><0A><03>B6<0D><0A><20><20><20><02>2H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BA<0D><0A><20><20><20><02>3P|1||||GOMEZ^CARMEN^||||||||||||||||||||<0D><0A><03>D4<0D><0A><20><20><20><02>4O|1|200||^^^T3|||||||||||||||
+
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+
+Received : ||||||F<0D><0A><03>59<0D><0A><20><20><20><02>5R|1|^^^T3|1.81|ng/mL||||F||||200106081711<0D><0A><03>5F<0D><0A><20><20><20><02>6L|1|<0D><0A><03>BB<0D><0A><20><20><20><02>7H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BF<0D><0A><20><20><20><02>0P|1||||GOMEZ^CARMEN^||||||||||||||||||||<0D><0A><03>D1<0D><0A><20><20><20><02>1O|1|200||^^^T4|
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+
+Received : ||||||||||||||||||||F<0D><0A><03>57<0D><0A><20><20><20><02>2R|1|^^^T4|6.3|ug/dL||||F||||200106081711<0D><0A><03>2A<0D><0A><20><20><20><02>3L|1|<0D><0A><03>B8<0D><0A><20><20><20><02>4H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BC<0D><0A><20><20><20><02>5P|1||||CACERES^CECILIA^||||||||||||||||||||<0D><0A><03>7E<0D><0A><20><20><20><02>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : 6O|1|300||^^^T4|||||||||||||||||||||F<0D><0A><03>5D<0D><0A><20><20><20><02>7R|1|^^^T4|10.8|ug/dL||||F||||200106081712<0D><0A><03>60<0D><0A><20><20><20><02>0L|1|<0D><0A><03>B5<0D><0A><20><20><20><02>1H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B9<0D><0A><20><20><20><02>2P|1||||||||||||||||||||||||<0D><0A><03>DF<0D><0A><20><20><20>
+
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : <02>3O|1|lig1||^^^TSH3|||||||||||||||||||||F<0D><0A><03>CE<0D><0A><20><20><20><02>4R|1|^^^TSH3|<<<|uIU/mL||<||F||||200106111219<0D><0A><03>5C<0D><0A><20><20><20><02>5L|1|<0D><0A><03>BA<0D><0A><20><20><20><02>6H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BE<0D><0A><20><20><20><02>7P|1||||||||||||||||||||||||<0D><0A><03>
+
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : E4<0D><0A><20><20><20><02>0O|1|lig1||^^^T3|||||||||||||||||||||F<0D><0A><03>30<0D><0A><20><20><20><02>1R|1|^^^T3|0.63|ng/mL||||F||||200106111218<0D><0A><03>56<0D><0A><20><20><20><02>2L|1|<0D><0A><03>B7<0D><0A><20><20><20><02>3H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BB<0D><0A><20><20><20><02>4P|1||||||||||||||||||||||||<0D>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+
+Received : <0A><03>E1<0D><0A><20><20><20><02>5O|1|lig2||^^^TSH3|||||||||||||||||||||F<0D><0A><03>D1<0D><0A><20><20><20><02>6R|1|^^^TSH3|<<<|uIU/mL||<||F||||200106111220<0D><0A><03>56<0D><0A><20><20><20><02>7L|1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1||||||||||||||||||
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+
+Received : ||||||<0D><0A><03>DE<0D><0A><20><20><20><02>2O|1|lig2||^^^T3|||||||||||||||||||||F<0D><0A><03>33<0D><0A><20><20><20><02>3R|1|^^^T3|1.47|ng/mL||||F||||200106111220<0D><0A><03>54<0D><0A><20><20><20><02>4L|1|<0D><0A><03>B9<0D><0A><20><20><20><02>5H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BD<0D><0A><20><20><20><02>6P|1||||||||||||||||
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+
+Received : ||||||||<0D><0A><03>E3<0D><0A><20><20><20><02>7O|1|lig3||^^^T3|||||||||||||||||||||F<0D><0A><03>39<0D><0A><20><20><20><02>0R|1|^^^T3|2.76|ng/mL||||F||||200106111221<0D><0A><03>55<0D><0A><20><20><20><02>1L|1|<0D><0A><03>B6<0D><0A><20><20><20><02>2H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BA<0D><0A><20><20><20><02>3P|1|||||||U||||||
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+
+Received : |||||||||||<0D><0A><03>35<0D><0A><20><20><20><02>4O|1|CONT1||^^^T4|||||||||||||||||||||F<0D><0A><03>2D<0D><0A><20><20><20><02>5R|1|^^^T4|4.0|ug/dL||||F||||200106081109<0D><0A><03>29<0D><0A><20><20><20><02>6C|1||Reschedule|G<0D><0A><03>F5<0D><0A><20><20><20><02>7L|1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Unknown Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+
+Received : P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1|||||||U|||||||||||||||||<0D><0A><03>33<0D><0A><20><20><20><02>2O|1|CONT1||^^^T3|||||||||||||||||||||F<0D><0A><03>2A<0D><0A><20><20><20><02>3R|1|^^^T3|0.80|ng/mL||||F||||200106081110<0D><0A><03>54<0D><0A><20><20><20><02>4C|1||Reschedule|G<0D><0A><03>F3<0D><0A><20><20><20><02>5L|1|<0D><0A><03>BA<0D><0A><20><20>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Unknown Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : <20><02>6H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BE<0D><0A><20><20><20><02>7P|1||||||||||||||||||||||||<0D><0A><03>E4<0D><0A><20><20><20><02>0O|1|lig3||^^^TSH3|||||||||||||||||||||F<0D><0A><03>CD<0D><0A><20><20><20><02>1R|1|^^^TSH3|0.058|uIU/mL||||F||||200106111222<0D><0A><03>5E<0D><0A><20><20><20><02>2L|1|<0D>
+
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+
+Received : <0A><03>B7<0D><0A><20><20><20><02>3H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BB<0D><0A><20><20><20><02>4P|1|||||||U|||||||||||||||||<0D><0A><03>36<0D><0A><20><20><20><02>5O|1|CONT2||^^^T3|||||||||||||||||||||F<0D><0A><03>2E<0D><0A><20><20><20><02>6R|1|^^^T3|1.73|ng/mL||||F||||200106081112<0D><0A><03>5C<0D><0A><20><20><20><02>7L
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+
+Received : |1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1|||||||U|||||||||||||||||<0D><0A><03>33<0D><0A><20><20><20><02>2O|1|CONT2||^^^T4|||||||||||||||||||||F<0D><0A><03>2C<0D><0A><20><20><20><02>3R|1|^^^T4|6.6|ug/dL||||F||||200106081111<0D><0A><03>28<0D><0A><20><20><20>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : <02>4L|1|<0D><0A><03>B9<0D><0A><20><20><20><02>5H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BD<0D><0A><20><20><20><02>6P|1|||||||U|||||||||||||||||<0D><0A><03>38<0D><0A><20><20><20><02>7O|1|CONT3||^^^T3|||||||||||||||||||||F<0D><0A><03>31<0D><0A><20><20><20><02>0R|1|^^^T3|3.14|ng/mL||||F||||200106081113<0D><0A><03>54<0D>
+
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : <0A><20><20><20><02>1L|1|<0D><0A><03>B6<0D><0A><20><20><20><02>2H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BA<0D><0A><20><20><20><02>3P|1|||||||U|||||||||||||||||<0D><0A><03>35<0D><0A><20><20><20><02>4O|1|CONT3||^^^T4|||||||||||||||||||||F<0D><0A><03>2F<0D><0A><20><20><20><02>5R|1|^^^T4|11.5|ug/dL||||F||||200106081113<0D><0A>
+
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : <03>57<0D><0A><20><20><20><02>6L|1|<0D><0A><03>BB<0D><0A><20><20><20><02>7H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BF<0D><0A><20><20><20><02>0P|1||||||||||||||||||||||||<0D><0A><03>DD<0D><0A><20><20><20><02>1O|1|1||^^^T4|||||||||||||||||||||F<0D><0A><03>F6<0D><0A><20><20><20><02>2R|1|^^^T4|4.5|ug/dL||||F||||200106111257<0D><0A><03>2
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : 9<0D><0A><20><20><20><02>3L|1|<0D><0A><03>B8<0D><0A><20><20><20><02>4H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BC<0D><0A><20><20><20><02>5P|1||||||||||||||||||||||||<0D><0A><03>E2<0D><0A><20><20><20><02>6O|1|1||^^^TSH3|||||||||||||||||||||F<0D><0A><03>95<0D><0A><20><20><20><02>7R|1|^^^TSH3|<<<|uIU/mL||<||F||||200106111258
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : <0D><0A><03>62<0D><0A><20><20><20><02>0L|1|<0D><0A><03>B5<0D><0A><20><20><20><02>1H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B9<0D><0A><20><20><20><02>2P|1||||||||||||||||||||||||<0D><0A><03>DF<0D><0A><20><20><20><02>3O|1|2||^^^T3|||||||||||||||||||||F<0D><0A><03>F8<0D><0A><20><20><20><02>4R|1|^^^T3|1.68|ng/mL||||F||||200106111259<0D>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+
+Received : <0A><03>64<0D><0A><20><20><20><02>5L|1|<0D><0A><03>BA<0D><0A><20><20><20><02>6H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BE<0D><0A><20><20><20><02>7P|1||||||||||||||||||||||||<0D><0A><03>E4<0D><0A><20><20><20><02>0O|1|2||^^^T4|||||||||||||||||||||F<0D><0A><03>F6<0D><0A><20><20><20><02>1R|1|^^^T4|2.5|ug/dL||||F||||200106111259<0D><0A><03>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : 28<0D><0A><20><20><20><02>2L|1|<0D><0A><03>B7<0D><0A><20><20><20><02>3H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BB<0D><0A><20><20><20><02>4P|1||||||||||||||||||||||||<0D><0A><03>E1<0D><0A><20><20><20><02>5O|1|2||^^^TSH3|||||||||||||||||||||F<0D><0A><03>95<0D><0A><20><20><20><02>6R|1|^^^TSH3|<<<|uIU/mL||<||F||||20010611130
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : 0<0D><0A><03>55<0D><0A><20><20><20><02>7L|1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1||||||||||||||||||||||||<0D><0A><03>DE<0D><0A><20><20><20><02>2O|1|3||^^^T4|||||||||||||||||||||F<0D><0A><03>F9<0D><0A><20><20><20><02>3R|1|^^^T4|11.4|ug/dL||||F||||200106111300
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : <0D><0A><03>4C<0D><0A><20><20><20><02>4L|1|<0D><0A><03>B9<0D><0A><20><20><20><02>5H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BD<0D><0A><20><20><20><02>6P|1||||||||||||||||||||||||<0D><0A><03>E3<0D><0A><20><20><20><02>7O|1|3||^^^T3|||||||||||||||||||||F<0D><0A><03>FD<0D><0A><20><20><20><02>0R|1|^^^T3|2.95|ng/mL||||F||||200106111301<0D>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+
+Received : <0A><03>55<0D><0A><20><20><20><02>1L|1|<0D><0A><03>B6<0D><0A><20><20><20><02>2H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BA<0D><0A><20><20><20><02>3P|1||||||||||||||||||||||||<0D><0A><03>E0<0D><0A><20><20><20><02>4O|1|3||^^^TSH3|||||||||||||||||||||F<0D><0A><03>95<0D><0A><20><20><20><02>5R|1|^^^TSH3|<<<|uIU/mL||<||F||||200106111
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : 301<0D><0A><03>55<0D><0A><20><20><20><02>6L|1|<0D><0A><03>BB<0D><0A><20><20><20>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Processing file ... : C:\windows\system\04070005.ACS
+
+Received : <02>1H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B9<0D><0A><20><20><20><02>2P|1||||SALAS^FERNANDO^||||||||||||||||||||<0D><0A><03>5C<0D><0A><20><20><20><02>3O|1|100||^^^T4|||||||||||||||||||||F<0D><0A><03>58<0D><0A><20><20><20><02>4R|1|^^^T4|4.6|ug/dL||||F||||200106081710<0D><0A><03>2C<0D><0A><20><20><20><02>
+
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : 5L|1|<0D><0A><03>BA<0D><0A><20><20><20><02>6H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BE<0D><0A><20><20><20><02>7P|1||||||||||||||||||||||||<0D><0A><03>E4<0D><0A><20><20><20><02>0O|1|CONTROL1||^^^TSH3|||||||||||||||||||||F<0D><0A><03>B0<0D><0A><20><20><20><02>1R|1|^^^TSH3|0.581|uIU/mL||||F||||20010608164
+
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : 0<0D><0A><03>69<0D><0A><20><20><20><02>2L|1|<0D><0A><03>B7<0D><0A><20><20><20><02>3H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BB<0D><0A><20><20><20><02>4P|1||||||||||||||||||||||||<0D><0A><03>E1<0D><0A><20><20><20><02>5O|1|CONTROL2||^^^TSH3|||||||||||||||||||||F<0D><0A><03>B6<0D><0A><20><20><20><02>6R|1|^^^TSH3|4.815|uIU/mL||||F|||
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : |200106081640<0D><0A><03>72<0D><0A><20><20><20><02>7L|1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1||||||||||||||||||||||||<0D><0A><03>DE<0D><0A><20><20><20><02>2O|1|CONTROL3||^^^TSH3|||||||||||||||||||||F<0D><0A><03>B4<0D><0A><20><20><20><02>3R|1|^^^TSH3|16.929|u
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : IU/mL||||F||||200106081641<0D><0A><03>A9<0D><0A><20><20><20><02>4L|1|<0D><0A><03>B9<0D><0A><20><20><20><02>5H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BD<0D><0A><20><20><20><02>6P|1||||GOMEZ^CARMEN^||||||||||||||||||||<0D><0A><03>D7<0D><0A><20><20><20><02>7O|1|200||^^^TSH3|||||||||||||||||||||F<0D><0A><03>F7<0D><0A><20><20><20><02>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : 0R|1|^^^TSH3|4.837|uIU/mL||||F||||200106081712<0D><0A><03>70<0D><0A><20><20><20><02>1L|1|<0D><0A><03>B6<0D><0A><20><20><20><02>2H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BA<0D><0A><20><20><20><02>3P|1||||GOMEZ^CARMEN^||||||||||||||||||||<0D><0A><03>D4<0D><0A><20><20><20><02>4O|1|200||^^^T3|||||||||||||||
+
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+
+Received : ||||||F<0D><0A><03>59<0D><0A><20><20><20><02>5R|1|^^^T3|1.81|ng/mL||||F||||200106081711<0D><0A><03>5F<0D><0A><20><20><20><02>6L|1|<0D><0A><03>BB<0D><0A><20><20><20><02>7H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BF<0D><0A><20><20><20><02>0P|1||||GOMEZ^CARMEN^||||||||||||||||||||<0D><0A><03>D1<0D><0A><20><20><20><02>1O|1|200||^^^T4|
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+
+Received : ||||||||||||||||||||F<0D><0A><03>57<0D><0A><20><20><20><02>2R|1|^^^T4|6.3|ug/dL||||F||||200106081711<0D><0A><03>2A<0D><0A><20><20><20><02>3L|1|<0D><0A><03>B8<0D><0A><20><20><20><02>4H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BC<0D><0A><20><20><20><02>5P|1||||CACERES^CECILIA^||||||||||||||||||||<0D><0A><03>7E<0D><0A><20><20><20><02>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : 6O|1|300||^^^T4|||||||||||||||||||||F<0D><0A><03>5D<0D><0A><20><20><20><02>7R|1|^^^T4|10.8|ug/dL||||F||||200106081712<0D><0A><03>60<0D><0A><20><20><20><02>0L|1|<0D><0A><03>B5<0D><0A><20><20><20><02>1H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B9<0D><0A><20><20><20><02>2P|1||||||||||||||||||||||||<0D><0A><03>DF<0D><0A><20><20><20>
+
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : <02>3O|1|lig1||^^^TSH3|||||||||||||||||||||F<0D><0A><03>CE<0D><0A><20><20><20><02>4R|1|^^^TSH3|<<<|uIU/mL||<||F||||200106111219<0D><0A><03>5C<0D><0A><20><20><20><02>5L|1|<0D><0A><03>BA<0D><0A><20><20><20><02>6H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BE<0D><0A><20><20><20><02>7P|1||||||||||||||||||||||||<0D><0A><03>
+
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : E4<0D><0A><20><20><20><02>0O|1|lig1||^^^T3|||||||||||||||||||||F<0D><0A><03>30<0D><0A><20><20><20><02>1R|1|^^^T3|0.63|ng/mL||||F||||200106111218<0D><0A><03>56<0D><0A><20><20><20><02>2L|1|<0D><0A><03>B7<0D><0A><20><20><20><02>3H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BB<0D><0A><20><20><20><02>4P|1||||||||||||||||||||||||<0D>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+
+Received : <0A><03>E1<0D><0A><20><20><20><02>5O|1|lig2||^^^TSH3|||||||||||||||||||||F<0D><0A><03>D1<0D><0A><20><20><20><02>6R|1|^^^TSH3|<<<|uIU/mL||<||F||||200106111220<0D><0A><03>56<0D><0A><20><20><20><02>7L|1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1||||||||||||||||||
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+
+Received : ||||||<0D><0A><03>DE<0D><0A><20><20><20><02>2O|1|lig2||^^^T3|||||||||||||||||||||F<0D><0A><03>33<0D><0A><20><20><20><02>3R|1|^^^T3|1.47|ng/mL||||F||||200106111220<0D><0A><03>54<0D><0A><20><20><20><02>4L|1|<0D><0A><03>B9<0D><0A><20><20><20><02>5H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BD<0D><0A><20><20><20><02>6P|1||||||||||||||||
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+
+Received : ||||||||<0D><0A><03>E3<0D><0A><20><20><20><02>7O|1|lig3||^^^T3|||||||||||||||||||||F<0D><0A><03>39<0D><0A><20><20><20><02>0R|1|^^^T3|2.76|ng/mL||||F||||200106111221<0D><0A><03>55<0D><0A><20><20><20><02>1L|1|<0D><0A><03>B6<0D><0A><20><20><20><02>2H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BA<0D><0A><20><20><20><02>3P|1|||||||U||||||
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+
+Received : |||||||||||<0D><0A><03>35<0D><0A><20><20><20><02>4O|1|CONT1||^^^T4|||||||||||||||||||||F<0D><0A><03>2D<0D><0A><20><20><20><02>5R|1|^^^T4|4.0|ug/dL||||F||||200106081109<0D><0A><03>29<0D><0A><20><20><20><02>6C|1||Reschedule|G<0D><0A><03>F5<0D><0A><20><20><20><02>7L|1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Unknown Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+
+Received : P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1|||||||U|||||||||||||||||<0D><0A><03>33<0D><0A><20><20><20><02>2O|1|CONT1||^^^T3|||||||||||||||||||||F<0D><0A><03>2A<0D><0A><20><20><20><02>3R|1|^^^T3|0.80|ng/mL||||F||||200106081110<0D><0A><03>54<0D><0A><20><20><20><02>4C|1||Reschedule|G<0D><0A><03>F3<0D><0A><20><20><20><02>5L|1|<0D><0A><03>BA<0D><0A><20><20>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Unknown Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : <20><02>6H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BE<0D><0A><20><20><20><02>7P|1||||||||||||||||||||||||<0D><0A><03>E4<0D><0A><20><20><20><02>0O|1|lig3||^^^TSH3|||||||||||||||||||||F<0D><0A><03>CD<0D><0A><20><20><20><02>1R|1|^^^TSH3|0.058|uIU/mL||||F||||200106111222<0D><0A><03>5E<0D><0A><20><20><20><02>2L|1|<0D>
+
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+
+Received : <0A><03>B7<0D><0A><20><20><20><02>3H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BB<0D><0A><20><20><20><02>4P|1|||||||U|||||||||||||||||<0D><0A><03>36<0D><0A><20><20><20><02>5O|1|CONT2||^^^T3|||||||||||||||||||||F<0D><0A><03>2E<0D><0A><20><20><20><02>6R|1|^^^T3|1.73|ng/mL||||F||||200106081112<0D><0A><03>5C<0D><0A><20><20><20><02>7L
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+
+Received : |1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1|||||||U|||||||||||||||||<0D><0A><03>33<0D><0A><20><20><20><02>2O|1|CONT2||^^^T4|||||||||||||||||||||F<0D><0A><03>2C<0D><0A><20><20><20><02>3R|1|^^^T4|6.6|ug/dL||||F||||200106081111<0D><0A><03>28<0D><0A><20><20><20>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : <02>4L|1|<0D><0A><03>B9<0D><0A><20><20><20><02>5H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BD<0D><0A><20><20><20><02>6P|1|||||||U|||||||||||||||||<0D><0A><03>38<0D><0A><20><20><20><02>7O|1|CONT3||^^^T3|||||||||||||||||||||F<0D><0A><03>31<0D><0A><20><20><20><02>0R|1|^^^T3|3.14|ng/mL||||F||||200106081113<0D><0A><03>54<0D>
+
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : <0A><20><20><20><02>1L|1|<0D><0A><03>B6<0D><0A><20><20><20><02>2H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BA<0D><0A><20><20><20><02>3P|1|||||||U|||||||||||||||||<0D><0A><03>35<0D><0A><20><20><20><02>4O|1|CONT3||^^^T4|||||||||||||||||||||F<0D><0A><03>2F<0D><0A><20><20><20><02>5R|1|^^^T4|11.5|ug/dL||||F||||200106081113<0D><0A>
+
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : <03>57<0D><0A><20><20><20><02>6L|1|<0D><0A><03>BB<0D><0A><20><20><20><02>7H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BF<0D><0A><20><20><20><02>0P|1||||||||||||||||||||||||<0D><0A><03>DD<0D><0A><20><20><20><02>1O|1|1||^^^T4|||||||||||||||||||||F<0D><0A><03>F6<0D><0A><20><20><20><02>2R|1|^^^T4|4.5|ug/dL||||F||||200106111257<0D><0A><03>2
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : 9<0D><0A><20><20><20><02>3L|1|<0D><0A><03>B8<0D><0A><20><20><20><02>4H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BC<0D><0A><20><20><20><02>5P|1||||||||||||||||||||||||<0D><0A><03>E2<0D><0A><20><20><20><02>6O|1|1||^^^TSH3|||||||||||||||||||||F<0D><0A><03>95<0D><0A><20><20><20><02>7R|1|^^^TSH3|<<<|uIU/mL||<||F||||200106111258
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : <0D><0A><03>62<0D><0A><20><20><20><02>0L|1|<0D><0A><03>B5<0D><0A><20><20><20><02>1H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B9<0D><0A><20><20><20><02>2P|1||||||||||||||||||||||||<0D><0A><03>DF<0D><0A><20><20><20><02>3O|1|2||^^^T3|||||||||||||||||||||F<0D><0A><03>F8<0D><0A><20><20><20><02>4R|1|^^^T3|1.68|ng/mL||||F||||200106111259<0D>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+
+Received : <0A><03>64<0D><0A><20><20><20><02>5L|1|<0D><0A><03>BA<0D><0A><20><20><20><02>6H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BE<0D><0A><20><20><20><02>7P|1||||||||||||||||||||||||<0D><0A><03>E4<0D><0A><20><20><20><02>0O|1|2||^^^T4|||||||||||||||||||||F<0D><0A><03>F6<0D><0A><20><20><20><02>1R|1|^^^T4|2.5|ug/dL||||F||||200106111259<0D><0A><03>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Received : 28<0D><0A><20><20><20><02>2L|1|<0D><0A><03>B7<0D><0A><20><20><20><02>3H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BB<0D><0A><20><20><20><02>4P|1||||||||||||||||||||||||<0D><0A><03>E1<0D><0A><20><20><20><02>5O|1|2||^^^TSH3|||||||||||||||||||||F<0D><0A><03>95<0D><0A><20><20><20><02>6R|1|^^^TSH3|<<<|uIU/mL||<||F||||20010611130
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : 0<0D><0A><03>55<0D><0A><20><20><20><02>7L|1|<0D><0A><03>BC<0D><0A><20><20><20><02>0H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>B8<0D><0A><20><20><20><02>1P|1||||||||||||||||||||||||<0D><0A><03>DE<0D><0A><20><20><20><02>2O|1|3||^^^T4|||||||||||||||||||||F<0D><0A><03>F9<0D><0A><20><20><20><02>3R|1|^^^T4|11.4|ug/dL||||F||||200106111300
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : <0D><0A><03>4C<0D><0A><20><20><20><02>4L|1|<0D><0A><03>B9<0D><0A><20><20><20><02>5H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BD<0D><0A><20><20><20><02>6P|1||||||||||||||||||||||||<0D><0A><03>E3<0D><0A><20><20><20><02>7O|1|3||^^^T3|||||||||||||||||||||F<0D><0A><03>FD<0D><0A><20><20><20><02>0R|1|^^^T3|2.95|ng/mL||||F||||200106111301<0D>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+Record Type Error (Especial char received)
+
+Received : <0A><03>55<0D><0A><20><20><20><02>1L|1|<0D><0A><03>B6<0D><0A><20><20><20><02>2H|\^&|||ACS:180SE|||||LABWIN||P|1<0D><0A><03>BA<0D><0A><20><20><20><02>3P|1||||||||||||||||||||||||<0D><0A><03>E0<0D><0A><20><20><20><02>4O|1|3||^^^TSH3|||||||||||||||||||||F<0D><0A><03>95<0D><0A><20><20><20><02>5R|1|^^^TSH3|<<<|uIU/mL||<||F||||200106111
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+
+Header Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Patient Block received without header block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Operation Block received without patient block
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Result Block received without operation block
+
+Received : 301<0D><0A><03>55<0D><0A><20><20><20><02>6L|1|<0D><0A><03>BB<0D><0A><20><20><20>
+
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Last Block received
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)
+Record Type Error (Especial char received)

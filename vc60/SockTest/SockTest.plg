@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SockTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5F.tmp" with contents
+[
+/nologo /MDd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/SockTest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\051207\VC60\SRC\SockBridge.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5F.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP60.tmp" with contents
+[
+ws2_32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/SockTest.pdb" /debug /machine:I386 /out:"Debug/SockTest.exe" /pdbtype:sept 
+.\Debug\BridgeSvr.obj
+.\Debug\CircularBuffer.obj
+.\Debug\LockEvent.obj
+.\Debug\MemPage.obj
+.\Debug\MessageEvent.obj
+.\Debug\Sock.obj
+.\Debug\SockBridge.obj
+.\Debug\SockCommon.obj
+.\Debug\SockSvr.obj
+.\Debug\SockTest.obj
+.\Debug\SockTestDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\TcpIpServer.obj
+.\Debug\TcpIpSocket.obj
+.\Debug\TrafficFile.obj
+.\Debug\Unknown.obj
+.\Debug\SockTest.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP60.tmp"
+<h3>Output Window</h3>
+Compiling...
+SockBridge.cpp
+D:\051207\VC60\SRC\SockBridge.cpp(109) : warning C4100: 'pSock' : unreferenced formal parameter
+D:\051207\VC60\SRC\SockBridge.cpp(169) : warning C4700: local variable 'size' used without having been initialized
+D:\051207\VC60\SRC\SockBridge.cpp(173) : warning C4700: local variable 'dr' used without having been initialized
+D:\051207\VC60\SRC\SockBridge.cpp(193) : warning C4700: local variable 'BytesRead' used without having been initialized
+D:\051207\VC60\SRC\SockBridge.cpp(193) : warning C4700: local variable 'Buffer' used without having been initialized
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP62.tmp" with contents
+[
+/nologo /o"Debug/SockTest.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\BridgeSvr.sbr
+.\Debug\CircularBuffer.sbr
+.\Debug\LockEvent.sbr
+.\Debug\MemPage.sbr
+.\Debug\MessageEvent.sbr
+.\Debug\Sock.sbr
+.\Debug\SockBridge.sbr
+.\Debug\SockCommon.sbr
+.\Debug\SockSvr.sbr
+.\Debug\SockTest.sbr
+.\Debug\SockTestDlg.sbr
+.\Debug\TcpIpServer.sbr
+.\Debug\TcpIpSocket.sbr
+.\Debug\TrafficFile.sbr
+.\Debug\Unknown.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP62.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SockTest.exe - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>

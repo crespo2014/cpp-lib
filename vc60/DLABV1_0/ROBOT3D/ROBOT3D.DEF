@@ -1,0 +1,7 @@
+; robot3d.def : Declares the module parameters for the DLL.
+
+LIBRARY      "robot3d"
+DESCRIPTION  'robot3d Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lisa200 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPCE.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/Lisa200.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200.cpp"
+"H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp"
+"H:\users\Lester\Visual C++ 6.0\Clases\TcpIpSocket.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPCE.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPCF.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Lisa200.pdb" /debug /machine:I386 /out:"Debug/Lisa200.exe" /pdbtype:sept 
+".\Debug\Common.obj"
+".\Debug\Lisa200.obj"
+".\Debug\Lisa2000Filter.obj"
+".\Debug\Lisa2000ResultFilter.obj"
+".\Debug\Lisa2000Server.obj"
+".\Debug\Lisa200Wind.obj"
+".\Debug\LockEvent.obj"
+".\Debug\MessageEvent.obj"
+".\Debug\SerialPort.obj"
+".\Debug\SerialPortBridge.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TcpIpServer.obj"
+".\Debug\TcpIpSocket.obj"
+".\Debug\Wind.obj"
+".\Debug\Lisa200.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPCF.tmp"
+<h3>Output Window</h3>
+Compiling...
+Lisa200Wind.cpp
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(276) : warning C4244: '=' : conversion from 'double' to 'unsigned char', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(278) : warning C4244: '=' : conversion from 'double' to 'unsigned char', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(280) : warning C4244: '=' : conversion from 'double' to 'unsigned long', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(282) : warning C4244: '=' : conversion from 'double' to 'unsigned long', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(284) : warning C4244: '=' : conversion from 'double' to 'unsigned long', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(286) : warning C4244: '=' : conversion from 'double' to 'unsigned long', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(288) : warning C4244: '=' : conversion from 'double' to 'unsigned long', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(290) : warning C4244: '=' : conversion from 'double' to 'unsigned char', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(292) : warning C4244: '=' : conversion from 'double' to 'unsigned long', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(294) : warning C4244: '=' : conversion from 'double' to 'unsigned char', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(296) : warning C4244: '=' : conversion from 'double' to 'unsigned short', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(298) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(300) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(302) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+H:\users\Lester\Visual C++ 6.0\Lisa200\Lisa200Wind.cpp(304) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+TcpIpSocket.cpp
+Generating Code...
+Compiling...
+Lisa200.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD0.tmp" with contents
+[
+/nologo /o"Debug/Lisa200.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\Common.sbr"
+".\Debug\Lisa200.sbr"
+".\Debug\Lisa2000Filter.sbr"
+".\Debug\Lisa2000ResultFilter.sbr"
+".\Debug\Lisa2000Server.sbr"
+".\Debug\Lisa200Wind.sbr"
+".\Debug\LockEvent.sbr"
+".\Debug\MessageEvent.sbr"
+".\Debug\SerialPort.sbr"
+".\Debug\SerialPortBridge.sbr"
+".\Debug\TcpIpServer.sbr"
+".\Debug\TcpIpSocket.sbr"
+".\Debug\Wind.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD0.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Lisa200.exe - 0 error(s), 15 warning(s)
+</pre>
+</body>
+</html>

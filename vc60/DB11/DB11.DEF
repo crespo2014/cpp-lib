@@ -1,0 +1,7 @@
+; DB11.def : Declares the module parameters for the DLL.
+
+LIBRARY      "DB11"
+DESCRIPTION  'DB11 Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

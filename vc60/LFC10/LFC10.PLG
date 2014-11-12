@@ -1,0 +1,31 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LFC10 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3D.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/LFC10.pdb" /debug /machine:I386 /def:".\LFC10.def" /out:"c:\lib\LFC10.dll" /implib:"c:\lib\LFC10.lib" /pdbtype:sept 
+".\debug\LFC10.obj"
+".\debug\LFC10C01.obj"
+".\debug\LFC10C02.obj"
+".\debug\LFC10C05.obj"
+".\debug\LFC10C06.obj"
+".\debug\StdAfx.obj"
+".\debug\LFC10.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3D.tmp"
+<h3>Output Window</h3>
+Linking...
+   Creating library c:\lib\LFC10.lib and object c:\lib\LFC10.exp
+
+
+
+<h3>Results</h3>
+LFC10.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

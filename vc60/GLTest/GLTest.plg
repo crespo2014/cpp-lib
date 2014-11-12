@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GL10 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP2F.tmp" with contents
+[
+opengl32.lib ftkvc40d.lib glu32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/GL10.pdb" /debug /machine:I386 /def:".\GL10.def" /out:"c:\windows\system\GL10.dll" /implib:"..\inc_src\lib\GL10.lib" /pdbtype:sept /libpath:"..\inc_src\lib" 
+".\Debug\GL10.obj"
+".\Debug\gl10c10.obj"
+".\Debug\gl10c11.obj"
+".\Debug\gl10c12.obj"
+".\Debug\gl10c13.obj"
+".\Debug\gl10c14.obj"
+".\Debug\gl10c3.obj"
+".\Debug\gl10c4.obj"
+".\Debug\gl10c5.obj"
+".\Debug\gl10c6.obj"
+".\Debug\gl10c7.obj"
+".\Debug\gl10c8.obj"
+".\Debug\gl10c9.obj"
+".\Debug\gl10d5.obj"
+".\Debug\gl10d6.obj"
+".\Debug\StdAfx.obj"
+".\Debug\GL10.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP2F.tmp"
+<h3>Output Window</h3>
+Linking...
+<h3>
+--------------------Configuration: GLTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP30.tmp" with contents
+[
+gl10.lib opengl32.lib glu32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/GLTest.pdb" /debug /machine:I386 /out:"Debug/GLTest.exe" /pdbtype:sept /libpath:"..\inc_src\lib" 
+".\Debug\GLTest.obj"
+".\Debug\GLTestDlg.obj"
+".\Debug\GLWind.obj"
+".\Debug\StdAfx.obj"
+".\Debug\GLTest.res"
+"c:\windows\system\GL10.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP30.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+GLTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

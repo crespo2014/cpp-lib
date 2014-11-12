@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: image1_0 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x80a /fo"Debug/image1_0.res" /d "_DEBUG" /d "_AFXDLL" "C:\USR\LESTER\Vc6_0\DLABV1_0\IMAGE1_0\image1_0.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP60A1.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Debug/Image1_0.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\USR\LESTER\Vc6_0\DLABV1_0\IMAGE1_0\Camara.cpp"
+"C:\USR\LESTER\Vc6_0\DLABV1_0\IMAGE1_0\Cambuff.cpp"
+"C:\USR\LESTER\Vc6_0\DLABV1_0\IMAGE1_0\Codec.cpp"
+"C:\USR\LESTER\Vc6_0\DLABV1_0\IMAGE1_0\image1_0.cpp"
+"C:\USR\LESTER\Vc6_0\DLABV1_0\IMAGE1_0\StoreImage.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP60A1.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP60A2.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Debug/Image1_0.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\USR\LESTER\Vc6_0\DLABV1_0\IMAGE1_0\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP60A2.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP60A3.TMP" with contents
+[
+vfw32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/image1_0.pdb" /debug /machine:I386 /def:".\image1_0.def" /out:"c:\windows\system\image1_0.dll" /implib:"Debug/image1_0.lib" /pdbtype:sept 
+.\Debug\Camara.obj
+.\Debug\Cambuff.obj
+.\Debug\Codec.obj
+.\Debug\image1_0.obj
+.\Debug\StdAfx.obj
+.\Debug\StoreImage.obj
+.\Debug\image1_0.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP60A3.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Camara.cpp
+c:\usr\lester\vc6_0\dlabv1_0\image1_0\camara.h(12) : fatal error C1083: Cannot open include file: 'VisImSrc.h': No such file or directory
+Cambuff.cpp
+c:\usr\lester\vc6_0\dlabv1_0\image1_0\cambuff.h(6) : fatal error C1083: Cannot open include file: 'VisImSrc.h': No such file or directory
+Codec.cpp
+image1_0.cpp
+StoreImage.cpp
+fatal error C1083: Cannot open source file: 'C:\USR\LESTER\Vc6_0\DLABV1_0\IMAGE1_0\StoreImage.cpp': No such file or directory
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+image1_0.dll - 3 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,212 @@
+[Font]
+lfFaceName=Times New Roman
+lfHeight=-13;
+lfWidth=0;
+lfWeight=400;				FW_BOLD             
+lfOutPrecision=3;
+lfClipPrecision=2;
+lfQuality=1;
+lfPitchAndFamily=34;
+lfCharSet=0;				ANSI_CHARSET
+lfItalic=0;					false
+
+[Control]
+x=10
+y=10
+width=505
+height=289
+type=7
+style = 0x50000400
+exstyle = 1
+id=2000;					panel principal
+
+[Control]
+caption=Expediente:
+x=5
+y=10
+width=83
+height=24
+type=2
+parentid = 2000
+style = 0x50000200
+exstyle = 0x4
+[Control]
+caption=Nombre:
+x=166
+y=10
+width=60
+height=24
+type=2
+parentid = 2000
+style = 0x50000200
+exstyle = 0x4
+[Control]
+caption=Dirección:
+x=17
+y=35
+width=71
+height=24
+type=2
+parentid = 2000
+style = 0x50000200
+exstyle = 0x4
+[Control]
+caption=Sindicato:
+x=18
+y=60
+width=70
+height=24
+type=2
+parentid = 2000
+style = 0x50000200
+exstyle = 0x4
+[Control]
+caption=Tema:
+x=282
+y=60
+width=45
+height=24
+type=2
+parentid = 2000
+style = 0x50000200
+exstyle = 0x4 
+[Control]
+caption=Provincia:
+x=18
+y=85
+width=70
+height=24
+type=2
+parentid = 2000
+style = 0x50000200
+exstyle = 0x4 
+[Control]
+caption=Sintesis:
+x=28
+y=110
+width=60
+height=24
+type=2
+parentid = 2000
+style = 0x50000200
+exstyle = 0x4
+[Control]
+caption=Recibida:
+x=20
+y=215
+width=68
+height=24
+type=2
+parentid = 2000
+style = 0x50000200
+exstyle = 0x4
+[Control]
+caption=Respuesta:
+x=266
+y=215
+width=80
+height=24
+type=2
+parentid = 2000
+style = 0x50000200
+exstyle = 0x4
+[Control]
+x=90			;expediente
+y=13	;10
+width=68
+height=18
+type=1
+parentid = 2000
+style = 0x50010080
+exstyle = 0x004			;204
+id = 1002
+dbIndex = 7
+[Control]
+x=230			;nombre
+y=10
+width=264
+height=24
+type=1
+parentid = 2000
+style = 0x50010080
+exstyle = 0x204
+id = 1003
+dbIndex = 8
+[Control]
+x=90			;direccion
+y=35
+width=404
+height=24
+type=1
+parentid = 2000
+style = 0x50010000
+exstyle = 0x204
+id = 1004
+dbIndex = 9
+[Control]
+x=90			;sindicato
+y=60
+width=164
+height=24
+type=1
+parentid = 2000
+style = 0x50010080
+exstyle = 0x204
+id = 1005
+dbIndex = 15
+[Control]
+x=330			;tema
+y=60
+width=164
+height=24
+type=1
+parentid = 2000
+style = 0x50010080
+exstyle = 0x204
+id = 1006
+dbIndex = 10
+[Control]				;Combobox provincia
+x=90			
+y=85
+width=164
+height=24
+type=7
+parentid = 2000
+style = 0x50010000
+exstyle = 0x204
+id = 1007
+dbIndex = 12
+[Control]
+x=90		;sintesis
+y=110
+width=404
+height=104
+type=1
+parentid = 2000
+style = 0x50010044
+exstyle = 0x204
+id = 1008
+dbIndex = 14
+[Control]			;Boton guardar
+caption = Guardar
+x=341
+y=248
+width=75
+height=25
+type=8
+style = 0x50014000
+exstyle = 0
+id=2001;
+parentid = 2000
+[Control]			;Boton oculto next ctrl
+caption = NextCtrl
+x=341
+y=248
+width=75
+height=25
+type=8
+style = 0x40014000
+exstyle = 0
+id=2002;
+parentid = 2000
+.

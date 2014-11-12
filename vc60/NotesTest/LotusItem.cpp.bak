@@ -1,0 +1,429 @@
+// LotusItem.cpp: implementation of the CLotusItem class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "LotusItem.h"
+#include "lotus\rsrcods.h"
+#include "lotus\actods.h"
+#include "lotus\ods.h"
+#include "lotus\editods.h"
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+#define SIG_SIZE(x) (SIG_CD_##x,sizeof(CD##x),_CD##x)
+
+struct
+{
+	WORD type;
+	BYTE size;
+	WORD ods_type;
+} sig_size[] = {
+				(SIG_CD_BEGIN,				sizeof(CDBEGINRECORD),_CDBEGINRECORD),
+				(SIG_CD_TABLECELL_HREF2,	sizeof(CDRESOURCE),_CDRESOURCE),
+				(SIG_CD_HREFBORDER,			sizeof(CDRESOURCE),_CDRESOURCE),
+				(SIG_CD_HREF2,				sizeof(CDRESOURCE),_CDRESOURCE),
+				(SIG_CD_CLIENT_BLOBPART,	sizeof(CDBLOBPART),_CDBLOBPART),
+				(SIG_CD_CLIENT_EVENT,		sizeof(CDEVENT),_CDEVENT),
+				(SIG_CD_LARGE_PARAGRAPH,	sizeof(CDLARGEPARAGRAPH),_CDLARGEPARAGRAPH),
+				(SIG_CD_EVENT_LANGUAGE_ENTRY,sizeof(CDEVENTENTRY),_CDEVENTENTRY),
+				(SIG_CD_EXT_EMBEDDEDSCHED,	sizeof(CDEMBEDDEDSCHEDCTLEXTRA),_CDEMBEDDEDSCHEDCTLEXTRA),
+				(SIG_CD_SPAN_END,			sizeof(CDSPANRECORD),_CDSPANRECORD),
+				(SIG_CD_SPAN_BEGIN,			sizeof(CDSPANRECORD),_CDSPANRECORD),
+				(SIG_CD_BACKGROUNDCOLOR,	sizeof(CDCOLOR),_CDCOLOR),
+				(SIG_CD_V6HOTSPOTBEGIN_CONTINUATION,sizeof(CDHOTSPOTBEGIN),_CDHOTSPOTBEGIN),
+				(SIG_CD_TARGET_DBLCLK,		sizeof(CDTARGET),_CDTARGET),
+				(SIG_CD_TABLECELL_HREF,		sizeof(CDRESOURCE),_CDRESOURCE),
+				(SIG_CD_TABLECELL_IDNAME,	sizeof(CDIDNAME),_CDIDNAME),
+				(SIG_CD_V5HOTSPOTBEGIN,		sizeof(CDHOTSPOTBEGIN),_CDHOTSPOTBEGIN),
+				(SIG_CD_V5HOTSPOTEND,		sizeof(CDHOTSPOTEND),_CDHOTSPOTEND),
+				(SIG_CD_HORIZONTALRULE,		sizeof(CDHRULE),_CDHRULE),
+				(SIG_CD_NESTEDTABLEBEGIN,	sizeof(CDTABLEBEGIN),_CDTABLEBEGIN),
+				(SIG_CD_NESTEDTABLECELL,	sizeof(CDTABLECELL),_CDTABLECELL),
+				(SIG_CD_NESTEDTABLEEND,		sizeof(CDTABLEEND),_CDTABLEEND),
+				(SIG_CD_TABLECELL_COLOR,	sizeof(CDCOLOR),_CDCOLOR),
+				(SIG_CD_END,				sizeof(CDENDRECORD),_CDENDRECORD),
+				(SIG_CD_BIDI_TEXT,			sizeof(CDTEXT),_CDTEXT),
+				(SIG_CD_BIDI_TEXTEFFECT),	sizeof(CDTEXTEFFECT),_TEXTEFFECT),
+				(SIG_CD_FLOATPOSITION,		sizeof(CDFLOAT),_CDFLOAT),
+
+								
+				SIG_SIZE(ACTIONBAREXT),
+				SIG_SIZE(ACTIONEXT),
+				SIG_SIZE(ALTERNATEBEGIN),
+				SIG_SIZE(ALTERNATEEND),
+				SIG_SIZE(ALTTEXT),
+				SIG_SIZE(ANCHOR),
+				SIG_SIZE(BACKGROUNDPROPERTIES),
+				SIG_SIZE(BACKGROUNDPROPERTIES),
+				SIG_SIZE(BAR),
+				SIG_SIZE(BAR),
+				SIG_SIZE(BITMAPHEADER),
+				SIG_SIZE(BITMAPSEGMENT),
+				SIG_SIZE(BOXSIZE),
+				SIG_SIZE(CAPTION),
+				SIG_SIZE(CGMMETA),
+				SIG_SIZE(COLORTABLE),
+				SIG_SIZE(DATAFLAGS),
+				SIG_SIZE(DECSFIELD),
+				SIG_SIZE(EMBEDDEDCALCTL),
+				SIG_SIZE(FILEHEADER),
+				SIG_SIZE(FILESEGMENT),
+				SIG_SIZE(GRAPHIC),
+				SIG_SIZE(HEADER),
+				SIG_SIZE(HTMLBEGIN),
+				SIG_SIZE(HTMLEND),
+				SIG_SIZE(HTMLFORMULA),
+				SIG_SIZE(IDNAME),
+				SIG_SIZE(IGNORE),
+				SIG_SIZE(IMAGEHEADER),
+				SIG_SIZE(IMAGESEGMENT),
+				SIG_SIZE(INLINE),
+				SIG_SIZE(LAYER),
+				SIG_SIZE(LINKCOLORS),
+				SIG_SIZE(LINKEXPORT2),
+				SIG_SIZE(MACMETAHEADER),
+				SIG_SIZE(MACMETASEG),
+				SIG_SIZE(PABDEFINITION),
+				SIG_SIZE(PABREFERENCE),
+				SIG_SIZE(PARAGRAPH),
+				SIG_SIZE(PMMETAHEADER),
+				SIG_SIZE(PMMETASEG),
+				SIG_SIZE(POSITIONING),
+				SIG_SIZE(STORAGELINK),
+				SIG_SIZE(STYLENAME),
+				SIG_SIZE(TABLEBEGIN),
+				SIG_SIZE(TABLECELL),
+				SIG_SIZE(TABLEDATAEXTENSION),
+				SIG_SIZE(TABLEEND),
+				SIG_SIZE(TEXT),
+				SIG_SIZE(TEXTPROPERTIESTABLE),
+				SIG_SIZE(TEXTPROPERTY),
+				SIG_SIZE(TRANSPARENTTABLE),
+				SIG_SIZE(WINMETAHEADER),
+				SIG_SIZE(WINMETASEG),
+
+
+				SIG_SIZE(COLOR),
+
+				SIG_SIZE(BLOBPART),
+				SIG_SIZE(VERTICALALIGN),
+
+				SIG_SIZE(TIMERINFO),
+				SIG_SIZE(TABLEROWHEIGHT),
+				SIG_SIZE(TABLELABEL),
+				/*
+
+#define SIG_CD_			(220 | WORDRECORDLENGTH)
+#define SIG_CD_			(221 | BYTERECORDLENGTH)
+#define SIG_CD_				(222 | BYTERECORDLENGTH)
+#define SIG_CD_	(223 | BYTERECORDLENGTH)
+#define SIG_CD_ 	(224 | BYTERECORDLENGTH)
+
+#define SIG_CD_		(225 | BYTERECORDLENGTH)
+#define SIG_CD_	(226 | BYTERECORDLENGTH)
+#define SIG_CD_		(227 | WORDRECORDLENGTH)
+#define SIG_CD_		(228 | WORDRECORDLENGTH)
+#define SIG_CD_  (229 | WORDRECORDLENGTH)
+#define SIG_CD_REGIONBEGIN		(230 | WORDRECORDLENGTH)
+#define SIG_CD_REGIONEND		(231 | WORDRECORDLENGTH)
+#define SIG_CD_TRANSITION		(232 | WORDRECORDLENGTH)
+#define SIG_CD_FIELDHINT		(233 | WORDRECORDLENGTH)
+#define SIG_CD_PLACEHOLDER		(234 | WORDRECORDLENGTH)
+#define SIG_CD_EMBEDDEDOUTLINE	(236 | WORDRECORDLENGTH)
+#define SIG_CD_EMBEDDEDVIEW		(237 | WORDRECORDLENGTH)
+#define SIG_CD_CELLBACKGROUNDDATA	(238 | WORDRECORDLENGTH)
+
+#define SIG_CD_FRAMESETHEADER	(239 | WORDRECORDLENGTH)
+#define SIG_CD_FRAMESET			(240 | WORDRECORDLENGTH)
+#define SIG_CD_FRAME			(241 | WORDRECORDLENGTH)
+
+#define SIG_CD_TARGET			(242 | WORDRECORDLENGTH)
+
+#define SIG_CD_MAPELEMENT		(244 | WORDRECORDLENGTH)
+#define SIG_CD_AREAELEMENT		(245 | WORDRECORDLENGTH)
+#define SIG_CD_HREF				(246 | WORDRECORDLENGTH)
+#define SIG_CD_EMBEDDEDCTL		(247 | WORDRECORDLENGTH)
+#define SIG_CD_HTML_ALTTEXT		(248 | WORDRECORDLENGTH)
+#define SIG_CD_EVENT			(249 | WORDRECORDLENGTH)
+#define SIG_CD_PRETABLEBEGIN	(251 | WORDRECORDLENGTH)
+#define SIG_CD_BORDERINFO		(252 | WORDRECORDLENGTH)
+#define SIG_CD_EMBEDDEDSCHEDCTL	(253 | WORDRECORDLENGTH)
+
+#define SIG_CD_EXT2_FIELD		(254 | WORDRECORDLENGTH)	
+#define SIG_CD_EMBEDDEDEDITCTL	(255 | WORDRECORDLENGTH)
+
+
+#define	SIG_CD_DOCUMENT_PRE_26	(128 | BYTERECORDLENGTH)
+#define	SIG_CD_FIELD_PRE_36		(132 | WORDRECORDLENGTH)
+#define	SIG_CD_FIELD			(138 | WORDRECORDLENGTH)
+#define	SIG_CD_DOCUMENT			(134 | BYTERECORDLENGTH)
+#define	SIG_CD_METAFILE			(135 | WORDRECORDLENGTH)
+#define	SIG_CD_BITMAP			(136 | WORDRECORDLENGTH)
+#define	SIG_CD_FONTTABLE		(139 | WORDRECORDLENGTH)
+#define	SIG_CD_LINK				(140 | BYTERECORDLENGTH)
+#define	SIG_CD_LINKEXPORT		(141 | BYTERECORDLENGTH)
+#define	SIG_CD_KEYWORD			(143 | WORDRECORDLENGTH)
+#define	SIG_CD_LINK2			(145 | WORDRECORDLENGTH)
+#define	SIG_CD_CGM				(147 | WORDRECORDLENGTH)
+#define	SIG_CD_TIFF				(148 | LONGRECORDLENGTH)
+#define SIG_CD_PATTERNTABLE	    (152 | LONGRECORDLENGTH)
+#define SIG_CD_DDEBEGIN			(161 | WORDRECORDLENGTH)
+#define SIG_CD_DDEEND			(162 | WORDRECORDLENGTH)
+#define SIG_CD_OLEBEGIN			(167 | WORDRECORDLENGTH)
+#define SIG_CD_OLEEND			(168 | WORDRECORDLENGTH)
+#define SIG_CD_HOTSPOTBEGIN		(169 | WORDRECORDLENGTH)
+#define SIG_CD_HOTSPOTEND		(170 | BYTERECORDLENGTH)
+#define SIG_CD_BUTTON			(171 | WORDRECORDLENGTH)
+#define SIG_CD_BAR				(172 | WORDRECORDLENGTH)
+#define SIG_CD_V4HOTSPOTBEGIN	(173 | WORDRECORDLENGTH)
+#define SIG_CD_V4HOTSPOTEND		(174 | BYTERECORDLENGTH)
+#define SIG_CD_EXT_FIELD		(176 | WORDRECORDLENGTH)
+#define SIG_CD_LSOBJECT			(177 | WORDRECORDLENGTH)
+#define SIG_CD_HTMLHEADER		(178 | WORDRECORDLENGTH)
+#define SIG_CD_HTMLSEGMENT		(179 | WORDRECORDLENGTH)
+#define SIG_CD_LAYOUT			(183 | BYTERECORDLENGTH)
+#define SIG_CD_LAYOUTTEXT		(184 | BYTERECORDLENGTH)
+#define SIG_CD_LAYOUTEND		(185 | BYTERECORDLENGTH)
+#define SIG_CD_LAYOUTFIELD		(186 | BYTERECORDLENGTH)
+#define SIG_CD_PABHIDE			(187 | WORDRECORDLENGTH)
+#define SIG_CD_PABFORMREF		(188 | BYTERECORDLENGTH)
+#define SIG_CD_ACTIONBAR		(189 | BYTERECORDLENGTH)
+#define SIG_CD_ACTION			(190 | WORDRECORDLENGTH)
+
+#define SIG_CD_DOCAUTOLAUNCH	(191 | WORDRECORDLENGTH)
+#define SIG_CD_LAYOUTGRAPHIC	(192 | BYTERECORDLENGTH)
+#define SIG_CD_OLEOBJINFO		(193 | WORDRECORDLENGTH)
+#define SIG_CD_LAYOUTBUTTON		(194 | BYTERECORDLENGTH)
+#define SIG_CD_TEXTEFFECT		(195 | WORDRECORDLENGTH)
+
+#define SIG_QUERY_HEADER		(129 | BYTERECORDLENGTH)
+#define SIG_QUERY_TEXTTERM		(130 | WORDRECORDLENGTH)
+#define SIG_QUERY_BYFIELD		(131 | WORDRECORDLENGTH)
+#define SIG_QUERY_BYDATE		(132 | WORDRECORDLENGTH)
+#define SIG_QUERY_BYAUTHOR		(133 | WORDRECORDLENGTH)
+#define SIG_QUERY_FORMULA		(134 | WORDRECORDLENGTH)
+#define SIG_QUERY_BYFORM		(135 | WORDRECORDLENGTH)
+#define SIG_QUERY_BYFOLDER		(136 | WORDRECORDLENGTH)
+#define SIG_QUERY_USESFORM		(137 | WORDRECORDLENGTH)
+#define SIG_QUERY_TOPIC			(138 | WORDRECORDLENGTH)
+
+
+#define SIG_ACTION_HEADER		(129 | BYTERECORDLENGTH)
+#define SIG_ACTION_MODIFYFIELD	(130 | WORDRECORDLENGTH)
+#define SIG_ACTION_REPLY		(131 | WORDRECORDLENGTH)
+#define SIG_ACTION_FORMULA		(132 | WORDRECORDLENGTH)
+#define SIG_ACTION_LOTUSSCRIPT	(133 | WORDRECORDLENGTH)
+#define SIG_ACTION_SENDMAIL		(134 | WORDRECORDLENGTH)
+#define SIG_ACTION_DBCOPY		(135 | WORDRECORDLENGTH)
+#define SIG_ACTION_DELETE		(136 | BYTERECORDLENGTH)
+#define SIG_ACTION_BYFORM		(137 | WORDRECORDLENGTH)
+#define SIG_ACTION_MARKREAD		(138 | BYTERECORDLENGTH)
+#define SIG_ACTION_MARKUNREAD	(139 | BYTERECORDLENGTH)
+#define SIG_ACTION_MOVETOFOLDER	(140 | WORDRECORDLENGTH)
+#define SIG_ACTION_COPYTOFOLDER	(141 | WORDRECORDLENGTH)
+#define SIG_ACTION_REMOVEFROMFOLDER	(142 | WORDRECORDLENGTH)
+#define SIG_ACTION_NEWSLETTER	(143 | WORDRECORDLENGTH)
+#define SIG_ACTION_RUNAGENT		(144 | WORDRECORDLENGTH)
+#define SIG_ACTION_SENDDOCUMENT	(145 | BYTERECORDLENGTH)
+#define SIG_ACTION_FORMULAONLY	(146 | WORDRECORDLENGTH)
+#define SIG_ACTION_JAVAAGENT	(147 | WORDRECORDLENGTH)
+#define SIG_ACTION_JAVA			(148 | WORDRECORDLENGTH)
+
+
+#define SIG_VIEWMAP_DATASET	(87 | WORDRECORDLENGTH)
+
+#define SIG_CD_VMHEADER			(175 | BYTERECORDLENGTH)
+#define SIG_CD_VMBITMAP			(176 | BYTERECORDLENGTH)
+#define SIG_CD_VMRECT			(177 | BYTERECORDLENGTH)
+#define SIG_CD_VMPOLYGON_BYTE	(178 | BYTERECORDLENGTH)
+#define SIG_CD_VMPOLYLINE_BYTE	(179 | BYTERECORDLENGTH)
+#define SIG_CD_VMREGION			(180 | BYTERECORDLENGTH)
+#define SIG_CD_VMACTION			(181 | BYTERECORDLENGTH)
+#define SIG_CD_VMELLIPSE		(182 | BYTERECORDLENGTH)
+#define SIG_CD_VMRNDRECT		(184 | BYTERECORDLENGTH)
+#define SIG_CD_VMBUTTON			(185 | BYTERECORDLENGTH)
+#define SIG_CD_VMACTION_2		(186 | WORDRECORDLENGTH)
+#define SIG_CD_VMTEXTBOX		(187 | WORDRECORDLENGTH)
+#define SIG_CD_VMPOLYGON 		(188 | WORDRECORDLENGTH)
+#define SIG_CD_VMPOLYLINE		(189 | WORDRECORDLENGTH)
+#define SIG_CD_VMPOLYRGN		(190 | WORDRECORDLENGTH)
+#define SIG_CD_VMCIRCLE			(191 | BYTERECORDLENGTH)
+#define SIG_CD_VMPOLYRGN_BYTE	(192 | BYTERECORDLENGTH)
+
+
+#define SIG_CD_ALTERNATEBEGIN	(198 | WORDRECORDLENGTH)
+#define SIG_CD_ALTERNATEEND		(199 | BYTERECORDLENGTH)
+
+#define SIG_CD_OLERTMARKER		(200 | WORDRECORDLENGTH)
+*/
+
+				(0,0)
+				};
+
+CLotusItem::CLotusItem(CLotusNote*	pnote)
+{
+	m_pnote = pnote;
+	data_size = 0;
+	data_type = 0;
+	m_name[0] = 0;
+	m_err_msg[0] = 0;
+//	data_ptr = NULL;
+}
+
+CLotusItem::~CLotusItem()
+{
+	Release();
+}
+
+DWORD CLotusItem::GetInfo(char *item_name)
+{
+	DWORD	dwr;
+	Release();
+	dwr = m_pnote->ItemInfo(item_name,&m_blockid,&data_type,&m_data_blockid,&data_size);
+	if (dwr != ERR_OK)
+	{
+		_snprintf(SSIZE(m_err_msg),"CLotusItem::GetInfo ... failed because %s",m_pnote->GetErrorMsg());
+		return dwr;
+	}
+	_snprintf(SSIZE(m_name),"%s",item_name);
+	return ERR_OK;
+}
+
+//DEL DWORD CLotusItem::LockData()
+//DEL {
+//DEL 	/*
+//DEL 		la estructura es la siguiente el pool posee bloques 
+//DEL 		cada bloque es un desplazamiento dentro del pool
+//DEL 		el comienzo de los datos parece ser el tamaño o algo desconocido de tipo USHORT 2 bytes
+//DEL 		despues vienen los datos hasta completar el tamaño del item, las lista string se dividen por ceros en las cadenas
+//DEL 	*/
+//DEL 
+//DEL 	if (data_size == 0) return Error("CLotusItem::LockData ... not data to lock, data size = 0");
+//DEL 	data_ptr =  (BYTE*)OSLockObject(m_data_blockid.pool);
+//DEL 	data_ptr += m_data_blockid.block;
+//DEL 	//data_ptr += sizeof(USHORT);	
+//DEL 	return ERR_OK;
+//DEL }
+
+DWORD CLotusItem::Error(char *msg, DWORD error)
+{
+	strcpy(m_err_msg,msg);
+	return error;
+}
+
+//DEL void CLotusItem::UnLockData()
+//DEL {
+//DEL 	if (data_ptr == NULL) return;
+//DEL 	OSUnlockBlock(m_data_blockid);
+//DEL 	data_ptr = NULL;
+//DEL }
+
+void CLotusItem::Release()
+{
+//	UnLockData();
+	data_size = 0;
+	data_type = 0;
+	m_name[0] = 0;
+}
+
+DWORD CLotusItem::GetItemData(CMemArray *pMemory)
+{
+	pMemory->Release();
+	pMemory->SetMaxMemorySize(data_size);
+	pMemory->SetSize(data_size);
+	//memcpy(pMemory->GetMemBuffer(),data_ptr,data_size);
+	return ERR_OK;
+}
+
+DWORD CLotusItem::Dump_start()
+{
+	BYTE*	data_ptr;
+	if (data_size == 0) return Error("CLotusItem::LockData ... not data to lock, data size = 0");
+	data_ptr =  (BYTE*)OSLockObject(m_data_blockid.pool);
+	data_ptr += m_data_blockid.block;
+
+	m_mem_data.Release();
+	m_mem_data.SetMaxMemorySize(data_size);
+	m_mem_data.SetSize(data_size);
+	dump_ptr = (BYTE*)m_mem_data.GetMemBuffer();
+	memcpy(dump_ptr,data_ptr,data_size);
+
+	OSUnlockBlock(m_data_blockid);
+	
+//	m_dump_pos = 0;
+	dump_data_type = (WORD*)&dump_ptr[0];
+	dump_ptr += 2;	//evitar el tipo de nota
+	/*
+	data_ptr = (BYTE*)m_mem_data.GetMemBuffer();
+	dump_data_type = (WORD*)&data_ptr[0];
+	data_ptr += 2;	// evitar el tipo de nota
+	*/
+
+	return ERR_OK;
+}
+
+void CLotusItem::Dump_next()
+{
+
+}
+
+void CLotusItem::Dump_GetData(void *pbuff, DWORD max_size, BOOL toCanonical)
+{
+
+}
+
+void CLotusItem::Dump_ReadSignature(_SIGNATURE *sig)
+{
+	ODSReadMemory(&dump_ptr, _WORD, &sig->bsig, 1);
+	switch (sig->bsig.Length)
+	{
+	case (LONGRECORDLENGTH >> 8):
+		ODSReadMemory(&dump_ptr, _DWORD, &sig->lsig.Length, 1);
+		sig->type = SIG_LONG;
+		break;
+	case (WORDRECORDLENGTH >> 8):
+		ODSReadMemory(&dump_ptr, _WORD, &sig->wsig.Length, 1);
+		sig->type = SIG_WORD;
+		break;
+	default:
+		sig->type = SIG_BIG;
+		break;
+	}
+	// el tipo de registro sigue siendo el byte bajo. (bsig.Signature)
+}
+
+DWORD CLotusItem::Dump_Next(_SIGNATURE *psig, _CD *pcd)
+{
+	ODSReadMemory(&dump_ptr, _WORD, &psig->bsig, 1);
+	switch (psig->bsig.Length)
+	{
+	case (LONGRECORDLENGTH >> 8):
+		ODSReadMemory(&dump_ptr, _DWORD, &psig->lsig.Length, 1);
+		psig->type = SIG_LONG;
+		pcd->type = psig->wsig.Signature;
+		break;
+	case (WORDRECORDLENGTH >> 8):
+		ODSReadMemory(&dump_ptr, _WORD, &psig->wsig.Length, 1);
+		psig->type = SIG_WORD;
+		pcd->type = psig->wsig.Signature;
+		break;
+	default:
+		psig->type = SIG_BIG;
+		pcd->type = psig->bsig.Signature;
+		break;
+	}
+	Dump_ReadCD(pcd);
+	return ERR_OK;
+}
+
+void CLotusItem::Dump_ReadCD(_CD *pcd)
+{
+	int i;
+	for (i=0;sig_size[i].type != 0;i++)
+	{
+		if (sig_size[i].type == pcd->type) break;
+	}
+	if (sig_size[i].size == 0) return;
+	ODSReadMemory(&dump_ptr,sig_size[i].ods_type,&pcd->data,1);
+}

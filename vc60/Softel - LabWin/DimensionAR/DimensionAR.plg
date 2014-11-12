@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DimensionAR - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP382.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DIMENSIONAR_EXPORTS" /FR"Debug/" /Fp"Debug/DimensionAR.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\Lester\Visual C++ 6.0\Softel - LabWin\SRC\LabDevice.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP382.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP383.tmp" with contents
+[
+kernel32.lib user32.lib /nologo /dll /incremental:yes /pdb:"Debug/DimensionAR.pdb" /debug /machine:I386 /out:"c:\windows\system\DimensionAR.dll" /implib:"Debug/DimensionAR.lib" /pdbtype:sept 
+".\Debug\Dimension_AR.obj"
+".\Debug\DimensionAR.obj"
+".\Debug\Dllcommon.obj"
+".\Debug\Factory.obj"
+".\Debug\StdAfx.obj"
+".\Debug\VirtualMem.obj"
+".\Debug\LabDevice.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP383.tmp"
+<h3>Output Window</h3>
+Compiling...
+LabDevice.cpp
+Linking...
+   Creating library Debug/DimensionAR.lib and object Debug/DimensionAR.exp
+Creating command line "bscmake.exe /nologo /o"Debug/DimensionAR.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\Dimension_AR.sbr" ".\Debug\DimensionAR.sbr" ".\Debug\Dllcommon.sbr" ".\Debug\Factory.sbr" ".\Debug\VirtualMem.sbr" ".\Debug\LabDevice.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+DimensionAR.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

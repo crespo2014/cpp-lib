@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ngc3d - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP18E.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "C3D_EXPORTS" /Fp"Debug/ngc3d.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Proyectos VC60\Personales\C++\ngc3d\c3dc03.cpp"
+"D:\Proyectos VC60\Personales\C++\ngc3d\c3dc05.cpp"
+"D:\Proyectos VC60\Personales\C++\ngc3d\c3dc06.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP18E.tmp" 
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP18F.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/ngc3d.pdb" /debug /machine:I386 /out:"..\nggame\debug\ngc3d.dll" /implib:"c:/lib/ngc3d.lib" /pdbtype:sept 
+".\Debug\c3d.obj"
+".\Debug\c3dc02.obj"
+".\Debug\c3dc03.obj"
+".\Debug\c3dc05.obj"
+".\Debug\c3dc06.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP18F.tmp"
+<h3>Output Window</h3>
+Compiling...
+c3dc03.cpp
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.h(26) : error C2061: syntax error : identifier 'LPDIRECT3DDEVICE7'
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.h(34) : error C2146: syntax error : missing ';' before identifier 'm_lpd3ddevice'
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.h(34) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.h(34) : error C2501: 'm_lpd3ddevice' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.cpp(26) : error C2065: 'LPDIRECT3DDEVICE7' : undeclared identifier
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.cpp(26) : error C2146: syntax error : missing ')' before identifier 'lpd3ddevice'
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.cpp(26) : error C2350: 'CDXEscene::SetD3DDevice' is not a static member
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.cpp(26) : error C2059: syntax error : ')'
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.cpp(27) : error C2143: syntax error : missing ';' before '{'
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.cpp(27) : error C2447: missing function header (old-style formal list?)
+c3dc05.cpp
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.h(26) : error C2061: syntax error : identifier 'LPDIRECT3DDEVICE7'
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.h(34) : error C2146: syntax error : missing ';' before identifier 'm_lpd3ddevice'
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.h(34) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\ngc3d\c3dc03.h(34) : error C2501: 'm_lpd3ddevice' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\ngc3d\c3dc05.cpp(53) : error C2039: 'm_lpd3ddevice' : is not a member of 'CDXEscene'
+        d:\proyectos vc60\personales\c++\ngc3d\c3dc03.h(24) : see declaration of 'CDXEscene'
+c3dc06.cpp
+d:\proyectos vc60\personales\c++\ngc3d\c3dc06.h(17) : error C2146: syntax error : missing ';' before identifier 'data'
+d:\proyectos vc60\personales\c++\ngc3d\c3dc06.h(17) : error C2501: 'D3DMATERIAL7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\ngc3d\c3dc06.h(17) : error C2501: 'data' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\ngc3d\c3dc06.h(26) : error C2146: syntax error : missing ';' before identifier 'm_data'
+d:\proyectos vc60\personales\c++\ngc3d\c3dc06.h(26) : error C2501: 'D3DMATERIAL7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\ngc3d\c3dc06.h(26) : error C2501: 'm_data' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\ngc3d\c3dc06.h(26) : error C2501: 'm_lpdata' : missing storage-class or type specifiers
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+ngc3d.dll - 22 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

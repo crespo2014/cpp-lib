@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Acs180 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16A.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ACS180_EXPORTS" /Fp"Release/Acs180.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Users\Lester\Visual C++ 6.0\Softel - LabWin\Acs180\Acs180.cpp"
+"D:\Users\Lester\Visual C++ 6.0\Softel - LabWin\Acs180\Acs180_.cpp"
+"D:\Users\Lester\Visual C++ 6.0\Softel - LabWin\SRC\LabDevice.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16A.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/Acs180.pdb" /machine:I386 /out:"C:\windows\system\Acs180.dll" /implib:"Release/Acs180.lib" 
+".\Release\Acs180.obj"
+".\Release\Acs180_.obj"
+".\Release\Dllcommon.obj"
+".\Release\Factory.obj"
+".\Release\LabDevice.obj"
+".\Release\StdAfx.obj"
+".\Release\VirtualMem.obj"
+"\Users\Lester\Visual C++ 6.0\lib\SerialPort32.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16B.tmp"
+<h3>Output Window</h3>
+Compiling...
+Acs180.cpp
+Acs180_.cpp
+LabDevice.cpp
+Generating Code...
+Linking...
+   Creating library Release/Acs180.lib and object Release/Acs180.exp
+<h3>
+--------------------Configuration: VCtoVB - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16F.tmp" with contents
+[
+kernel32.lib user32.lib /nologo /dll /incremental:no /pdb:"Release/LabDevice.pdb" /machine:I386 /def:".\labdevice.def" /out:"c:\windows\system\LabDevice.dll" /implib:"Release/LabDevice.lib" 
+".\Release\StdAfx.obj"
+".\Release\VCtoVB.obj"
+"\Users\Lester\Visual C++ 6.0\Softel - LabWin\Acs180\Release\Acs180.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16F.tmp"
+<h3>Output Window</h3>
+Linking...
+   Creating library Release/LabDevice.lib and object Release/LabDevice.exp
+
+
+
+<h3>Results</h3>
+LabDevice.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

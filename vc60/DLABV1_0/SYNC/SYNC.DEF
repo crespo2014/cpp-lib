@@ -1,0 +1,7 @@
+; sync.def : Declares the module parameters for the DLL.
+
+LIBRARY      "sync"
+DESCRIPTION  'sync Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

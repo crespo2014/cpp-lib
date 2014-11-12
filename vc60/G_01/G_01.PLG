@@ -1,0 +1,137 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: G_01 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP10F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\inc_src" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Debug/G_01.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp"
+"D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP10F.tmp" 
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP110.tmp" with contents
+[
+ddraw.lib opengl32.lib lfc10.lib glu32.lib gl10.lib neurofbdll.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/G_01.pdb" /debug /machine:I386 /def:".\G_01.def" /out:"c:\windows\system\G_01.dll" /implib:"c:\windows\system\G_01.lib" /pdbtype:sept 
+".\Debug\G_01.obj"
+".\Debug\G_01C01.obj"
+".\Debug\G_01C02.obj"
+".\Debug\G_01C03.obj"
+".\Debug\G_01C04.obj"
+".\Debug\G_01C05.obj"
+".\Debug\g_01c06.obj"
+".\Debug\g_01c07.obj"
+".\Debug\g_01c08.obj"
+".\Debug\g_01c09.obj"
+".\Debug\LFC10C01.obj"
+".\Debug\LFC10C02.obj"
+".\Debug\LFC10C03.obj"
+".\Debug\lfc10c04.obj"
+".\Debug\LFC10C05.obj"
+".\Debug\LFC10C06.obj"
+".\Debug\StdAfx.obj"
+".\Debug\G_01.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP110.tmp"
+<h3>Output Window</h3>
+Compiling...
+g_01c06.cpp
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(195) : error C2039: 'm_device' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(195) : error C2228: left of '.GameStart' must have class/struct/union type
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(377) : error C2039: 'm_device' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(377) : error C2228: left of '.m_disparar' must have class/struct/union type
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(480) : error C2039: 'pParam' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(480) : error C2227: left of '->m_Nivel_I_Eeg' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(480) : error C2039: 'm_device' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(480) : error C2228: left of '.m_prom_ieeg_sec' must have class/struct/union type
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(484) : error C2039: 'pParam' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(484) : error C2227: left of '->m_Nivel_R_Eeg' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(484) : error C2039: 'm_device' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(484) : error C2228: left of '.m_prom_reeg_sec' must have class/struct/union type
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(488) : error C2039: 'pParam' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(488) : error C2227: left of '->m_Nivel_I_Musculo' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(488) : error C2039: 'm_device' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(488) : error C2228: left of '.m_prom_iemg_sec' must have class/struct/union type
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(497) : error C2039: 'pParam' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(497) : error C2227: left of '->m_Duracion_Cond' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(497) : error C2039: 'm_device' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(497) : error C2228: left of '.m_minuto' must have class/struct/union type
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(497) : error C2039: 'm_device' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(497) : error C2228: left of '.m_cant_seconds' must have class/struct/union type
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(500) : error C2039: 'm_device' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(500) : error C2228: left of '.m_minuto' must have class/struct/union type
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(500) : error C2039: 'pParam' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(500) : error C2227: left of '->m_Duracion_Cond' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(553) : error C2039: 'pDatos' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(718) : error C2039: 'm_device' : is not a member of 'CApp'
+        d:\proyectos vc60\personales\c++\neurofbdll\app.h(47) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\G_01\g_01c06.cpp(718) : error C2228: left of '.m_disparar' must have class/struct/union type
+LFC10C03.cpp
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(569) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(581) : error C2027: use of undefined type 'parametros'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(100) : see declaration of 'parametros'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(581) : error C2227: left of '->m_Nivel_I_Eeg' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(582) : error C2027: use of undefined type 'parametros'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(100) : see declaration of 'parametros'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(582) : error C2227: left of '->m_Nivel_R_Eeg' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(583) : error C2027: use of undefined type 'parametros'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(100) : see declaration of 'parametros'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(583) : error C2227: left of '->m_Nivel_I_Musculo' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(589) : error C2027: use of undefined type 'parametros'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(100) : see declaration of 'parametros'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(589) : error C2227: left of '->m_Tiempo_Conteo_Burst' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(592) : error C2027: use of undefined type 'parametros'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(100) : see declaration of 'parametros'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(592) : error C2227: left of '->m_Crit_Comp_Burst' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(621) : error C2027: use of undefined type 'datos'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(100) : see declaration of 'datos'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(621) : error C2227: left of '->prom_ieeg_min' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(622) : error C2027: use of undefined type 'datos'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(100) : see declaration of 'datos'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(622) : error C2227: left of '->prom_iemg_min' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(623) : error C2027: use of undefined type 'datos'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(100) : see declaration of 'datos'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(623) : error C2227: left of '->prom_reeg_min' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(624) : error C2027: use of undefined type 'datos'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(100) : see declaration of 'datos'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(624) : error C2227: left of '->prom_temp_min' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(625) : error C2027: use of undefined type 'datos'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(100) : see declaration of 'datos'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(625) : error C2227: left of '->minuto' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(626) : error C2027: use of undefined type 'datos'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(100) : see declaration of 'datos'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(626) : error C2227: left of '->puntos' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(626) : error C2027: use of undefined type 'CApp'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(16) : see declaration of 'CApp'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(626) : error C2227: left of '->m_3dgame' must point to class/struct/union
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(626) : error C2228: left of '.m_score' must have class/struct/union type
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(634) : error C2027: use of undefined type 'parametros'
+        d:\proyectos vc60\personales\c++\lfc10\lfc10c03.h(100) : see declaration of 'parametros'
+D:\Proyectos VC60\Personales\C++\Lfc10\LFC10C03.cpp(634) : error C2227: left of '->m_Duracion_Cond' must point to class/struct/union
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+G_01.dll - 56 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

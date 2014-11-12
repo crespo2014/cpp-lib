@@ -1,0 +1,604 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Proyecto.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Proyecto.ico"
+IDR_PROYECTYPE          ICON    DISCARDABLE     "res\\ProyectoDoc.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Archivo"
+    BEGIN
+        MENUITEM "&Nuevo",                      ID_NUEVO
+        MENUITEM "&Abrir",                      ID_ABRIR
+        MENUITEM "Cerrar",                      ID_CERRAR
+        MENUITEM "&Guardar",                    ID_GUARDAR
+        MENUITEM SEPARATOR
+        MENUITEM "Salir",                       ID_APP_EXIT
+    END
+    POPUP "&Ver"
+    BEGIN
+        MENUITEM "Simulacion",                  ID_SIMULACION
+    END
+    POPUP "Configurar"
+    BEGIN
+        MENUITEM "Transmisor",                  ID_CONFIGURAR_TRANSMISOR
+        MENUITEM "Receptor",                    ID_CONFIGURAR_RECEPTOR
+        MENUITEM "Superficie",                  ID_CONFIGURAR_SUPERFICIE
+        MENUITEM "Dimensiones",                 ID_CONFIGURAR_DIMENSIONES
+    END
+    POPUP "Ayuda"
+    BEGIN
+        MENUITEM "&Acerca de Proyecto...",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 223, 41
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca de Proyecto"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,8,21,20
+    LTEXT           "Simulador de redes inalámbricas \n Version 1.0",
+                    IDC_STATIC,37,9,119,17,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,166,9,50,14,WS_GROUP
+END
+
+IDD_CD DIALOG DISCARDABLE  0, 0, 171, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dimensiones del canal"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,114,7,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,114,24,50,14
+    LTEXT           "Largo",IDC_STATIC,7,7,19,12,SS_CENTERIMAGE
+    LTEXT           "Ancho",IDC_STATIC,7,23,22,12,SS_CENTERIMAGE
+    LTEXT           "Altura",IDC_STATIC,7,39,19,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_LARGO,45,7,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ANCHO,45,23,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALTURA,45,39,40,12,ES_AUTOHSCROLL
+END
+
+IDD_CONFIG_CR DIALOG DISCARDABLE  0, 0, 207, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configurar Receptor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Vector Orientación",-1,20,25,80,64
+    LTEXT           "X",-1,29,36,8,12,SS_CENTERIMAGE
+    EDITTEXT        VOX,44,36,40,12,ES_AUTOHSCROLL
+    LTEXT           "Y",-1,29,52,8,12,SS_CENTERIMAGE
+    LTEXT           "Z",-1,29,68,8,12,SS_CENTERIMAGE
+    EDITTEXT        VOY,44,52,40,12,ES_AUTOHSCROLL
+    EDITTEXT        VOZ,44,68,40,12,ES_AUTOHSCROLL
+    GROUPBOX        "Vector Posición",-1,109,25,80,64
+    LTEXT           "X",-1,119,36,8,12,SS_CENTERIMAGE
+    EDITTEXT        VPX,133,36,40,12,ES_AUTOHSCROLL
+    LTEXT           "Y",-1,119,52,8,12,SS_CENTERIMAGE
+    LTEXT           "Z",-1,119,68,8,12,SS_CENTERIMAGE
+    EDITTEXT        VPY,133,52,40,12,ES_AUTOHSCROLL
+    EDITTEXT        VPZ,133,68,40,12,ES_AUTOHSCROLL
+    LTEXT           "Receptor de 10",IDC_POS,59,15,81,8
+    DEFPUSHBUTTON   "Aceptar",IDOK,76,147,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,132,147,50,14
+    PUSHBUTTON      "Graficar",IDC_GRAFICAR,20,147,50,14
+    PUSHBUTTON      "Anterior",IDC_ANTERIOR,20,163,50,14
+    PUSHBUTTON      "Siguiente",IDC_SIGUIENTE,132,163,50,14
+    PUSHBUTTON      "Adicionar",IDC_ADICIONAR,76,163,50,14
+    LTEXT           "Area de Superficie",-1,20,111,59,12,SS_CENTERIMAGE
+    EDITTEXT        AS,82,111,40,12,ES_AUTOHSCROLL
+    LTEXT           "Area de Colección",-1,20,93,59,12,SS_CENTERIMAGE
+    EDITTEXT        AC,82,93,40,12,ES_AUTOHSCROLL
+    LTEXT           "Campo de vista",-1,20,129,50,12,SS_CENTERIMAGE
+    EDITTEXT        CV,82,129,40,12,ES_AUTOHSCROLL
+    LTEXT           "mm²",-1,126,93,14,12,SS_CENTERIMAGE
+    LTEXT           "mm²",-1,126,111,14,12,SS_CENTERIMAGE
+    LTEXT           "rad",-1,126,129,11,12,SS_CENTERIMAGE
+END
+
+IDD_CONFIG_CT DIALOG DISCARDABLE  0, 0, 204, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configurar Transmisor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,76,126,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,132,126,50,14
+    GROUPBOX        "Vector Orientacion",IDC_STATIC,19,22,80,64
+    LTEXT           "X",IDC_STATIC,29,35,8,12,SS_CENTERIMAGE
+    EDITTEXT        VOX,44,35,40,12,ES_AUTOHSCROLL
+    LTEXT           "Y",IDC_STATIC,29,50,8,12,SS_CENTERIMAGE
+    LTEXT           "Z",IDC_STATIC,29,66,8,12,SS_CENTERIMAGE
+    EDITTEXT        VOY,44,50,40,12,ES_AUTOHSCROLL
+    EDITTEXT        VOZ,44,66,40,12,ES_AUTOHSCROLL
+    GROUPBOX        "Vector Posicion",IDC_STATIC,109,22,80,64
+    LTEXT           "X",IDC_STATIC,119,35,8,12,SS_CENTERIMAGE
+    EDITTEXT        VPX,133,35,40,12,ES_AUTOHSCROLL
+    LTEXT           "Y",IDC_STATIC,119,50,8,12,SS_CENTERIMAGE
+    LTEXT           "Z",IDC_STATIC,119,66,8,12,SS_CENTERIMAGE
+    EDITTEXT        VPY,133,50,40,12,ES_AUTOHSCROLL
+    EDITTEXT        VPZ,133,66,40,12,ES_AUTOHSCROLL
+    LTEXT           "Perfil de Radiacion",IDC_STATIC,20,92,64,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Potencia Radiada",IDC_STATIC,21,107,58,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        PERRAD,88,92,40,12,ES_AUTOHSCROLL
+    EDITTEXT        POTRAD,88,107,40,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Graficar",IDC_T_GRAFICAR,20,127,50,14
+    PUSHBUTTON      "Anterior",IDC_T_ANTERIOR,20,142,50,14
+    PUSHBUTTON      "Siguiente",IDC_T_SIGUIENTE,132,142,50,14
+    LTEXT           "Transmisor 2 de 10",IDC_T_POS,55,13,102,8
+    PUSHBUTTON      "Adicionar",IDC_T_ADICIONAR,76,143,50,14
+    LTEXT           "W",IDC_STATIC,135,107,8,12,SS_CENTERIMAGE
+END
+
+IDD_CONFIG_SUP DIALOG DISCARDABLE  0, 0, 193, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Propiedades de la superficie"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Vector Orientación",-1,7,17,80,64
+    LTEXT           "X",-1,17,28,8,12,SS_CENTERIMAGE
+    EDITTEXT        VOX,32,28,40,12,ES_AUTOHSCROLL
+    LTEXT           "Y",-1,17,45,8,12,SS_CENTERIMAGE
+    LTEXT           "Z",-1,17,62,8,12,SS_CENTERIMAGE
+    EDITTEXT        VOY,32,45,40,12,ES_AUTOHSCROLL
+    EDITTEXT        VOZ,31,62,40,12,ES_AUTOHSCROLL
+    GROUPBOX        "Vector Posición",-1,97,18,80,64
+    LTEXT           "X",-1,107,28,8,12,SS_CENTERIMAGE
+    EDITTEXT        VPX,121,28,40,12,ES_AUTOHSCROLL
+    LTEXT           "Y",-1,107,45,8,12,SS_CENTERIMAGE
+    LTEXT           "Z",-1,107,62,8,12,SS_CENTERIMAGE
+    EDITTEXT        VPY,121,45,40,12,ES_AUTOHSCROLL
+    EDITTEXT        VPZ,121,62,40,12,ES_AUTOHSCROLL
+    LTEXT           "Superficie 5 de 10",IDC_S_POS,42,7,113,8
+    LTEXT           "Coeficiente de Reflexión",-1,7,87,78,12,SS_CENTERIMAGE
+    EDITTEXT        CR,95,87,40,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,72,109,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,128,109,50,14
+    PUSHBUTTON      "Graficar",IDC_S_GRAFICAR,16,109,50,14
+    PUSHBUTTON      "Anterior",IDC_S_ANTERIOR,16,125,50,14
+    PUSHBUTTON      "Siguiente",IDC_S_SIGUIENTE,128,125,50,14
+    PUSHBUTTON      "Adicionar",IDC_S_ADICONAR,72,125,50,14
+END
+
+IDD_GRAFICO DIALOG DISCARDABLE  0, 0, 227, 238
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Grafico"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,7,212,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,157,212,50,14
+    CONTROL         "",IDC_GRAFICO,"Static",SS_BLACKFRAME,7,8,200,200
+    LTEXT           "X",IDC_STATIC,43,162,8,8
+    LTEXT           "Y",IDC_STATIC,209,105,8,8
+    LTEXT           "Z",IDC_STATIC,106,0,8,8
+    EDITTEXT        IDC_X,31,185,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,94,185,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z,157,185,40,12,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,20,185,8,12,SS_CENTERIMAGE
+    LTEXT           "Y",IDC_STATIC,83,185,8,12,SS_CENTERIMAGE
+    LTEXT           "Z",IDC_STATIC,147,185,8,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Aplicar",IDC_APLICAR,82,212,50,14
+END
+
+IDD_SIMULACION DIALOG DISCARDABLE  0, 0, 317, 142
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Simulacion"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,137,121,50,14
+    CONTROL         "",IDC_MSFLEXGRID1,
+                    "{6262D3A0-531B-11CF-91F6-C2863C385E30}",WS_TABSTOP,7,7,
+                    303,109
+END
+
+IDD_MSG DIALOG DISCARDABLE  0, 0, 186, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Proyecto de Curso"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Si",IDOK,7,45,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,129,45,50,14
+    CTEXT           "Desea salvar los cambios realizados",IDC_LABEL,42,13,
+                    130,29,SS_CENTERIMAGE
+    PUSHBUTTON      "No",IDC_BUTTON1,68,45,50,14
+    ICON            IDI_ICON1,IDC_STATIC,17,17,21,20
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Proyecto MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Proyecto\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Proyecto.EXE\0"
+            VALUE "ProductName", "Proyecto Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_CD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_CONFIG_CR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_CONFIG_CT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_CONFIG_SUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_GRAFICO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_SIMULACION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_MSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SIMULACION DLGINIT
+BEGIN
+    IDC_MSFLEXGRID1, 0x37a, 308, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x2f07, 0x0000, 0x124b, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0x000d, 0x8000, 
+0x000e, 0x8000, 0x8080, 0x0080, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0002, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 
+0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x0001, 0x0000, 0x0190, 0x4244, 0x0001, 
+0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 0x6669, 0x5204, 0x0be3, 
+0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 
+0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Proyecto"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Proyecto"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Proyecto.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

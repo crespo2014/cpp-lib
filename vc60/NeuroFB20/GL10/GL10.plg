@@ -1,0 +1,68 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GL10 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP5275.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Debug/GL10.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Windows\Profiles\rodney\Escritorio\Lester\GL10\gl10c10.cpp"
+"C:\Windows\Profiles\rodney\Escritorio\Lester\GL10\gl10c3.cpp"
+"C:\Windows\Profiles\rodney\Escritorio\Lester\GL10\gl10c4.cpp"
+"C:\Windows\Profiles\rodney\Escritorio\Lester\GL10\gl10c5.cpp"
+"C:\Windows\Profiles\rodney\Escritorio\Lester\GL10\gl10c6.cpp"
+"C:\Windows\Profiles\rodney\Escritorio\Lester\GL10\gl10c7.cpp"
+"C:\Windows\Profiles\rodney\Escritorio\Lester\GL10\gl10c8.cpp"
+"C:\Windows\Profiles\rodney\Escritorio\Lester\GL10\gl10c9.cpp"
+"C:\Windows\Profiles\rodney\Escritorio\Lester\GL10\gl10d5.cpp"
+"C:\Windows\Profiles\rodney\Escritorio\Lester\GL10\gl10d6.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP5275.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP5276.TMP" with contents
+[
+opengl32.lib ftkvc40d.lib glu32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/GL10.pdb" /debug /machine:I386 /def:".\GL10.def" /out:"c:\windows\system\GL10.dll" /implib:"c:\windows\system\GL10.lib" /pdbtype:sept 
+.\Debug\GL10.obj
+.\Debug\gl10c10.obj
+.\Debug\gl10c11.obj
+.\Debug\gl10c12.obj
+.\Debug\gl10c13.obj
+.\Debug\gl10c14.obj
+.\Debug\gl10c3.obj
+.\Debug\gl10c4.obj
+.\Debug\gl10c5.obj
+.\Debug\gl10c6.obj
+.\Debug\gl10c7.obj
+.\Debug\gl10c8.obj
+.\Debug\gl10c9.obj
+.\Debug\gl10d5.obj
+.\Debug\gl10d6.obj
+.\Debug\StdAfx.obj
+.\Debug\GL10.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP5276.TMP"
+<h3>Output Window</h3>
+Compiling...
+gl10c10.cpp
+gl10c3.cpp
+C:\Windows\Profiles\rodney\Escritorio\Lester\GL10\gl10c3.cpp(208) : error C2065: 'S_MESHMATINFO' : undeclared identifier
+gl10c4.cpp
+gl10c5.cpp
+gl10c6.cpp
+gl10c7.cpp
+gl10c8.cpp
+gl10c9.cpp
+gl10d5.cpp
+gl10d6.cpp
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+GL10.dll - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,246 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Mexican) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DB11.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.esp\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SQL_DLG DIALOG DISCARDABLE  0, 0, 284, 197
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Opciones de la busqueda"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Buscar",IDOK,15,176,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,70,176,50,14
+    CONTROL         "Numero",IDC_BNUMERO,"Button",BS_AUTOCHECKBOX | 
+                    BS_VCENTER | WS_TABSTOP,15,11,41,12
+    CONTROL         "Nombre",IDC_BNOMBRE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,25,55,12
+    CONTROL         "1er Apellido",IDC_B1APELLIDO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,40,53,12
+    CONTROL         "2do Apellido",IDC_B2APELLIDO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,55,55,12
+    CONTROL         "Organismo",IDC_BORGANISMO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,70,49,12
+    CONTROL         "Municipio",IDC_BMUNICIPIO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,85,46,12
+    CONTROL         "Tema",IDC_BTEMA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,100,34,12
+    CONTROL         "Respuesta",IDC_BCLASIFICACION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,86,48,12
+    CONTROL         "Entr Desde",IDC_BDESDE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,10,55,12
+    CONTROL         "Ent. Hasta",IDC_BHASTA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,25,55,12
+    CONTROL         "Sindicato",IDC_BSINDICATO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,115,45,12
+    CONTROL         "Ordenar",IDC_BORDENAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,131,55,12
+    EDITTEXT        IDC_NUMERO,70,10,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NOMBRE,70,25,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_1APELLIDO,70,40,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_2APELLIDO,70,55,60,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_ORGANISMO,70,70,60,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MUNICIPIO,70,85,60,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TEMA,70,100,60,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SINDICATO,70,115,60,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DESDE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,195,10,65,12
+    CONTROL         "DateTimePicker1",IDC_HASTA,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,195,25,65,12
+    COMBOBOX        IDC_TPROVINCIA,195,40,65,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TDEPARTAMENTO,195,56,65,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TSINDICATO,195,70,65,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CLASIFICACION,195,85,65,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ORDENAR,70,130,60,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Provincia",IDC_BTPROVINCIA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,40,45,12
+    CONTROL         "Depart.",IDC_BTDEPARTAMENTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,55,39,12
+    CONTROL         "Sindicato",IDC_BTSINDICATO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,70,45,12
+    CONTROL         "Resp. desde",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,100,56,12
+    CONTROL         "Resp. hasta",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,115,54,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,195,100,65,12
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,195,115,65,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SQL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        VERTGUIDE, 15
+        VERTGUIDE, 70
+        VERTGUIDE, 130
+        VERTGUIDE, 140
+        VERTGUIDE, 195
+        VERTGUIDE, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish (Mexican) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Modern) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0C0A04B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DB11 DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DB11\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DB11.DLL\0"
+            VALUE "ProductName", "DB11 Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Spanish (Modern) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\DB11.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.esp\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

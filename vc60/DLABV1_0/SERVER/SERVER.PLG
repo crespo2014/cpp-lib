@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: server - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x80a /fo"Debug/server.res" /d "_DEBUG" /d "_AFXDLL" "C:\Usr\Lauci\VisualC++\vc++soft\VLab\dlabv1_0\server\server.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPD083.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/server.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Usr\Lauci\VisualC++\vc++soft\VLab\dlabv1_0\server\server.cpp"
+"C:\Usr\Lauci\VisualC++\vc++soft\VLab\dlabv1_0\server\serverDlg.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPD083.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPD084.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/server.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Usr\Lauci\VisualC++\vc++soft\VLab\dlabv1_0\server\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPD084.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPD085.TMP" with contents
+[
+sync.lib robot3d.lib image1_0.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/server.pdb" /debug /machine:I386 /out:"Debug/server.exe" /pdbtype:sept 
+".\Debug\server.obj"
+".\Debug\serverDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\server.res"
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPD085.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+server.cpp
+serverDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+server.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

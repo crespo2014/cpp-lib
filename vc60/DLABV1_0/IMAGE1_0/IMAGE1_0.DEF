@@ -1,0 +1,7 @@
+; image1_0.def : Declares the module parameters for the DLL.
+
+LIBRARY      "image1_0"
+DESCRIPTION  'image1_0 Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

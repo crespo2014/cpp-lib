@@ -1,0 +1,27 @@
+[Table]
+index = 3
+[Data]
+caption = Nombre
+index = 2
+flags = 0xC3
+size = 26
+type = 129
+[Data]
+caption = ID
+index = 1
+flags = 0x8
+size = 4
+type = 19
+[Data]
+caption = Provincia
+index = 4
+flags = 0x4
+size = 4
+type = 129
+[Data]
+caption = Codigo
+index = 3
+flags = 0x8
+size = 5
+type = 129
+.

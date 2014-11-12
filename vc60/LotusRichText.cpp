@@ -4,9 +4,12 @@
 
 #include "LotusRichText.h"
 
+#define _FILENAME_ "lotusrichtext.c"
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
+
+#define _CHECK_HANDLE_ 	if (m_hRichText == NULL) return _LOG_ERROR ERR_HANDLE,"Invalid handle (not open richtext)");
 
 CLotusRichText::CLotusRichText(CLotusNote*	pnote)
 {
@@ -24,7 +27,8 @@ CLotusRichText::~CLotusRichText()
 DWORD CLotusRichText::Close()
 {
 	STATUS	sr;
-	sr = CompoundTextClose(m_hRichText,NULL,NULL,NULL,0);if (sr != NOERROR) ErrorApiFail(sr,"CompoundTextClose ... failed");
+	_CHECK_HANDLE_
+	sr = CompoundTextClose(m_hRichText,NULL,NULL,NULL,0);if (sr != NOERROR) return _LOG_ERROR ERR_API,"CompoundTextClose failed : %s",CLNotesError().getErrorString(sr));
 	m_hRichText = NULL;	
 	return ERR_OK;
 }
@@ -33,8 +37,7 @@ DWORD CLotusRichText::Create(char *name)
 {
 	DWORD	dwr;
 	Close();
-	dwr = m_note->Create_CompoundText(name,&m_hRichText);
-	if (dwr != ERR_OK) return SetError(true,ERR_FATAL,"CLotusRichText::Create failed because %s",m_note->GetErrorMsg());
+	if (m_note->Create_CompoundText(name,&m_hRichText) != ERR_OK) return _LOG_AT;
 	return ERR_OK;
 }
 
@@ -54,8 +57,8 @@ DWORD CLotusRichText::ErrorApiFail(STATUS sr, char *msg)
 DWORD CLotusRichText::AttachFile(char *file_path)
 {
 	STATUS	sr;
-	if (m_hRichText == NULL) return Error_Handle("CLotusRichText::AttachFile");
-	sr = CompoundTextAssimilateFile(m_hRichText,file_path,0);if (sr != NOERROR) return ErrorApiFail(sr,"CompoundTextAssimilateFile ... failed");
+	_CHECK_HANDLE_
+	sr = CompoundTextAssimilateFile(m_hRichText,file_path,0);	if (sr != NOERROR) return _LOG_ERROR ERR_API,"CompoundTextAssimilateFile for %s failed : %s",file_path,CLNotesError().getErrorString(sr));
 	return ERR_OK;		
 }
 

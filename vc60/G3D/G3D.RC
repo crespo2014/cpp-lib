@@ -1,0 +1,343 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Mexican) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\G3D.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.esp\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_G3D_DIALOG2 DIALOG DISCARDABLE  0, 0, 370, 187
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Training Session"
+FONT 10, "Arial"
+BEGIN
+    PUSHBUTTON      "TRAINING VIDEO PRESENTATION",IDC_G3D_BUTTON1,141,7,222,
+                    171,NOT WS_VISIBLE
+    PUSHBUTTON      "Level-III",IDC_G3D_BUTTON2,21,82,104,19
+    DEFPUSHBUTTON   "Level-I",IDC_G3D_BUTTON3,21,16,104,19
+    PUSHBUTTON      "Level-II",IDC_G3D_BUTTON4,21,49,104,19
+    PUSHBUTTON      "Level-IV",IDC_G3D_BUTTON5,21,115,104,19
+    PUSHBUTTON      "Level-V",IDC_G3D_BUTTON6,21,148,104,19
+END
+
+IDD_G3D_DIALOG3 DIALOG DISCARDABLE  0, 0, 375, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Game (Running)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Game ",IDC_G3D_BUTTON1,101,23,202,186,NOT WS_VISIBLE
+    PUSHBUTTON      "Pause",IDC_G3D_BUTTON4,310,17,50,14
+    PUSHBUTTON      "Stop",IDC_G3D_BUTTON5,309,38,50,14
+    PUSHBUTTON      "Play",IDC_G3D_BUTTON6,310,64,50,14
+    PUSHBUTTON      "Close",IDC_G3D_BUTTON7,312,86,50,14
+    LTEXT           "Score",IDC_STATIC,174,215,20,8
+    GROUPBOX        "Spaceships",IDC_STATIC,7,79,76,104
+    ICON            "IDI_ICON1",IDC_STATIC,18,90,20,20
+    LTEXT           "100",IDC_STATIC,53,98,13,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,19,119,20,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,21,146,20,20
+    LTEXT           "50",IDC_STATIC,48,127,9,8
+    LTEXT           "56",IDC_STATIC,50,154,9,8
+    LTEXT           "Time",IDC_STATIC,141,13,16,8
+    LTEXT           "00:45:34",IDC_STATIC,161,13,29,8
+    PUSHBUTTON      "Brain signals",IDC_G3D_BUTTON8,311,115,50,14
+    LTEXT           "10056 points",IDC_STATIC,198,214,42,8
+    LTEXT           "Event Counter",IDC_STATIC,7,190,46,8
+    PUSHBUTTON      "     Game Configuration (and Definitions)",
+                    IDC_G3D_BUTTON9,17,23,50,48,BS_CENTER | BS_VCENTER | 
+                    BS_MULTILINE
+END
+
+IDD_G3D_DIALOG4 DIALOG DISCARDABLE  0, 0, 391, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tests of Variables of Atention (Go Go)"
+FONT 10, "Arial"
+BEGIN
+    PUSHBUTTON      "TOVA",IDC_G3D_BUTTON4,113,27,263,186,NOT WS_VISIBLE
+    PUSHBUTTON      "Play",IDC_G3D_BUTTON5,7,58,94,25
+    PUSHBUTTON      "Options",IDC_G3D_BUTTON6,7,29,94,25
+    LTEXT           "Countdown",IDC_STATIC,159,11,37,8
+    LTEXT           "01:34:56",IDC_STATIC,202,10,29,8
+    PUSHBUTTON      "Stop",IDC_G3D_BUTTON1,7,87,94,25
+    LTEXT           "Static",IDC_G3D_ACIERTOS,26,127,20,8
+END
+
+IDD_G3D_DIALOG5 DIALOG DISCARDABLE  0, 0, 375, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tretis"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Game ",IDC_G3D_BUTTON1,101,23,202,186
+    PUSHBUTTON      "Pause",IDC_G3D_BUTTON4,310,17,50,14
+    PUSHBUTTON      "Stop",IDC_G3D_BUTTON5,309,38,50,14
+    PUSHBUTTON      "Play",IDC_G3D_BUTTON6,310,64,50,14
+    PUSHBUTTON      "Close",IDC_G3D_BUTTON7,312,86,50,14
+    LTEXT           "Score",IDC_STATIC,174,215,20,8
+    LTEXT           "Time",IDC_STATIC,141,13,16,8
+    LTEXT           "00:45:34",IDC_STATIC,161,13,29,8
+    PUSHBUTTON      "Brain signals",IDC_G3D_BUTTON8,311,115,50,14
+    LTEXT           "10056 points",IDC_STATIC,198,214,42,8
+    LTEXT           "Event Counter",IDC_STATIC,16,161,46,8
+    PUSHBUTTON      "     Game Configuration (and Definitions)",
+                    IDC_G3D_BUTTON9,17,23,50,48,BS_CENTER | BS_VCENTER | 
+                    BS_MULTILINE
+    GROUPBOX        "Mission",IDC_STATIC,15,87,72,51
+END
+
+IDD_G3D_DIALOG6 DIALOG DISCARDABLE  0, 0, 210, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,143,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,73,143,50,14
+    LTEXT           "Time betwen Objects ",IDC_STATIC,10,16,70,8
+    LTEXT           "Presentation Time",IDC_STATIC,14,37,58,8
+    EDITTEXT        IDC_G3D_EDIT1,89,14,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_G3D_EDIT2,89,33,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Mode ",IDC_STATIC,16,57,69,42
+    CONTROL         "Go Go",IDC_G3D_RADIO1,"Button",BS_AUTORADIOBUTTON,23,70,
+                    37,10
+    CONTROL         "Go No Go",IDC_G3D_RADIO2,"Button",BS_AUTORADIOBUTTON,23,
+                    83,48,10
+    PUSHBUTTON      "Save",IDC_G3D_BUTTON1,147,17,50,14
+    PUSHBUTTON      "Load",IDC_G3D_BUTTON2,147,38,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,108,76,20,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,136,76,20,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,164,76,20,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,108,101,20,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,137,101,20,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,166,101,20,20
+    GROUPBOX        "Static",IDC_STATIC,101,62,94,66
+END
+
+IDD_G3D_LEVEL1 DIALOG DISCARDABLE  0, 0, 281, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Level 1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Button1",IDC_G3D_BUTTON1,7,7,211,153,NOT WS_VISIBLE
+    PUSHBUTTON      "Start",IDC_G3D_START,224,7,50,14
+    PUSHBUTTON      "Pause",IDC_G3D_PAUSE,224,23,50,14
+    PUSHBUTTON      "Finish",IDC_G3D_FINISH,224,40,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_G3D_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_G3D_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_G3D_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_G3D_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_G3D_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_G3D_LEVEL1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_G3D_ICON1           ICON    DISCARDABLE     "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+SOUND1                  WAVE    DISCARDABLE     "Btnsnd2.wav"
+SOUND2                  WAVE    DISCARDABLE     "Btnsnd1.wav"
+#endif    // Spanish (Mexican) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Modern) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "G3D DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "G3D\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "G3D.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "G3D Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Spanish (Modern) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\G3D.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.esp\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

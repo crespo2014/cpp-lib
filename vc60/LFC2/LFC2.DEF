@@ -1,0 +1,6 @@
+; LFC2.def : Declares the module parameters for the DLL.
+
+LIBRARY      "LFC2"
+DESCRIPTION  'LFC2 Windows Dynamic Link Library'
+
+EXPORTS

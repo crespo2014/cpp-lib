@@ -1,0 +1,30 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+HKEY_CLASSES_ROOT\.rx1 = VLClient1.Document
+HKEY_CLASSES_ROOT\VLClient1.Document\shell\open\command = VLCLIENT1.EXE %1
+HKEY_CLASSES_ROOT\VLClient1.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\VLClient1.Document\shell\open\ddeexec\application = VLCLIENT1
+    ; note: the application is optional
+    ;  (it defaults to the app name in "command")
+
+HKEY_CLASSES_ROOT\VLClient1.Document = VLClie Document
+HKEY_CLASSES_ROOT\VLClient1.Document\protocol\StdFileEditing\server = VLCLIENT1.EXE
+HKEY_CLASSES_ROOT\VLClient1.Document\protocol\StdFileEditing\verb\0 = &Edit
+HKEY_CLASSES_ROOT\VLClient1.Document\Insertable =
+HKEY_CLASSES_ROOT\VLClient1.Document\CLSID = {B1D8C123-45A1-11D3-8023-0000E8DE4B3B}
+
+HKEY_CLASSES_ROOT\CLSID\{B1D8C123-45A1-11D3-8023-0000E8DE4B3B} = VLClie Document
+HKEY_CLASSES_ROOT\CLSID\{B1D8C123-45A1-11D3-8023-0000E8DE4B3B}\DefaultIcon = VLCLIENT1.EXE,1
+HKEY_CLASSES_ROOT\CLSID\{B1D8C123-45A1-11D3-8023-0000E8DE4B3B}\LocalServer32 = VLCLIENT1.EXE
+HKEY_CLASSES_ROOT\CLSID\{B1D8C123-45A1-11D3-8023-0000E8DE4B3B}\ProgId = VLClient1.Document
+HKEY_CLASSES_ROOT\CLSID\{B1D8C123-45A1-11D3-8023-0000E8DE4B3B}\MiscStatus = 32
+HKEY_CLASSES_ROOT\CLSID\{B1D8C123-45A1-11D3-8023-0000E8DE4B3B}\AuxUserType\3 = VLClient1
+HKEY_CLASSES_ROOT\CLSID\{B1D8C123-45A1-11D3-8023-0000E8DE4B3B}\AuxUserType\2 = VLClie
+HKEY_CLASSES_ROOT\CLSID\{B1D8C123-45A1-11D3-8023-0000E8DE4B3B}\Insertable = 
+HKEY_CLASSES_ROOT\CLSID\{B1D8C123-45A1-11D3-8023-0000E8DE4B3B}\verb\1 = &Open,0,2
+HKEY_CLASSES_ROOT\CLSID\{B1D8C123-45A1-11D3-8023-0000E8DE4B3B}\verb\0 = &Edit,0,2
+HKEY_CLASSES_ROOT\CLSID\{B1D8C123-45A1-11D3-8023-0000E8DE4B3B}\InprocHandler32 = ole32.dll

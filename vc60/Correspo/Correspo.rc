@@ -1,0 +1,114 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RESOURCES
+//
+
+CARTAS_START_GUI        RESOURCES DISCARDABLE   "Cartas_start_gui.txt"
+CARTAS_LIST_GUI         RESOURCES DISCARDABLE   "Cartas_list_gui.txt"
+CARTAS_PROP_GUI         RESOURCES DISCARDABLE   "Cartas_prop_gui.txt"
+CARTAS_DBTABLEINFO      RESOURCES DISCARDABLE   "Cartas_dbTableInfo.txt"
+PROVINCIAS              RESOURCES DISCARDABLE   "Provincias.txt"
+PROVINCIA_DBTABLEINFO   RESOURCES DISCARDABLE   "Provincia_dbTableInfo.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 318, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,268,0,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,268,24,50,14
+    LTEXT           "Expediente",IDC_STATIC,5,8,41,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT1,60,10,40,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Button1",IDC_BUTTON1,153,57,50,14
+    PUSHBUTTON      "Button2",IDC_BUTTON2,223,102,50,14
+    COMBOBOX        IDC_COMBO1,31,68,98,65,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,31,106,102,17,CBS_DROPDOWN | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG2 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 6, 0
+0x7361, 0x6164, 0x0064, 
+    IDC_COMBO1, 0x403, 7, 0
+0x6478, 0x6366, 0x737a, "\000" 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,14 @@
+LIBRARY SX32W.DLL
+EXPORTS
+RNBOsproInitialize		= _RNBOsproInitialize@4
+RNBOsproFindFirstUnit	= _RNBOsproFindFirstUnit@8
+RNBOsproActivate		= _RNBOsproActivate@20
+RNBOsproDecrement		= _RNBOsproDecrement@12
+RNBOsproExtendedRead	= _RNBOsproExtendedRead@16
+RNBOsproFindNextUnit	= _RNBOsproFindNextUnit@4
+RNBOsproFormatPacket	= _RNBOsproFormatPacket@8
+RNBOsproGetVersion		= _RNBOsproGetVersion@20
+RNBOsproOverwrite		= _RNBOsproOverwrite@28
+RNBOsproQuery			= _RNBOsproQuery@24
+RNBOsproRead			= _RNBOsproRead@12
+RNBOsproWrite			= _RNBOsproWrite@20

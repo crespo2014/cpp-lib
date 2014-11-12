@@ -1,0 +1,183 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_LISA200 MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_LISA200 ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+LISA200DLG DIALOG DISCARDABLE  0, 0, 186, 138
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Lisa 200 Bridge",IDC_STATIC,7,7,171,60
+    LTEXT           "Source port",IDC_STATIC,15,20,38,12,SS_CENTERIMAGE
+    COMBOBOX        CMB_RCVPORT,60,20,52,50,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Destiny port",IDC_STATIC,15,35,38,12,SS_CENTERIMAGE
+    COMBOBOX        CMB_SNDPORT,60,35,52,50,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Status : ",IDC_STATIC,15,50,28,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Start",BTN_BRIDGE_START,120,20,50,12
+    PUSHBUTTON      "Stop",BTN_BRIDGE_STOP,120,35,50,12
+    PUSHBUTTON      "Advanced",BTN_BRIDGE_ADV,120,50,50,12
+    LTEXT           "Unknow...",ST_BRIDGE_STAT,60,50,51,12,SS_CENTERIMAGE
+    GROUPBOX        "Lisa 200 TCP/IP server",IDC_STATIC,7,72,172,44
+    LTEXT           "TCP port",IDC_STATIC,15,85,39,12,SS_CENTERIMAGE
+    EDITTEXT        EDT_SRV_PORT,60,85,52,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Start",BTN_SRV_START,120,85,50,12
+    LTEXT           "Status :",IDC_STATIC,15,100,25,8
+    LTEXT           "Unknown ...",ST_SRV_STAT,60,100,52,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Stop",BTN_SRV_STOP,120,100,50,12
+    PUSHBUTTON      "Close",BTN_CLOSE,120,119,50,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "LISA200DLG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        VERTGUIDE, 15
+        VERTGUIDE, 60
+        VERTGUIDE, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+        HORZGUIDE, 20
+        HORZGUIDE, 35
+        HORZGUIDE, 50
+        HORZGUIDE, 85
+        HORZGUIDE, 100
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "icon1.ico"
+LISA200ICO1             ICON    DISCARDABLE     "Status01.ico"
+LISA200ICO              ICON    DISCARDABLE     "logoico.ico"
+TASKBARICO              ICON    DISCARDABLE     "Status00.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "Lisa200"
+    IDS_HELLO               "Hello World!"
+    IDC_LISA200             "LISA200"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

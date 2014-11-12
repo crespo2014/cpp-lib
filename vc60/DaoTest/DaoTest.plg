@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DaoTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP2124.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/DaoTest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\USR\LESTER\12_9_00\Vc6_0\DaoTest\DaoTest.cpp"
+"C:\USR\LESTER\12_9_00\Vc6_0\DaoTest\DaoTestDlg.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP2124.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP2125.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/DaoTest.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\USR\LESTER\12_9_00\Vc6_0\DaoTest\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP2125.TMP" 
+Creating command line "link.exe ddao35d.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/DaoTest.pdb" /debug /machine:I386 /out:"Debug/DaoTest.exe" /pdbtype:sept  .\Debug\DaoTest.obj .\Debug\DaoTestDlg.obj .\Debug\StdAfx.obj .\Debug\DaoTest.res "
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+DaoTest.cpp
+DaoTestDlg.cpp
+C:\USR\LESTER\12_9_00\Vc6_0\DaoTest\DaoTestDlg.cpp(175) : error C2660: 'SQLConnect' : function does not take 0 parameters
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+DaoTest.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

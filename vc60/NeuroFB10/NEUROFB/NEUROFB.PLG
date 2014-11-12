@@ -1,0 +1,156 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: neurofb - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP171.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\inc_src" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/neurofb.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\App.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\ChangePass.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\NEUROFB\ChildView.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\DataBaseAplication.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\EntradaSistema.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\FileManage.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\G_01\G_01C02.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\G_01\G_01C03.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\G_01\G_01C04.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\G_01\G_01C05.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\G_01\g_01c06.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\G_01\g_01c07.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\G_01\g_01c08.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\G_01\g_01c09.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\LFC10C01.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\LFC10C02.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\LFC10C03.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\lfc10c04.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\LFC10C05.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\LFC10C06.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\NEUROFB\MainFrm.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\Medico.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\msflexgrid.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\NEUROFB\neurofb.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\Paciente.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\TreePaciente.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\ViewAllReports.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\ViewBuscarPaciente.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\ViewCondicion.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\ViewConfigurarSesion.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\ViewMostrarDatos.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\ViewRegistro.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\ViewSenales.cpp"
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\ViewTraining.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP171.tmp" 
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP172.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\inc_src" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/neurofb.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Proyectos VC60\Personales\C++\NeuroFB10\NEUROFB\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP172.tmp" 
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP173.tmp" with contents
+[
+shlwapi.lib opengl32.lib ddraw.lib glu32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/neurofb.pdb" /debug /machine:I386 /out:"Debug/neurofb.exe" /pdbtype:sept 
+".\Debug\App.obj"
+".\Debug\ChangePass.obj"
+".\Debug\ChildView.obj"
+".\Debug\DataBaseAplication.obj"
+".\Debug\EntradaSistema.obj"
+".\Debug\FileManage.obj"
+".\Debug\G_01C02.obj"
+".\Debug\G_01C03.obj"
+".\Debug\G_01C04.obj"
+".\Debug\G_01C05.obj"
+".\Debug\g_01c06.obj"
+".\Debug\g_01c07.obj"
+".\Debug\g_01c08.obj"
+".\Debug\g_01c09.obj"
+".\Debug\LFC10C01.obj"
+".\Debug\LFC10C02.obj"
+".\Debug\LFC10C03.obj"
+".\Debug\lfc10c04.obj"
+".\Debug\LFC10C05.obj"
+".\Debug\LFC10C06.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Medico.obj"
+".\Debug\msflexgrid.obj"
+".\Debug\neurofb.obj"
+".\Debug\Paciente.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TreePaciente.obj"
+".\Debug\ViewAllReports.obj"
+".\Debug\ViewBuscarPaciente.obj"
+".\Debug\ViewCondicion.obj"
+".\Debug\ViewConfigurarSesion.obj"
+".\Debug\ViewMostrarDatos.obj"
+".\Debug\ViewRegistro.obj"
+".\Debug\ViewSenales.obj"
+".\Debug\ViewTraining.obj"
+".\Debug\neurofb.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP173.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+App.cpp
+ChangePass.cpp
+ChildView.cpp
+DataBaseAplication.cpp
+D:\Proyectos VC60\Personales\C++\NeuroFB10\neurofbdll\DataBaseAplication.cpp(470) : warning C4244: '=' : conversion from 'float' to 'long', possible loss of data
+EntradaSistema.cpp
+FileManage.cpp
+G_01C02.cpp
+G_01C03.cpp
+G_01C04.cpp
+G_01C05.cpp
+g_01c06.cpp
+D:\Proyectos VC60\Personales\C++\NeuroFB10\G_01\g_01c06.cpp(500) : warning C4018: '==' : signed/unsigned mismatch
+g_01c07.cpp
+g_01c08.cpp
+g_01c09.cpp
+LFC10C01.cpp
+LFC10C02.cpp
+LFC10C03.cpp
+D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\LFC10C03.cpp(575) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\LFC10C03.cpp(599) : warning C4018: '==' : signed/unsigned mismatch
+D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\LFC10C03.cpp(604) : warning C4018: '==' : signed/unsigned mismatch
+D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\LFC10C03.cpp(608) : warning C4018: '>' : signed/unsigned mismatch
+D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\LFC10C03.cpp(655) : warning C4018: '==' : signed/unsigned mismatch
+lfc10c04.cpp
+D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\lfc10c04.cpp(679) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\lfc10c04.cpp(694) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\lfc10c04.cpp(695) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\lfc10c04.cpp(1680) : warning C4018: '<' : signed/unsigned mismatch
+D:\Proyectos VC60\Personales\C++\NeuroFB10\Lfc10\lfc10c04.cpp(1681) : warning C4018: '<' : signed/unsigned mismatch
+LFC10C05.cpp
+LFC10C06.cpp
+Generating Code...
+Compiling...
+MainFrm.cpp
+Medico.cpp
+msflexgrid.cpp
+neurofb.cpp
+Paciente.cpp
+TreePaciente.cpp
+ViewAllReports.cpp
+ViewBuscarPaciente.cpp
+ViewCondicion.cpp
+ViewConfigurarSesion.cpp
+ViewMostrarDatos.cpp
+ViewRegistro.cpp
+ViewSenales.cpp
+ViewTraining.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+neurofb.exe - 0 error(s), 12 warning(s)
+</pre>
+</body>
+</html>

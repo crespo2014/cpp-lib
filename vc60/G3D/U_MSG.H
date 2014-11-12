@@ -1,0 +1,20 @@
+
+#define UM_CREATERC  WM_USER+1
+//   lParam HGLRC
+//   wParam HDC
+#define UM_ATTACHWND      WM_USER+2
+#define UM_ATTACHDC       WM_USER+3
+#define UM_DESTROYRC      WM_USER+4
+#define UM_DETACHWND	  WM_USER+5
+#define UM_ATTACHRC       WM_USER+6
+#define UM_THREADCLOSE    WM_USER+7
+#define UM_THREADACK      WM_USER+8
+#define UM_RELEASERC      WM_USER+9
+#define UM_BEGINGRAF      WM_USER+10
+#define UM_PAUSEGRAF      WM_USER+11
+#define UM_STOPGRAF       WM_USER+12
+#define UM_CLOSE          WM_USER+13
+#define UM_SHOW           WM_USER+14
+#define UM_HIDE			  WM_USER+15
+#define UM_PLAY			  WM_USER+16 
+#define UM_PAUSE          WM_USER+17	

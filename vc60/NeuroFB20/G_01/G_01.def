@@ -1,0 +1,7 @@
+; G_01.def : Declares the module parameters for the DLL.
+
+LIBRARY      "G_01"
+DESCRIPTION  'G_01 Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

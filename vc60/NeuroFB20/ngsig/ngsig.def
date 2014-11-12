@@ -1,0 +1,6 @@
+; ngsig.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ngsig"
+DESCRIPTION  'ngsig Windows Dynamic Link Library'
+
+EXPORTS

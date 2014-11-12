@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lisa200Drv - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Build : warning : failed to (or don't know how to) build 'D:\Users\Lester\Visual C++ 6.0\Wilian - Lisa 200\Clases\MessageEvent.cpp'
+
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7B.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DLL_EXPORTS" /FR"Debug/" /Fp"Debug/Lisa200Drv.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\Lester\Visual C++ 6.0\Wilian - Lisa 200\Clases\Common.cpp"
+"D:\Users\Lester\Visual C++ 6.0\Wilian - Lisa 200\Lisa200Drv\Lisa200.cpp"
+"D:\Users\Lester\Visual C++ 6.0\Wilian - Lisa 200\Lisa200\Lisa2000Client.cpp"
+"D:\Users\Lester\Visual C++ 6.0\Wilian - Lisa 200\Lisa200Drv\Lisa200Drv.cpp"
+"D:\Users\Lester\Visual C++ 6.0\Wilian - Lisa 200\Clases\LockEvent.cpp"
+"D:\Users\Lester\Visual C++ 6.0\Wilian - Lisa 200\Clases\MessageEvent.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7B.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib /nologo /dll /incremental:yes /pdb:"Debug/Lisa200Drv.pdb" /debug /machine:I386 /out:"c:\lib\Lisa200Drv.dll" /implib:"Debug/Lisa200Drv.lib" /pdbtype:sept 
+".\Debug\Common.obj"
+".\Debug\Lisa200.obj"
+".\Debug\Lisa2000Client.obj"
+".\Debug\Lisa200Drv.obj"
+".\Debug\LockEvent.obj"
+".\Debug\MessageEvent.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TcpIpSocket.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7C.tmp"
+<h3>Output Window</h3>
+Compiling...
+Common.cpp
+fatal error C1083: Cannot open source file: 'D:\Users\Lester\Visual C++ 6.0\Wilian - Lisa 200\Clases\Common.cpp': No such file or directory
+Lisa200.cpp
+d:\users\lester\visual c++ 6.0\wilian - lisa 200\lisa200drv\lisa200.h(13) : fatal error C1083: Cannot open include file: '..\interfaces\ILabDevice.h': No such file or directory
+Lisa2000Client.cpp
+Lisa200Drv.cpp
+d:\users\lester\visual c++ 6.0\wilian - lisa 200\lisa200drv\lisa200.h(13) : fatal error C1083: Cannot open include file: '..\interfaces\ILabDevice.h': No such file or directory
+LockEvent.cpp
+fatal error C1083: Cannot open source file: 'D:\Users\Lester\Visual C++ 6.0\Wilian - Lisa 200\Clases\LockEvent.cpp': No such file or directory
+MessageEvent.cpp
+fatal error C1083: Cannot open source file: 'D:\Users\Lester\Visual C++ 6.0\Wilian - Lisa 200\Clases\MessageEvent.cpp': No such file or directory
+Generating Code...
+Error executing cl.exe.
+Creating command line "bscmake.exe /nologo /o"Debug/Lisa200Drv.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\Common.sbr" ".\Debug\Lisa200.sbr" ".\Debug\Lisa2000Client.sbr" ".\Debug\Lisa200Drv.sbr" ".\Debug\LockEvent.sbr" ".\Debug\MessageEvent.sbr" ".\Debug\TcpIpSocket.sbr""
+Creating browse info file...
+BSCMAKE: error BK1506 : cannot open file '.\Debug\Common.sbr': No such file or directory
+Error executing bscmake.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Lisa200Drv.dll - 6 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

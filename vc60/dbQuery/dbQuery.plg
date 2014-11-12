@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dbQuery - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Lester\CONFIG~1\Temp\RSP70.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "D:\CDs Viejos\CD 4\Visual C++ 6.0\INCLUDE" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/dbQuery.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Lester\CONFIG~1\Temp\RSP70.tmp" 
+Creating temporary file "C:\DOCUME~1\Lester\CONFIG~1\Temp\RSP71.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/dbQuery.pdb" /debug /machine:I386 /out:"Debug/dbQuery.exe" /pdbtype:sept 
+".\Debug\Common.obj"
+".\Debug\dbCommon.obj"
+".\Debug\dbDataInfoInfProcess.obj"
+".\Debug\dbGuiInfProcess.obj"
+".\Debug\dbQuery.obj"
+".\Debug\dbQueryDlg.obj"
+".\Debug\Grid.obj"
+".\Debug\MemArray.obj"
+".\Debug\StdAfx.obj"
+".\Debug\VirtualMem.obj"
+".\Debug\Wind.obj"
+".\Debug\dbQuery.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Lester\CONFIG~1\Temp\RSP71.tmp"
+<h3>Output Window</h3>
+Compiling...
+Grid.cpp
+d:\cds viejos\cd 4\visual c++ 6.0\include\memarray.h(42) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(78) : warning C4101: 'rect' : unreferenced local variable
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(400) : warning C4244: '+=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(443) : error C2039: 'GetStrAt' : is not a member of 'IDBArray'
+        d:\cds viejos\cd 4\visual c++ 6.0\include\dbcommon.h(190) : see declaration of 'IDBArray'
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(444) : error C2039: 'str' : is not a member of 'ITEM_DATA'
+        d:\cds viejos\cd 4\visual c++ 6.0\include\dbcommon.h(131) : see declaration of 'ITEM_DATA'
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(754) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(761) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(769) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(780) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(788) : warning C4018: '>' : signed/unsigned mismatch
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(822) : warning C4018: '>' : signed/unsigned mismatch
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(992) : error C2065: 'ITEM_INFO' : undeclared identifier
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(992) : error C2146: syntax error : missing ';' before identifier 'strinfo'
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(992) : error C2065: 'strinfo' : undeclared identifier
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1058) : error C2228: left of '.backColor' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1059) : error C2228: left of '.textColor' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1064) : error C2228: left of '.backColor' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1065) : error C2228: left of '.textColor' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1069) : error C2228: left of '.backColor' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1070) : error C2228: left of '.textColor' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1073) : error C2228: left of '.backColor' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1112) : error C2228: left of '.str' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1113) : error C2228: left of '.textColor' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1130) : error C2228: left of '.color' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1131) : error C2039: 'GetStrAt' : is not a member of 'IDBArray'
+        d:\cds viejos\cd 4\visual c++ 6.0\include\dbcommon.h(190) : see declaration of 'IDBArray'
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1132) : error C2228: left of '.str' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1132) : error C2228: left of '.uFormat' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1137) : error C2228: left of '.uFormat' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1138) : error C2228: left of '.color' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1143) : error C2228: left of '.str' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1143) : error C2228: left of '.uFormat' must have class/struct/union type
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1589) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1609) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\CDs Viejos\CD 4\Visual C++ 6.0\SRC\Grid.cpp(1614) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+Error executing cl.exe.
+Creating temporary file "C:\DOCUME~1\Lester\CONFIG~1\Temp\RSP72.tmp" with contents
+[
+/nologo /o"Debug/dbQuery.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\Common.sbr"
+".\Debug\dbCommon.sbr"
+".\Debug\dbDataInfoInfProcess.sbr"
+".\Debug\dbGuiInfProcess.sbr"
+".\Debug\dbQuery.sbr"
+".\Debug\dbQueryDlg.sbr"
+".\Debug\Grid.sbr"
+".\Debug\MemArray.sbr"
+".\Debug\VirtualMem.sbr"
+".\Debug\Wind.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\Lester\CONFIG~1\Temp\RSP72.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+dbQuery.exe - 22 error(s), 12 warning(s)
+</pre>
+</body>
+</html>

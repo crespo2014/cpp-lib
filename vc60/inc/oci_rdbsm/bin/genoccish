@@ -1,0 +1,91 @@
+#!/bin/sh
+#
+# $Id: genoccish.sh 11-aug-2004.14:06:43 ppallapo Exp $
+#
+# genoccish.sh
+#
+# Copyright (c) 2002, 2004, Oracle Corporation.  All rights reserved.  
+#
+#    NAME
+#      genoccish.sh - Generate the occi shared object
+#
+#    DESCRIPTION
+#      Script to generate the occi shared object
+#      Assumes that the .a file has already been created
+#
+#    MODIFIED   (MM/DD/YY)
+#    ppallapo    08/11/04 - Exit if the static library does not exist 
+#    ppallapo    03/05/15 - Remove -h option 
+#    mkrohan     03/31/03 - Update version to 10.1
+#    sawadhwa    03/28/02 - AIX-specific changes.
+#    vvinay      03/05/02 - vvinay_fix2141259
+#    vvinay      02/26/02 - Creation
+#
+
+if [ "$1" = "-32" ] ; then
+    LIB=lib32
+    LOOP="DONE"
+    OBJECT_MODE=32
+else
+    LIB=lib
+    # Set object mode in customer environment
+    [ -z "${SRCHOME}" ] && OBJECT_MODE=64
+fi
+export OBJECT_MODE
+
+#
+# library definitions
+OLIB=${ORACLE_HOME}/${LIB}
+
+#
+# Library names and locations
+OCCI_NAM=occi                                   # (short) library name
+OCCI_VER=10.1                                    # library version number
+OCCI_VERS=10
+OCCI_LNK=lib${OCCI_NAM}.a                       # name of symlink to library
+OCCI_LIB=${OCCI_LNK}                            # actual library file name
+OCCI_ARC=lib${OCCI_NAM}${OCCI_VERS}.a
+LIB_DIR=${ORACLE_HOME}/${LIB}                   # lib. destination directory
+
+if [ ! -z "$SRCHOME" ]
+then
+    LIB_DIR=${SRCHOME}/rdbms/${LIB}             # lib. destination directory
+fi
+
+SHARED_OBJ=${LIB_DIR}/shr.o                     # shared obj for library
+
+#
+# If in ADE, the library may be a symlink to the label server.  If so,
+# pull it over...
+if [ -h ${LIB_DIR}/${OCCI_LIB} ]
+then
+        echo "Copying ${OCCI_LIB} to local disk"
+        cp -p ${LIB_DIR}/${OCCI_LIB} ${LIB_DIR}/${OCCI_LIB}.tmp
+        rm -f ${LIB_DIR}/${OCCI_LIB}
+        mv ${LIB_DIR}/${OCCI_LIB}.tmp ${LIB_DIR}/${OCCI_LIB}
+        chmod +w ${LIB_DIR}/${OCCI_LIB}
+fi
+
+# Exit if the static library does not exist
+if [ ! -s ${LIB_DIR}/${OCCI_ARC} ]
+then
+  exit 0
+fi
+
+#
+# Linker command and options
+LD="xlC -qmkshrobj -o ${SHARED_OBJ} ${LIB_DIR}/${OCCI_ARC} \
+    -L${LIB_DIR} -lclntsh"
+
+# Create library
+/bin/rm -f ${LIB_DIR}/${OCCI_LIB} ${SHARED_OBJ}
+${LD}
+ar crl ${LIB_DIR}/${OCCI_LIB} ${SHARED_OBJ}
+/bin/rm -f ${SHARED_OBJ}
+
+# Create 32bit library
+if [ -z "${SRCHOME}" -a -d ${ORACLE_HOME}/lib32 -a "$LOOP" != "DONE" ]
+then
+    ${ORACLE_HOME}/bin/genoccish -32
+fi
+exit 0

@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GL10 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP682.tmp" with contents
+[
+opengl32.lib ftkvc40d.lib glu32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/GL10.pdb" /debug /machine:I386 /def:".\GL10.def" /out:"c:\windows\system\GL10.dll" /implib:"..\lib\GL10.lib" /pdbtype:sept 
+.\Debug\GL10.obj
+.\Debug\gl10c10.obj
+.\Debug\gl10c11.obj
+.\Debug\gl10c12.obj
+.\Debug\gl10c13.obj
+.\Debug\gl10c14.obj
+.\Debug\gl10c3.obj
+.\Debug\gl10c4.obj
+.\Debug\gl10c5.obj
+.\Debug\gl10c6.obj
+.\Debug\gl10c7.obj
+.\Debug\gl10c8.obj
+.\Debug\gl10c9.obj
+.\Debug\gl10d5.obj
+.\Debug\gl10d6.obj
+.\Debug\StdAfx.obj
+.\Debug\GL10.res
+]
+Creating command line "link.exe @C:\TEMP\RSP682.tmp"
+<h3>Output Window</h3>
+Linking...
+   Creating library ..\lib\GL10.lib and object ..\lib\GL10.exp
+LINK : warning LNK4098: defaultlib "LIBC" conflicts with use of other libs; use /NODEFAULTLIB:library
+
+
+
+<h3>Results</h3>
+GL10.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

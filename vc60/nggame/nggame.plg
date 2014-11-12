@@ -1,0 +1,219 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: nggame - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x80a /fo"Debug/game.res" /d "_DEBUG" "D:\Proyectos VC60\Personales\C++\nggame\game.rc"" 
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP192.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/nggame.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Proyectos VC60\Personales\C++\nggame\game.cpp"
+"D:\Proyectos VC60\Personales\C++\nggame\gc01.cpp"
+"D:\Proyectos VC60\Personales\C++\nggame\Gc02.cpp"
+"D:\Proyectos VC60\Personales\C++\nggame\Gc03.cpp"
+"D:\Proyectos VC60\Personales\C++\nggame\Gc04.cpp"
+"D:\Proyectos VC60\Personales\C++\nggame\gc06.cpp"
+"D:\Proyectos VC60\Personales\C++\nggame\Gc07.cpp"
+"D:\Proyectos VC60\Personales\C++\nggame\Gc08.cpp"
+"D:\Proyectos VC60\Personales\C++\nggame\Gc09.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP192.tmp" 
+Creating temporary file "C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP193.tmp" with contents
+[
+ngc3d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ddraw.lib glu32.lib opengl32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/nggame.pdb" /debug /machine:I386 /out:"Debug/nggame.exe" /pdbtype:sept 
+".\Debug\game.obj"
+".\Debug\gc01.obj"
+".\Debug\Gc02.obj"
+".\Debug\Gc03.obj"
+".\Debug\Gc04.obj"
+".\Debug\gc06.obj"
+".\Debug\Gc07.obj"
+".\Debug\Gc08.obj"
+".\Debug\Gc09.obj"
+".\Debug\game.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lcrespos\CONFIG~1\Temp\RSP193.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+game.cpp
+d:\proyectos vc60\personales\c++\nggame\gc01.h(31) : error C2146: syntax error : missing ';' before identifier 'm_DDraw'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(31) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(31) : error C2501: 'm_DDraw' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(32) : error C2146: syntax error : missing ';' before identifier 'm_DDSurface'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(32) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(32) : error C2501: 'm_DDSurface' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(33) : error C2146: syntax error : missing ';' before identifier 'm_DDBackSurface'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(33) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(33) : error C2501: 'm_DDBackSurface' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(34) : error C2146: syntax error : missing ';' before identifier 'm_DDZBuffer'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(34) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(34) : error C2501: 'm_DDZBuffer' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(35) : error C2146: syntax error : missing ';' before identifier 'm_D3D'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(35) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(35) : error C2501: 'm_D3D' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(36) : error C2146: syntax error : missing ';' before identifier 'm_D3DDevice'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(36) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(36) : error C2501: 'm_D3DDevice' : missing storage-class or type specifiers
+gc01.cpp
+d:\proyectos vc60\personales\c++\nggame\gc01.h(31) : error C2146: syntax error : missing ';' before identifier 'm_DDraw'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(31) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(31) : error C2501: 'm_DDraw' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(32) : error C2146: syntax error : missing ';' before identifier 'm_DDSurface'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(32) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(32) : error C2501: 'm_DDSurface' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(33) : error C2146: syntax error : missing ';' before identifier 'm_DDBackSurface'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(33) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(33) : error C2501: 'm_DDBackSurface' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(34) : error C2146: syntax error : missing ';' before identifier 'm_DDZBuffer'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(34) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(34) : error C2501: 'm_DDZBuffer' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(35) : error C2146: syntax error : missing ';' before identifier 'm_D3D'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(35) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(35) : error C2501: 'm_D3D' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(36) : error C2146: syntax error : missing ';' before identifier 'm_D3DDevice'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(36) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(36) : error C2501: 'm_D3DDevice' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(83) : error C2065: 'm_DDraw' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(84) : error C2065: 'm_DDSurface' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(85) : error C2065: 'm_DDBackSurface' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(86) : error C2065: 'm_D3D' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(87) : error C2065: 'm_D3DDevice' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(88) : error C2065: 'm_DDZBuffer' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(194) : error C2227: left of '->Restore' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(195) : error C2227: left of '->Restore' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(256) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(256) : error C2146: syntax error : missing ';' before identifier 'ddsd'
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(256) : error C2065: 'ddsd' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(257) : error C2065: 'DDSCAPS2' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(257) : error C2146: syntax error : missing ';' before identifier 'ddscaps'
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(257) : error C2065: 'ddscaps' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(258) : error C2039: 'DirectDrawCreateEx' : is not a member of '`global namespace''
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(258) : error C2065: 'DirectDrawCreateEx' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(258) : error C2065: 'IID_IDirectDraw7' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(262) : error C2227: left of '->SetCooperativeLevel' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(266) : error C2227: left of '->SetDisplayMode' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(273) : error C2228: left of '.dwSize' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(275) : error C2228: left of '.dwFlags' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(277) : error C2228: left of '.ddsCaps' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(277) : error C2228: left of '.dwCaps' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(283) : error C2228: left of '.dwBackBufferCount' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(285) : error C2227: left of '->CreateSurface' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(288) : error C2228: left of '.dwCaps' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(289) : error C2227: left of '->GetAttachedSurface' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(292) : error C2227: left of '->QueryInterface' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(292) : error C2065: 'IID_IDirect3D7' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(300) : error C2227: left of '->CreateDevice' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(303) : error C2227: left of '->DeleteAttachedSurface' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(304) : error C2227: left of '->Release' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(315) : error C2227: left of '->CreateDevice' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(318) : error C2227: left of '->DeleteAttachedSurface' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(319) : error C2227: left of '->Release' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(329) : error C2227: left of '->Release' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(330) : error C2227: left of '->Release' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(331) : error C2227: left of '->DeleteAttachedSurface' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(332) : error C2227: left of '->Release' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(333) : error C2227: left of '->Release' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(334) : error C2227: left of '->Release' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(356) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(356) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(358) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(358) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(362) : error C2227: left of '->SetTransform' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(363) : error C2227: left of '->Clear' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(364) : error C2227: left of '->Clear' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(366) : error C2227: left of '->BeginScene' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(368) : error C2227: left of '->DrawPrimitive' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(368) : error C2065: 'D3DFVF_XYZ' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(370) : error C2227: left of '->EndScene' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(371) : error C2227: left of '->Flip' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(377) : error C2065: 'D3DVIEWPORT7' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(377) : error C2146: syntax error : missing ';' before identifier 'vp'
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(377) : error C2065: 'vp' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(377) : error C2059: syntax error : '{'
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(377) : error C2143: syntax error : missing ';' before '{'
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(377) : error C2143: syntax error : missing ';' before '}'
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(378) : error C2227: left of '->SetViewport' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(380) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(380) : error C2146: syntax error : missing ';' before identifier 'mtrl'
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(380) : error C2065: 'mtrl' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(382) : error C2228: left of '.diffuse' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(382) : error C2228: left of '.r' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(382) : error C2228: left of '.diffuse' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(382) : error C2228: left of '.g' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(382) : error C2228: left of '.diffuse' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(382) : error C2228: left of '.b' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(383) : error C2228: left of '.ambient' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(383) : error C2228: left of '.r' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(383) : error C2228: left of '.ambient' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(383) : error C2228: left of '.g' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(383) : error C2228: left of '.ambient' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(383) : error C2228: left of '.b' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(384) : error C2227: left of '->SetMaterial' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(388) : error C2228: left of '.ambient' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(388) : error C2228: left of '.r' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(389) : error C2228: left of '.ambient' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(389) : error C2228: left of '.g' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(390) : error C2228: left of '.ambient' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(390) : error C2228: left of '.b' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(391) : error C2227: left of '->SetMaterial' must point to class/struct/union
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(394) : error C2065: 'D3DLIGHT7' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(394) : error C2146: syntax error : missing ';' before identifier 'light'
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(394) : error C2065: 'light' : undeclared identifier
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(396) : error C2228: left of '.dltType' must have class/struct/union type
+d:\proyectos vc60\personales\c++\nggame\gc01.cpp(396) : fatal error C1003: error count exceeds 100; stopping compilation
+Gc02.cpp
+d:\proyectos vc60\personales\c++\nggame\gc01.h(31) : error C2146: syntax error : missing ';' before identifier 'm_DDraw'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(31) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(31) : error C2501: 'm_DDraw' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(32) : error C2146: syntax error : missing ';' before identifier 'm_DDSurface'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(32) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(32) : error C2501: 'm_DDSurface' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(33) : error C2146: syntax error : missing ';' before identifier 'm_DDBackSurface'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(33) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(33) : error C2501: 'm_DDBackSurface' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(34) : error C2146: syntax error : missing ';' before identifier 'm_DDZBuffer'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(34) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(34) : error C2501: 'm_DDZBuffer' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(35) : error C2146: syntax error : missing ';' before identifier 'm_D3D'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(35) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(35) : error C2501: 'm_D3D' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(36) : error C2146: syntax error : missing ';' before identifier 'm_D3DDevice'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(36) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(36) : error C2501: 'm_D3DDevice' : missing storage-class or type specifiers
+Gc03.cpp
+Gc04.cpp
+gc06.cpp
+d:\proyectos vc60\personales\c++\nggame\gc01.h(31) : error C2146: syntax error : missing ';' before identifier 'm_DDraw'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(31) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(31) : error C2501: 'm_DDraw' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(32) : error C2146: syntax error : missing ';' before identifier 'm_DDSurface'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(32) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(32) : error C2501: 'm_DDSurface' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(33) : error C2146: syntax error : missing ';' before identifier 'm_DDBackSurface'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(33) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(33) : error C2501: 'm_DDBackSurface' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(34) : error C2146: syntax error : missing ';' before identifier 'm_DDZBuffer'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(34) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(34) : error C2501: 'm_DDZBuffer' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(35) : error C2146: syntax error : missing ';' before identifier 'm_D3D'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(35) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(35) : error C2501: 'm_D3D' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(36) : error C2146: syntax error : missing ';' before identifier 'm_D3DDevice'
+d:\proyectos vc60\personales\c++\nggame\gc01.h(36) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\proyectos vc60\personales\c++\nggame\gc01.h(36) : error C2501: 'm_D3DDevice' : missing storage-class or type specifiers
+Gc07.cpp
+Gc08.cpp
+Gc09.cpp
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+nggame.exe - 156 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

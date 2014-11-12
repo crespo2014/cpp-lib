@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ROBOT1 - Win32 Debug--------------------
+</h3>
+
+
+Microsoft (R) Program Maintenance Utility   Version 6.00.8168.0
+Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+
+ copy ROBOT.DEF nul
+        1 archivo(s) copiado(s)
+ c:\archiv~1\micros~3\vc98\bin\link.exe @C:\WINDOWS\TEMP\nma72529. | C:\VTD95\bin\fltrwarn LNK4078 LNK4039
+Microsoft (R) Incremental Linker Version 6.00.8168
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+-VXD -OUT:ROBOT.VXD -MAP -NODEFAULTLIB 
+-DEBUG -DEBUGTYPE:MAP 
+-DEF:ROBOT.DEF 
+-MERGE:.data=_LDATA -MERGE:ICRTTEXT=_IDATA -MERGE:ICRTXXXX=_IDATA 
+-MERGE:.rdata=_LDATA 
+-MERGE:.bss=_LDATA -MERGE:_PDATA=_PTEXT 
+"-COMMENT:VxD ROBOT (VtoolsD)" 
+C:\VTD95\LIB\ICRTMS9.OBJ 
+robot.OBJ 
+CMOSIO.OBJ 
+C:\VTD95\lib\cfMS940D.lib 
+C:\VTD95\lib\rtMS940D.lib 
+C:\VTD95\lib\wr0MS940.lib 
+C:\VTD95\lib\wr1MS940.lib 
+C:\VTD95\lib\wr2MS940.lib 
+C:\VTD95\lib\wr3MS940.lib 
+ C:\VTD95\bin\sethdr -n ROBOT -x ROBOT.VXD -r ROBOT.RES
+ C:\VTD95\bin\testvxd ROBOT.VXD
+
+
+
+<h3>Results</h3>
+ROBOT1.vxd - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

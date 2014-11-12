@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PCimex01 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP1290.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/PCimex01.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\Lester Data\Vc6_0\PCimex01\MainFrm.cpp"
+"D:\Users\Lester Data\Vc6_0\PCimex01\PCimex01.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP1290.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP1291.TMP" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/PCimex01.pdb" /debug /machine:I386 /out:"Debug/PCimex01.exe" /pdbtype:sept 
+".\Debug\ChildView.obj"
+".\Debug\LFC10C05.obj"
+".\Debug\MainFrm.obj"
+".\Debug\PCimex01.obj"
+".\Debug\ReGrid.obj"
+".\Debug\StdAfx.obj"
+".\Debug\PCimex01.res"
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP1291.TMP"
+<h3>Output Window</h3>
+Compiling...
+MainFrm.cpp
+Generating Code...
+Compiling...
+PCimex01.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+PCimex01.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

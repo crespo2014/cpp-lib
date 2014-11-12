@@ -1,0 +1,44 @@
+
+LIBRARY	 
+EXPORTS
+  CTSAPIInit 		  
+  CTSAPITerm 		  
+  CTSSetRSSParams	  
+  CTSAddUser 		  
+  CTSUpdUser 		  
+  CTSDelUser 		  
+  CTSRevokeUser		  
+  CTSUpdPassword	  
+  CTSAddUG		      
+  CTSUpdUG		      
+  CTSDelUG		      
+  CTSAddUserToUG	  
+  CTSUpdUserToUG	  
+  CTSDelUserFromUG	  
+  CTSAddACE		     
+  CTSDelACE		      
+  CTSUpdACE		      
+  CTSAddRes 		  
+  CTSDelRes 		 
+  CTSUpdRes 		  
+  CTSGetRSSParams 	  
+  CTSGetUsers		    
+  CTSGetUGs 		  
+  CTSGetConns		  
+  CTSGetRes 		  
+  CTSGetResACL		  
+  CTSRSSLogin		  
+  CTSRSSLogout		    
+  CTSRSSCheck 		  
+  CTSGetOEs 		 
+  CTSAddOE  		 
+  CTSDelOE  		 
+  CTSUpdOE
+  CTSIsMaskMatch  		 
+  CTSIsOEInOE		 
+  CTSIsUGInOE		 
+  CTSIsUserInOE		  
+  CTSAPILoad  		  
+
+
+

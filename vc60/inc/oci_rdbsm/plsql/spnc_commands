@@ -1,0 +1,42 @@
+# This file contains commands to generate a shared object or DLL
+# for a natively compiled PL/SQL unit. 
+# This file can have multiple commands. 
+# Each command should be specified in a single line by itself terminated by
+# a newline.
+# Lines starting with a # character are comments which are ignored.
+# Each command is executed by creating (forking) a process and
+# giving the command to the process to be executed directly.
+# That means no other program (such as a shell or make) is used
+# to interpret these commands.
+# The command(s) use the following symbolic names as placeholders
+# which will be replaced by actual names before executing the command(s).
+#
+# 	%(src) -  refers to the name of the generated C source file.
+# 	%(obj) -  refers to the name of the generated object file.
+# 	%(exp) -  refers to the name of the generated export file.
+# 	%(imp) -  refers to the name of the generated import file.
+# 	%(so)  -  refers to the name of the generated shared object file.
+#
+# The variable $(ORACLE_HOME) will be replaced by its actual value
+# before executing the command(s).
+#
+# NOTE:  The recommended optimization level for the C compiler is
+#        -O1. The generated C code is such that any optimization level
+#        above -O1 results in significantly longer C compilation times
+#        without any tangible incremental benefit in runtime performance.
+#        However, on AIX even O1 will result in out-of-memory problem
+#        in the compiler for a few cases. So not using any optimization.
+#
+$(ORACLE_HOME)/bin/oraxlc %(src) -q64 -D_THREAD_SAFE -I$(ORACLE_HOME)/plsql/include -I$(ORACLE_HOME)/plsql/public -c -o %(obj) 
+$(ORACLE_HOME)/bin/genExpImp.sh %(obj) %(exp) %(imp)
+/usr/ccs/bin/ld -b64 -bM:SRE -bE:%(exp) -bI:%(imp) -bnoentry %(obj) -o %(so)
+/usr/bin/rm -rf %(obj)
+#
+# NOTE : The following commands are for the gcc compiler. If you wish to
+#        use gcc compiler, please comment out the lines above
+#        and uncomment the lines corresponding to the gcc compiler below.
+#
+#/usr/local/bin/gcc -B/usr/ccs/bin -maix64 %(src) -c -fPIC -I$(ORACLE_HOME)/plsql/include -I$(ORACLE_HOME)/plsql/public -o %(obj)
+#$(ORACLE_HOME)/bin/genExpImp.sh %(obj) %(exp) %(imp)
+#/usr/ccs/bin/ld -b64 -bM:SRE -bE:%(exp) -bI:%(imp) -bnoentry %(obj) -o %(so) -lc
+#/usr/bin/rm -rf %(obj)

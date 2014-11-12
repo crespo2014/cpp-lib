@@ -1,0 +1,17 @@
+cancel = Cancelar
+accept = Aceptar
+error = Error
+yes = Si
+no = No
+dlg.login.title = Lotus Notes Gestión de identidades
+dlg.login.lbl.userid = Identificador de usuario:
+dlg.login.lbl.password = Contraseña:
+err.dlg.show = Error al mostrar el dialogo
+err.login.nouser = Debe introducir un nombre de usuario
+err.login.nopwd = Debe introducir una contraseña
+err.db.noconnect = No se puede establecer la coneción con la base de datos %1
+err.mem.lock.failed = El bloqueo de memoria ha fallado.
+err.mem.get.failed = Memoria insuficiente.
+err.mem.overflow = Desbordamiento de datos.
+err.caption = Error en Lotus Notes Gestion de Identidades
+err.initialize = Error critico de inicialización

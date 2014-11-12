@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: logonclient - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Lester\CONFIG~1\Temp\RSP6E.tmp" with contents
+[
+/nologo /MLd /W4 /Gm /GX /ZI /Od /I "D:\CProjects\inc_src" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/logonclient.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\CProjects\logonclient\logonclient.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Lester\CONFIG~1\Temp\RSP6E.tmp" 
+Creating temporary file "C:\DOCUME~1\Lester\CONFIG~1\Temp\RSP6F.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/logonclient.pdb" /debug /machine:I386 /out:"Debug/logonclient.exe" /pdbtype:sept 
+.\Debug\_inifile.obj
+.\Debug\IniFile.obj
+.\Debug\LogClient.obj
+.\Debug\logonclient.obj
+.\Debug\LogonTrans.obj
+.\Debug\StdAfx.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Lester\CONFIG~1\Temp\RSP6F.tmp"
+<h3>Output Window</h3>
+Compiling...
+logonclient.cpp
+D:\CProjects\logonclient\logonclient.cpp(127) : warning C4244: '=' : conversion from 'int' to 'unsigned short', possible loss of data
+D:\CProjects\logonclient\logonclient.cpp(94) : warning C4101: 'day' : unreferenced local variable
+D:\CProjects\logonclient\logonclient.cpp(178) : warning C4100: 'pdata_file' : unreferenced formal parameter
+D:\CProjects\logonclient\logonclient.cpp(178) : warning C4100: 'pdisp' : unreferenced formal parameter
+D:\CProjects\logonclient\logonclient.cpp(206) : error C2065: 'InitDataFile' : undeclared identifier
+D:\CProjects\logonclient\logonclient.cpp(211) : error C2065: 'GetLine' : undeclared identifier
+D:\CProjects\logonclient\logonclient.cpp(216) : error C2065: 'ReadRowData' : undeclared identifier
+D:\CProjects\logonclient\logonclient.cpp(219) : error C2039: 'value_count' : is not a member of '_datafile'
+        d:\cprojects\inc_src\datafile.h(25) : see declaration of '_datafile'
+D:\CProjects\logonclient\logonclient.cpp(282) : error C2039: 'value_count' : is not a member of '_datafile'
+        d:\cprojects\inc_src\datafile.h(25) : see declaration of '_datafile'
+Error executing cl.exe.
+Creating command line "bscmake.exe /nologo /o"Debug/logonclient.bsc"  .\Debug\StdAfx.sbr .\Debug\_inifile.sbr .\Debug\IniFile.sbr .\Debug\LogClient.sbr .\Debug\logonclient.sbr .\Debug\LogonTrans.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+logonclient.exe - 5 error(s), 4 warning(s)
+</pre>
+</body>
+</html>
