@@ -42,9 +42,8 @@ namespace io
  * InBuffer is derived from buffer, define iterator in read direction only
  * is attached to an io device to read data when it is necessary
  *
- *
- *
  */
+
 /*
  * Specialization for size equal 0
  * A data buffer can be static from stack or dynamic from heap
