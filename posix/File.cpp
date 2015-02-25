@@ -71,5 +71,9 @@ int File::ioctl(unsigned long request, void* arg)
 {
     return ::ioctl(file_,request,arg);
 }
+void* File::mmap(void *addr, size_t length,off_t offset, int prot, int flags)
+{
+    return ::mmap(addr,length,prot,flags,file_,offset);
+}
 
 } /* namespace POSIX */
