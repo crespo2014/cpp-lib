@@ -31,7 +31,7 @@ public:
     bool eof();
     void close();
     int ioctl(unsigned long request, void* arg);
-    void* mmap(void *addr, size_t length, off_t offset = 0, int prot = PROT_READ | PROT_WRITE, int flags = MAP_PRIVATE);
+    void* mmap(void *addr, size_t length, int prot = PROT_READ | PROT_WRITE, int flags = MAP_PRIVATE ,off_t offset = 0);
     size_t read(void *data, size_t size, const std::nothrow_t&)
     {
         return ::read(file_,data, size);
@@ -42,7 +42,10 @@ private:
     unsigned status_ = status_e::closed;
     enum status_e
     {
-        ok, fail, eof_, closed
+        ok, //
+        fail,//
+        eof_,//
+        closed
     };
 };
 

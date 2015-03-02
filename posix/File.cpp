@@ -71,9 +71,13 @@ int File::ioctl(unsigned long request, void* arg)
 {
     return ::ioctl(file_,request,arg);
 }
-void* File::mmap(void *addr, size_t length,off_t offset, int prot, int flags)
+
+void* File::mmap(void *addr, size_t length, int prot, int flags,off_t offset)
 {
-    return ::mmap(addr,length,prot,flags,file_,offset);
+    void* p = ::mmap(addr,length,prot,flags,file_,offset);
+    if (p == MAP_FAILED)
+        throw std::system_error(errno, std::system_category());
+    return p;
 }
 
 } /* namespace POSIX */
