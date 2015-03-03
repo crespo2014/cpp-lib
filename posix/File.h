@@ -147,18 +147,30 @@ public:
      * @param [in,out] size - number of bytes in the buffer in d, returns the number of bytes not written
      * @throws Exception on error
      */
-    void write(const void* d, size_t size)
+    size_t write(const void* d, size_t size)
     {
-        decltype(::write(fd_, d, size)) written = 0;
-        if (size)
+        auto written = ::write(fd_, d, size);
+        if (written < 0)
         {
-            do {
-                written = ::write(fd_, d, size);
-                if (written < 0) {
-
-                }
-            } while (written != (int)size);
+            throw std::system_error(written, std::system_category());
         }
+        return written;
+    }
+    int write(const void* d, size_t size,const std::nothrow_t&)
+    {
+        return ::write(fd_, d, size);
+    }
+    void write_all(const void* d, size_t size)
+    {
+        do
+        {
+            auto written = ::write(fd_, d, size);
+            if (written < 0)
+            {
+                throw std::system_error(written, std::system_category());
+            }
+            size -= written;
+        } while (size);
     }
     /** Constructor which opens the file at path as read-only
      * @param [in] path - Operating system name of the file, including path if necessary.
@@ -290,6 +302,10 @@ public:
         {
             throw std::system_error(r, std::system_category());
         }
+    }
+    bool sync(const std::nothrow_t&)
+    {
+        return (::fsync(fd_) == 0);
     }
 //    int ioctl(unsigned long request, void* arg,std::nothrow_t)
 //    {
