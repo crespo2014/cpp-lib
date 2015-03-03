@@ -47,6 +47,255 @@ private:
         eof_,//
         closed
     };
+    using fd_type = int;    ///< Linux generic file description type
+    fd_type fd = -1;        //!< the file descriptor
+public:
+    constexpr static unsigned F_RDONLY = O_RDONLY; ///< Wrapping read-only flag
+    constexpr static unsigned F_WRONLY = O_WRONLY; ///< Wrapping write-only flag
+    constexpr static unsigned F_RDWR = O_RDWR; ///< Wrapping read/write flag
+
+    /**
+     * Open the file at path
+     * @param [in] path - Operating system name of the file, including path if necessary.
+     * @param [in] flag - The requested input/output mode for the file.
+     * @param [out] e - returns the result of operation.
+     */
+    void open(const char* path, int flag)
+    {
+        fd = ::open(path, flag, S_IRUSR | S_IWUSR);
+        if (fd == -1)
+        {
+
+        }
+    }
+    /**
+     * Create a new file or delete current one if exist
+     * exception safe function
+     */
+    bool create_s(const char* file_path)
+    {
+        open_s(file_path,O_CREAT |O_WRONLY|O_TRUNC);
+        return error_;
+    }
+    /**
+     * Safe file open operation, not exception are generated file status is update with the result of operation
+     * @param [in] path - Operating system name of the file, including path if necessary.
+     * @param [in] flag - The requested input/output mode for the file.
+     */
+    void open_s(const char* path, int flag)
+    {
+        fd = ::open(path, flag, S_IRUSR | S_IWUSR);
+        if (fd == -1);
+
+    }
+
+    void open(const char* path, int flag,const std::nothrow_t&)
+    {
+        fd = ::open(path, flag, S_IRUSR | S_IWUSR);
+        if (fd == -1);
+
+    }
+
+    //! default constructor
+    File()
+    {
+    }
+    /**
+     * Constructor which opens the file at path
+     *@param [in] path - Operating system name of the file, including path if necessary.
+     *@param [in] flag - The requested input/output mode for the file.
+     *@return - a exception is throw if operation can not complete
+     */
+    File(const char* path, int flag)
+    {
+        File::open(path,flag);
+    }
+    File(const char* path, int flag,const std::nothrow_t&)
+    {
+        File::open(path,flag,std::nothrow);
+    }
+
+    /**
+     * read data from file
+     * @param [in] d - pointer to the buffer stroing the data
+     * @param [in,out] size - number of byte to be read from file on finish number of real bytes readed
+     */
+    size_t read(void* d,size_t len)
+    {
+        if (len)
+        {
+            auto r = ::read(fd,d,len);
+            if (r < 0)
+            {
+
+            }
+            return r;
+        }
+        return 0;
+    }
+    /**
+     * Write data to file
+     * @param [in] d - pointer to the buffer holding the data
+     * @param [in,out] size - number of bytes in the buffer in d, returns the number of bytes not written
+     * @throws Exception on error
+     */
+    void write(const void* d, size_t size)
+    {
+        decltype(::write(fd, d, size)) written = 0;
+        if (size)
+        {
+            do {
+                written = ::write(fd, d, size);
+                if (written < 0) {
+
+                }
+            } while (written != (int)size);
+        }
+    }
+    /** Constructor which opens the file at path as read-only
+     * @param [in] path - Operating system name of the file, including path if necessary.
+     * @param [out] e - returns the result of operation.
+     */
+    File(const char* path)
+    {
+        fd = ::open(path, O_RDONLY);
+        if (fd == -1)
+        {
+
+        }
+    }
+    /**
+     * Get the file descriptor and reset the internal file descriptor member.
+     * The class loses ownership of the file descriptor, thus the caller of this function
+     * is responsible for closing the file.
+     *@return int - the file descriptor
+     */
+    int dettach()
+    {
+        int f = fd;
+        fd = -1;
+        return f;
+    }
+    /**
+     * Default destructor. Closes the file.
+     */
+    ~File()
+    {
+        if (fd != -1)
+            ::close(fd);
+    }
+    /**
+     * Get boolean if file is open
+     *@return bool - true if file is open, false if not opened
+     */
+    operator bool()
+    {
+        return fd != -1;
+    }
+    /**
+     * Close the file.
+     */
+    void close() noexcept
+    {
+        if (fd != -1)
+            ::close(fd);
+        fd = -1;
+    }
+
+
+    /** Lock the file.
+     * @throws Exception on error */
+    void lock()
+    {
+        struct flock fl;
+        memset(&fl, 0, sizeof(fl));
+        fl.l_type = F_WRLCK;
+        fl.l_whence = SEEK_SET;
+        if (fcntl(fd, F_SETLK, &fl) == -1)
+        {
+
+        }
+    }
+    /**
+     * UnLock the file
+     * @param [out] e - returns the result of operation.
+     * @todo use exceptions
+     */
+    void unlock()
+    {
+        if (fd != -1)       // @todo remove when class become exception safe
+        {
+            struct flock fl;
+            memset(&fl, 0, sizeof(fl));
+            fl.l_type = F_UNLCK;
+            fl.l_whence = SEEK_SET;
+            if (fcntl(fd, F_SETLK, &fl) == -1)
+            {
+
+            }
+        }
+    }
+
+    /**
+     * UnLock the file
+     * @param [out] e - returns the result of operation.
+     * @todo use exceptions
+     */
+    bool unlock_s() noexcept
+    {
+        if (fd != -1)       // @todo remove when class become exception safe
+        {
+            struct flock fl;
+            memset(&fl, 0, sizeof(fl));
+            fl.l_type = F_UNLCK;
+            fl.l_whence = SEEK_SET;
+            return (fcntl(fd, F_SETLK, &fl) != -1);
+        }
+        return false;
+    }
+
+    /** Truncate the file
+     * @throws Exception - on error
+     */
+    void truncate()
+    {
+        if (::ftruncate(fd, 0) == -1)
+        {
+
+        }
+    }
+    /**
+     * Flush all data to the file
+     */
+    void flush()
+    {
+        if(::fsync(fd) != 0)
+        {
+
+        }
+    }
+    /**
+     * No exception function to flush the file
+     */
+    bool flush_s() noexcept
+    {
+        if (::fsync(fd) != 0)
+
+        return error_;
+    }
+    int ioctl(unsigned long request, void* arg,std::nothrow_t)
+    {
+        return ::ioctl(fd,request,arg);
+    }
+    void ioctl(unsigned long request, void* arg)
+    {
+        int r;
+        if ((r = ::ioctl(fd,request,arg)) != 0)
+        {
+            throw std::system_error(r, std::system_category());
+        }
+
+    }
 };
 
 } /* namespace POSIX */
