@@ -11,26 +11,27 @@
 #include <fcntl.h>
 #include <sys/ioctl.h>
 #include "File.h"
+#include <poll.h>
 
 namespace POSIX {
 
 File::File(const char* name,int flag)
 {
-    file_ = ::open(name,flag);
-    if (file_ == -1) throw std::system_error(errno,std::system_category());
+    fd_ = ::open(name,flag);
+    if (fd_ == -1) throw std::system_error(errno,std::system_category());
     status_ |= status_e::ok;
 }
 
 File::File(const char* name, int flag,const std::nothrow_t& t)
 {
-  file_ = ::open(name,flag);
-  if (file_ == -1)
+  fd_ = ::open(name,flag);
+  if (fd_ == -1)
     status_ |= status_e::fail;
 }
 
-File::File(File&& f) : file_(f.file_),status_(f.status_)
+File::File(File&& f) : fd_(f.fd_),status_(f.status_)
 {
-    f.file_ = -1;
+    f.fd_ = -1;
 }
 
 File& File::operator =(const File&& f)
@@ -40,8 +41,8 @@ File& File::operator =(const File&& f)
 
 File::~File()
 {
-    if (file_ != -1)
-        ::close(file_);
+    if (fd_ != -1)
+        ::close(fd_);
         //close(std::nothrow);
 }
 
@@ -57,27 +58,38 @@ bool File::eof()
 
 //bool File::close(const std::nothrow_t& t)
 //{
-//    fclose(file_) != 0)
+//    fclose(fd_) != 0)
 //}
 
 void File::close()
 {
-    if (::close(file_) != 0)
+    if (::close(fd_) != 0)
         throw std::system_error(errno,std::system_category());
-    file_ = -1;
+    fd_ = -1;
 }
 
 int File::ioctl(unsigned long request, void* arg)
 {
-    return ::ioctl(file_,request,arg);
+    return ::ioctl(fd_,request,arg);
 }
 
 void* File::mmap(void *addr, size_t length, int prot, int flags,off_t offset)
 {
-    void* p = ::mmap(addr,length,prot,flags,file_,offset);
+    void* p = ::mmap(addr,length,prot,flags,fd_,offset);
     if (p == MAP_FAILED)
         throw std::system_error(errno, std::system_category());
     return p;
+}
+
+bool File::poll(short events, short& revents, int timeout, const std::nothrow_t&)
+{
+    struct pollfd fds;
+    fds.events = events;
+    fds.revents = 0;
+    fds.fd = fd_;
+    int r = ::poll(&fds, 1, timeout);
+    revents = fds.revents;
+    return (r > 0);
 }
 
 } /* namespace POSIX */

@@ -15,6 +15,7 @@
 #include <stdexcept>
 #include <system_error>
 #include <string.h>
+#include "poll.h"
 
 namespace POSIX
 {
@@ -37,11 +38,15 @@ public:
     void* mmap(void *addr, size_t length, int prot = PROT_READ | PROT_WRITE, int flags = MAP_PRIVATE ,off_t offset = 0);
     size_t read(void *data, size_t size, const std::nothrow_t&)
     {
-        return ::read(file_,data, size);
+        return ::read(fd_,data, size);
     }
+    /*
+     * Returns true if a event has been trigger
+     */
+    bool poll(short events,short& revents,int timeout,const std::nothrow_t&);
 protected:
 private:
-    int file_ = -1;
+    int fd_ = -1;
     unsigned status_ = status_e::closed;
     enum status_e
     {
@@ -50,8 +55,8 @@ private:
         eof_,//
         closed
     };
-    using fd_type = int;    ///< Linux generic file description type
-    fd_type fd = -1;        //!< the file descriptor
+    //using fd_type = int;    ///< Linux generic file description type
+    //fd_type fd = -1;        //!< the file descriptor
 public:
     constexpr static unsigned F_RDONLY = O_RDONLY; ///< Wrapping read-only flag
     constexpr static unsigned F_WRONLY = O_WRONLY; ///< Wrapping write-only flag
@@ -65,8 +70,8 @@ public:
      */
     void open(const char* path, int flag)
     {
-        fd = ::open(path, flag, S_IRUSR | S_IWUSR);
-        if (fd == -1)
+        fd_ = ::open(path, flag, S_IRUSR | S_IWUSR);
+        if (fd_ == -1)
         {
 
         }
@@ -75,9 +80,9 @@ public:
      * Create a new file or delete current one if exist
      * exception safe function
      */
-//    bool create_s(const char* file_path)
+//    bool create_s(const char* fd_path)
 //    {
-//        open_s(file_path,O_CREAT |O_WRONLY|O_TRUNC);
+//        open_s(fd_path,O_CREAT |O_WRONLY|O_TRUNC);
 //        return error_;
 //    }
     /**
@@ -87,15 +92,15 @@ public:
      */
     void open_s(const char* path, int flag)
     {
-        fd = ::open(path, flag, S_IRUSR | S_IWUSR);
-        if (fd == -1);
+        fd_ = ::open(path, flag, S_IRUSR | S_IWUSR);
+        if (fd_ == -1);
 
     }
 
     void open(const char* path, int flag,const std::nothrow_t&)
     {
-        fd = ::open(path, flag, S_IRUSR | S_IWUSR);
-        if (fd == -1);
+        fd_ = ::open(path, flag, S_IRUSR | S_IWUSR);
+        if (fd_ == -1);
 
     }
 
@@ -127,7 +132,7 @@ public:
     {
         if (len)
         {
-            auto r = ::read(fd,d,len);
+            auto r = ::read(fd_,d,len);
             if (r < 0)
             {
 
@@ -144,11 +149,11 @@ public:
      */
     void write(const void* d, size_t size)
     {
-        decltype(::write(fd, d, size)) written = 0;
+        decltype(::write(fd_, d, size)) written = 0;
         if (size)
         {
             do {
-                written = ::write(fd, d, size);
+                written = ::write(fd_, d, size);
                 if (written < 0) {
 
                 }
@@ -161,8 +166,8 @@ public:
      */
     File(const char* path)
     {
-        fd = ::open(path, O_RDONLY);
-        if (fd == -1)
+        fd_ = ::open(path, O_RDONLY);
+        if (fd_ == -1)
         {
 
         }
@@ -175,8 +180,8 @@ public:
      */
     int dettach()
     {
-        int f = fd;
-        fd = -1;
+        int f = fd_;
+        fd_ = -1;
         return f;
     }
     /**
@@ -193,7 +198,7 @@ public:
      */
     operator bool()
     {
-        return fd != -1;
+        return fd_ != -1;
     }
     /**
      * Close the file.
@@ -214,7 +219,7 @@ public:
         memset(&fl, 0, sizeof(fl));
         fl.l_type = F_WRLCK;
         fl.l_whence = SEEK_SET;
-        if (fcntl(fd, F_SETLK, &fl) == -1)
+        if (fcntl(fd_, F_SETLK, &fl) == -1)
         {
 
         }
@@ -226,13 +231,13 @@ public:
      */
     void unlock()
     {
-        if (fd != -1)       // @todo remove when class become exception safe
+        if (fd_ != -1)       // @todo remove when class become exception safe
         {
             struct flock fl;
             memset(&fl, 0, sizeof(fl));
             fl.l_type = F_UNLCK;
             fl.l_whence = SEEK_SET;
-            if (fcntl(fd, F_SETLK, &fl) == -1)
+            if (fcntl(fd_, F_SETLK, &fl) == -1)
             {
 
             }
@@ -246,13 +251,13 @@ public:
      */
     bool unlock_s() noexcept
     {
-        if (fd != -1)       // @todo remove when class become exception safe
+        if (fd_ != -1)       // @todo remove when class become exception safe
         {
             struct flock fl;
             memset(&fl, 0, sizeof(fl));
             fl.l_type = F_UNLCK;
             fl.l_whence = SEEK_SET;
-            return (fcntl(fd, F_SETLK, &fl) != -1);
+            return (fcntl(fd_, F_SETLK, &fl) != -1);
         }
         return false;
     }
@@ -263,7 +268,7 @@ public:
     void truncate()
     {
         int r;
-        if ((r = ::ftruncate(fd, 0)) == -1)
+        if ((r = ::ftruncate(fd_, 0)) == -1)
         {
             throw std::system_error(r, std::system_category());
         }
@@ -273,7 +278,7 @@ public:
      */
     bool flush(const std::nothrow_t&)
     {
-        return (::fsync(fd) == 0);
+        return (::fsync(fd_) == 0);
     }
     /**
      * No exception function to flush the file
@@ -281,7 +286,7 @@ public:
     void flush() noexcept
     {
         int r;
-        if ((r = ::fsync(fd)) != 0)
+        if ((r = ::fsync(fd_)) != 0)
         {
             throw std::system_error(r, std::system_category());
         }
