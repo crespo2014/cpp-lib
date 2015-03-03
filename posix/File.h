@@ -12,6 +12,9 @@
 #include "stdio.h"
 #include <sys/mman.h>
 #include <unistd.h>
+#include <stdexcept>
+#include <system_error>
+#include <string.h>
 
 namespace POSIX
 {
@@ -72,11 +75,11 @@ public:
      * Create a new file or delete current one if exist
      * exception safe function
      */
-    bool create_s(const char* file_path)
-    {
-        open_s(file_path,O_CREAT |O_WRONLY|O_TRUNC);
-        return error_;
-    }
+//    bool create_s(const char* file_path)
+//    {
+//        open_s(file_path,O_CREAT |O_WRONLY|O_TRUNC);
+//        return error_;
+//    }
     /**
      * Safe file open operation, not exception are generated file status is update with the result of operation
      * @param [in] path - Operating system name of the file, including path if necessary.
@@ -106,14 +109,14 @@ public:
      *@param [in] flag - The requested input/output mode for the file.
      *@return - a exception is throw if operation can not complete
      */
-    File(const char* path, int flag)
-    {
-        File::open(path,flag);
-    }
-    File(const char* path, int flag,const std::nothrow_t&)
-    {
-        File::open(path,flag,std::nothrow);
-    }
+//    File(const char* path, int flag)
+//    {
+//        File::open(path,flag);
+//    }
+//    File(const char* path, int flag,const std::nothrow_t&)
+//    {
+//        File::open(path,flag,std::nothrow);
+//    }
 
     /**
      * read data from file
@@ -179,11 +182,11 @@ public:
     /**
      * Default destructor. Closes the file.
      */
-    ~File()
-    {
-        if (fd != -1)
-            ::close(fd);
-    }
+//    ~File()
+//    {
+//        if (fd != -1)
+//            ::close(fd);
+//    }
     /**
      * Get boolean if file is open
      *@return bool - true if file is open, false if not opened
@@ -195,12 +198,12 @@ public:
     /**
      * Close the file.
      */
-    void close() noexcept
-    {
-        if (fd != -1)
-            ::close(fd);
-        fd = -1;
-    }
+//    void close() noexcept
+//    {
+//        if (fd != -1)
+//            ::close(fd);
+//        fd = -1;
+//    }
 
 
     /** Lock the file.
@@ -259,43 +262,43 @@ public:
      */
     void truncate()
     {
-        if (::ftruncate(fd, 0) == -1)
+        int r;
+        if ((r = ::ftruncate(fd, 0)) == -1)
         {
-
+            throw std::system_error(r, std::system_category());
         }
     }
     /**
      * Flush all data to the file
      */
-    void flush()
+    bool flush(const std::nothrow_t&)
     {
-        if(::fsync(fd) != 0)
-        {
-
-        }
+        return (::fsync(fd) == 0);
     }
     /**
      * No exception function to flush the file
      */
-    bool flush_s() noexcept
-    {
-        if (::fsync(fd) != 0)
-
-        return error_;
-    }
-    int ioctl(unsigned long request, void* arg,std::nothrow_t)
-    {
-        return ::ioctl(fd,request,arg);
-    }
-    void ioctl(unsigned long request, void* arg)
+    void flush() noexcept
     {
         int r;
-        if ((r = ::ioctl(fd,request,arg)) != 0)
+        if ((r = ::fsync(fd)) != 0)
         {
             throw std::system_error(r, std::system_category());
         }
-
     }
+//    int ioctl(unsigned long request, void* arg,std::nothrow_t)
+//    {
+//        return ::ioctl(fd,request,arg);
+//    }
+//    void ioctl(unsigned long request, void* arg)
+//    {
+//        int r;
+//        if ((r = ::ioctl(fd,request,arg)) != 0)
+//        {
+//            throw std::system_error(r, std::system_category());
+//        }
+//
+//    }
 };
 
 } /* namespace POSIX */
