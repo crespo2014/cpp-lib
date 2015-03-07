@@ -18,11 +18,11 @@ namespace POSIX {
 File::File(const char* name,int flag)
 {
     fd_ = ::open(name,flag);
-    if (fd_ == -1) throw std::system_error(errno,std::system_category());
+    if (fd_ == -1) throw std::system_error(errno,std::system_category(),name);
     status_ |= status_e::ok;
 }
 
-File::File(const char* name, int flag,const std::nothrow_t& t)
+File::File(const char* name, int flag,const std::nothrow_t&)
 {
   fd_ = ::open(name,flag);
   if (fd_ == -1)
@@ -34,9 +34,9 @@ File::File(File&& f) : fd_(f.fd_),status_(f.status_)
     f.fd_ = -1;
 }
 
-File& File::operator =(const File&& f)
+File& File::operator =(const File&& )
 {
-
+    return *this;
 }
 
 File::~File()
@@ -64,7 +64,7 @@ bool File::eof()
 void File::close()
 {
     if (::close(fd_) != 0)
-        throw std::system_error(errno,std::system_category());
+        throw std::system_error(errno,std::system_category(),"close");
     fd_ = -1;
 }
 
@@ -77,7 +77,7 @@ void* File::mmap(void *addr, size_t length, int prot, int flags,off_t offset)
 {
     void* p = ::mmap(addr,length,prot,flags,fd_,offset);
     if (p == MAP_FAILED)
-        throw std::system_error(errno, std::system_category());
+        throw std::system_error(errno, std::system_category(),"mmap");
     return p;
 }
 

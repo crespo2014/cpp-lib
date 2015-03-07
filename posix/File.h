@@ -16,6 +16,7 @@
 #include <system_error>
 #include <string.h>
 #include "poll.h"
+#include "ostreamstring.h"
 
 namespace POSIX
 {
@@ -93,15 +94,15 @@ public:
     void open_s(const char* path, int flag)
     {
         fd_ = ::open(path, flag, S_IRUSR | S_IWUSR);
-        if (fd_ == -1);
+        if (fd_ == -1)
+            throw std::system_error(fd_, std::system_category());
 
     }
 
-    void open(const char* path, int flag,const std::nothrow_t&)
+    bool open(const char* path, int flag,const std::nothrow_t&)
     {
         fd_ = ::open(path, flag, S_IRUSR | S_IWUSR);
-        if (fd_ == -1);
-
+        return (fd_ != -1);
     }
 
     //! default constructor
