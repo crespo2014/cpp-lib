@@ -1,0 +1,13 @@
+Index: writer.h
+===================================================================
+--- writer.h	(revision 18175)
++++ writer.h	(revision 18176)
+@@ -361,7 +361,7 @@
+ 	int doublePrecision_;
+ 	bool hasRoot_;
+ 
+-	static const int kDefaultDoublePrecision = 6;
++	static const int kDefaultDoublePrecision = 15;
+ 
+ private:
+ 	// Prohibit copy constructor & assignment operator.

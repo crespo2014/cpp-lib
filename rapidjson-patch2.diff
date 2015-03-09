@@ -1,0 +1,22 @@
+Index: writer.h
+===================================================================
+--- writer.h	(revision 15912)
++++ writer.h	(revision 15913)
+@@ -138,7 +138,7 @@
+ 	bool EndObject(SizeType memberCount = 0) {
+ 		(void)memberCount;
+ 		RAPIDJSON_ASSERT(level_stack_.GetSize() >= sizeof(Level));
+-		RAPIDJSON_ASSERT(!level_stack_.template Top<Level>()->inArray);
++		RAPIDJSON_ASSERT(!level_stack_.Top()->inArray);
+ 		level_stack_.Pop(1);
+ 		bool ret = WriteEndObject();
+ 		if (level_stack_.Empty())	// end of json text
+@@ -155,7 +155,7 @@
+ 	bool EndArray(SizeType elementCount = 0) {
+ 		(void)elementCount;
+ 		RAPIDJSON_ASSERT(level_stack_.GetSize() >= sizeof(Level));
+-		RAPIDJSON_ASSERT(level_stack_.template Top<Level>()->inArray);
++		RAPIDJSON_ASSERT(level_stack_.Top()->inArray);
+ 		level_stack_.Pop(1);
+ 		bool ret = WriteEndArray();
+ 		if (level_stack_.Empty())	// end of json text

@@ -1,0 +1,60 @@
+Index: writer.h
+===================================================================
+--- writer.h	(revision 15952)
++++ writer.h	(revision 15953)
+@@ -137,7 +137,7 @@
+ 
+ 	bool EndObject(SizeType memberCount = 0) {
+ 		(void)memberCount;
+-		RAPIDJSON_ASSERT(level_stack_.GetSize() >= sizeof(Level));
++		RAPIDJSON_ASSERT(level_stack_.GetSize() >= 1);
+ 		RAPIDJSON_ASSERT(!level_stack_.Top()->inArray);
+ 		level_stack_.Pop(1);
+ 		bool ret = WriteEndObject();
+@@ -154,7 +154,7 @@
+ 
+ 	bool EndArray(SizeType elementCount = 0) {
+ 		(void)elementCount;
+-		RAPIDJSON_ASSERT(level_stack_.GetSize() >= sizeof(Level));
++		RAPIDJSON_ASSERT(level_stack_.GetSize() >= 1);
+ 		RAPIDJSON_ASSERT(level_stack_.Top()->inArray);
+ 		level_stack_.Pop(1);
+ 		bool ret = WriteEndArray();
+
+Property changes on: writer.h
+___________________________________________________________________
+Added: svn:mergeinfo
+   Merged /trunk INT6500/Software/branches/IP-325/6.2_COB/phyCORE-OMAP4-PD12.2.0/local_src/sds/include/rapidjson/writer.h:r15438-15530
+   Merged /trunk INT6500/Software/branches/IP-354/sds/include/rapidjson/writer.h:r15687-15906
+   Merged /trunk INT6500/Software/branches/IP-231/6.2_COB/phyCORE-OMAP4-PD12.2.0/local_src/sds/include/rapidjson/writer.h:r15915-15952
+   Merged /trunk INT6500/Software/branches/IP-191/sds/include/rapidjson/writer.h:r15582-15710
+Index: internal/stack.h
+===================================================================
+--- internal/stack.h	(revision 15952)
++++ internal/stack.h	(revision 15953)
+@@ -43,7 +43,7 @@
+ 
+ 	//template<typename T>
+ 	T* Pop(size_t count) {
+-		RAPIDJSON_ASSERT(GetSize() >= count * sizeof(T));
++		RAPIDJSON_ASSERT(GetSize() >= count);
+ 		stack_top_ -= count * sizeof(T);
+ 		return reinterpret_cast<T*>(stack_top_);
+ 	}
+@@ -50,7 +50,7 @@
+ 
+ 	//template<typename T>
+ 	T* Top() { 
+-		RAPIDJSON_ASSERT(GetSize() >= sizeof(T));
++		RAPIDJSON_ASSERT(GetSize() >= 1);
+ 		return reinterpret_cast<T*>(stack_top_ - sizeof(T));
+ 	}
+ 
+
+Property changes on: internal/stack.h
+___________________________________________________________________
+Added: svn:mergeinfo
+   Merged /trunk INT6500/Software/branches/IP-231/6.2_COB/phyCORE-OMAP4-PD12.2.0/local_src/sds/include/rapidjson/internal/stack.h:r15915-15952
+   Merged /trunk INT6500/Software/branches/IP-191/sds/include/rapidjson/internal/stack.h:r15582-15710
+   Merged /trunk INT6500/Software/branches/IP-325/6.2_COB/phyCORE-OMAP4-PD12.2.0/local_src/sds/include/rapidjson/internal/stack.h:r15438-15530
+   Merged /trunk INT6500/Software/branches/IP-354/sds/include/rapidjson/internal/stack.h:r15687-15906

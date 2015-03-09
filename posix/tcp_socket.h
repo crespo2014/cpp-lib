@@ -515,7 +515,7 @@ public:
     /** Get the socket file descriptor
      * @return
      */
-    int Getfd() const
+    int getfd() const
     {
         return sock_;
     }

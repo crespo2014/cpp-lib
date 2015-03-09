@@ -1,0 +1,13 @@
+Index: stringbuffer.h
+===================================================================
+--- stringbuffer.h	(revision 15951)
++++ stringbuffer.h	(revision 15952)
+@@ -33,7 +33,7 @@
+ 		return stack_.Bottom();
+ 	}
+ 
+-	size_t GetSize() const { return stack_.GetSize(); }
++	size_t GetSize() const { return stack_.GetSize() * sizeof(Ch); }
+ 
+ 	static const size_t kDefaultCapacity = 256;
+ 	mutable internal::Stack<Ch,Allocator> stack_;

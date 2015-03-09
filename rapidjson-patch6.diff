@@ -1,0 +1,22 @@
+Index: internal/stack.h
+===================================================================
+--- internal/stack.h	(revision 16048)
++++ internal/stack.h	(revision 16049)
+@@ -44,7 +44,7 @@
+ 	//template<typename T>
+ 	T* Pop(size_t count) {
+ 		RAPIDJSON_ASSERT(GetSize() >= count);
+-		stack_top_ -= count * sizeof(T);
++		stack_top_ -= count;
+ 		return reinterpret_cast<T*>(stack_top_);
+ 	}
+ 
+@@ -51,7 +51,7 @@
+ 	//template<typename T>
+ 	T* Top() { 
+ 		RAPIDJSON_ASSERT(GetSize() >= 1);
+-		return reinterpret_cast<T*>(stack_top_ - sizeof(T));
++		return reinterpret_cast<T*>(stack_top_ - 1);
+ 	}
+ 
+ 	//template<typename T>
