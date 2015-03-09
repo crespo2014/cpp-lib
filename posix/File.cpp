@@ -73,13 +73,13 @@ int File::ioctl(unsigned long request, void* arg)
     return ::ioctl(fd_,request,arg);
 }
 
-void* File::mmap(void *addr, size_t length, int prot, int flags,off_t offset)
-{
-    void* p = ::mmap(addr,length,prot,flags,fd_,offset);
-    if (p == MAP_FAILED)
-        throw std::system_error(errno, std::system_category(),"mmap");
-    return p;
-}
+//void* File::mmap(void *addr, size_t length, int prot, int flags,off_t offset)
+//{
+//    void* p = ::mmap(addr,length,prot,flags,fd_,offset);
+//    if (p == MAP_FAILED)
+//        throw std::system_error(errno, std::system_category(),"mmap");
+//    return p;
+//}
 
 bool File::poll(short events, short& revents, int timeout, const std::nothrow_t&)
 {
