@@ -17,15 +17,13 @@
 #include <string.h>
 #include "poll.h"
 #include "ostreamstring.h"
+#include <sys/sendfile.h>
 
 namespace POSIX
 {
 
 class File
 {
-    File& operator=(const File&) = delete;
-    File(const File&) = delete;
-    //bool close(const std::nothrow_t& t);
 public:
     File(const char* name, int flag);
     File(const char* name, int flag, const std::nothrow_t& t);
@@ -42,10 +40,32 @@ public:
         return ::read(fd_,data, size);
     }
     /*
+     * Get file descriptor to be used in system functions calls
+     */
+    int getfd() const
+    {
+        return fd_;
+    }
+    /*
      * Returns true if a event has been trigger
      */
     bool poll(short events,short& revents,int timeout,const std::nothrow_t&);
+    /*
+     * Call splice
+     */
+    ssize_t spliceTo(int fd_out, size_t len, loff_t *off_in = nullptr,loff_t *off_out=nullptr,unsigned int flags = 0)
+    {
+        ssize_t s;
+        if ((s = ::splice(fd_,off_in,fd_out,off_out,len,flags)) < 0)
+        {
+            throw std::system_error(errno, std::system_category(),"splice");
+        }
+        return s;
+    }
 protected:
+    File& operator=(const File&) = delete;
+    File(const File&) = delete;
+    //bool close(const std::nothrow_t& t);
 private:
     int fd_ = -1;
     unsigned status_ = status_e::closed;
@@ -74,7 +94,7 @@ public:
         fd_ = ::open(path, flag, S_IRUSR | S_IWUSR);
         if (fd_ == -1)
         {
-
+            throw std::system_error(errno, std::system_category(),"open");
         }
     }
     /**
@@ -321,6 +341,18 @@ public:
 //        }
 //
 //    }
+    /*
+     * Send file content from kernel space
+     */
+    ssize_t  sendFile(int dest_fd,size_t count,off_t* offset = nullptr)
+    {
+        ssize_t  r = ::sendfile(dest_fd,fd_,offset,count);
+        if (r < 0)
+        {
+            throw std::system_error(errno, std::system_category(),"sendfile");
+        }
+        return r;
+    }
 };
 
 } /* namespace POSIX */

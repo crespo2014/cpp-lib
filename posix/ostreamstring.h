@@ -13,7 +13,12 @@
 class SS
 {
     std::ostringstream stream;
+    SS(const SS&) = delete;
+    SS(SS&&) = delete;
+    SS& operator=(const SS&) = delete;
+    SS& operator=(SS&&) = delete;
 public:
+    SS(){};
     template<class T>
     SS& operator <<(const T& t)
     {

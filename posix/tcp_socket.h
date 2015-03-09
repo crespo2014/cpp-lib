@@ -28,8 +28,6 @@
  */
 class tcpSock
 {
-    int sock_ = -1;                        ///< setting as mutable will allow invalidate this handle on copy constructor and assignment
-    struct sockaddr_in sock_addr_;    ///< connection information
 
     void bind(uint16_t port, uint32_t address = INADDR_ANY)
     {
@@ -37,6 +35,7 @@ class tcpSock
         sock_addr_.sin_port = htons(port);
         if (::bind(sock_, (struct sockaddr*) &sock_addr_, sizeof(sock_addr_)) != 0)
         {
+            good = false;
             throw std::system_error(errno, std::system_category(), SS() << "Failed to bind to socket. ip " << sock_addr_.sin_addr.s_addr << ":" << sock_addr_.sin_port);
         }
     }
@@ -44,20 +43,28 @@ class tcpSock
     {
         if (::listen(sock_, count) != 0)
         {
-            //LOG(ERROR_INVALID_RESULT) << "failed to listen to socket. ip " << sock_addr_.sin_addr.s_addr << ":" << sock_addr_.sin_port;
-            throw std::system_error(errno, std::system_category(), "listen");
+            good = false;
+            throw std::system_error(errno, std::system_category(), SS() << "failed to listen to socket. ip " << sock_addr_.sin_addr.s_addr << ":" << sock_addr_.sin_port);
         }
     }
 
-    bool bind(uint16_t port,const std::nothrow_t&, uint32_t address = INADDR_ANY)
+    bool bind(uint16_t port, const std::nothrow_t&, uint32_t address = INADDR_ANY)
     {
         sock_addr_.sin_addr.s_addr = address;
         sock_addr_.sin_port = htons(port);
-        return (::bind(sock_, (struct sockaddr*) &sock_addr_, sizeof(sock_addr_)) == 0);
+        if (::bind(sock_, (struct sockaddr*) &sock_addr_, sizeof(sock_addr_)) != 0)
+        {
+            good = false;
+        }
+        return good;
     }
-    bool listen(int count,const std::nothrow_t&)
+    bool listen(int count, const std::nothrow_t&)
     {
-        return (::listen(sock_, count) == 0);
+        if (::listen(sock_, count) != 0)
+        {
+            good = false;
+        }
+        return good;
     }
 
     void connect(const struct in_addr& address, uint16_t port)
@@ -66,8 +73,8 @@ class tcpSock
         sock_addr_.sin_addr = address;
         if (::connect(sock_, (const sockaddr*) &sock_addr_, sizeof(sock_addr_)) != 0)
         {
-            // LOG(ERROR_INVALID_RESULT) << "failed to connect to socket. ip " << sock_addr_.sin_addr.s_addr << ":" << sock_addr_.sin_port;
-            throw std::system_error(errno, std::system_category(), "connect");
+            good = false;
+            throw std::system_error(errno, std::system_category(), SS() << "failed to connect to socket. ip " << sock_addr_.sin_addr.s_addr << ":" << sock_addr_.sin_port);
         }
     }
     /**
@@ -79,6 +86,23 @@ class tcpSock
     }
 public:
     /*
+     * Construct a connected socket
+     */
+    tcpSock(const char* srv, uint16_t port, int type = SOCK_STREAM, int domain = AF_INET, int protocol = 0) :
+            tcpSock(type, domain, protocol)
+    {
+        if (::inet_aton(srv, &sock_addr_.sin_addr) == 0)
+        {
+            throw std::system_error(errno, std::system_category(), SS() << "inet_aton failed for " << srv);
+        }
+        sock_addr_.sin_port = htons(port);
+        if (::connect(sock_, (const sockaddr*) &sock_addr_, sizeof(sock_addr_)) != 0)
+        {
+            throw std::system_error(errno, std::system_category(), SS() << "failed to connect to socket. ip " << sock_addr_.sin_addr.s_addr << ":" << sock_addr_.sin_port);
+        }
+    }
+
+    /*
      * Default constructor
      */
     tcpSock(const std::nothrow_t&, int type = SOCK_STREAM, int domain = AF_INET, int protocol = 0)
@@ -86,21 +110,18 @@ public:
         sock_ = socket(domain, type, protocol);
         memset(&sock_addr_, 0, sizeof(sock_addr_));
         sock_addr_.sin_family = (sa_family_t) domain;
+        good = (sock_ >= 0);
     }
     /**
      * Get a connected socket
      */
-    tcpSock(const char* srv, uint16_t port,const std::nothrow_t&, int type = SOCK_STREAM, int domain = AF_INET, int protocol = 0)
+    tcpSock(const char* srv, uint16_t port, const std::nothrow_t&, int type = SOCK_STREAM, int domain = AF_INET, int protocol = 0) :
+        tcpSock(std::nothrow,type, domain, protocol)
     {
-        struct in_addr addr;
-        sock_ = socket(domain, type, protocol);
-        if (sock_ < 0 ) return;
-        bool b = true;
-        b = b && (::inet_aton(srv, &addr) != 0);
+        good = good && (::inet_aton(srv, &sock_addr_.sin_addr) != 0);
         sock_addr_.sin_port = htons(port);
-        sock_addr_.sin_addr = addr;
-        b = b && (::connect(sock_, (const sockaddr*) &sock_addr_, sizeof(sock_addr_)) == 0);
-        if (!b)
+        good = good && (::connect(sock_, (const sockaddr*) &sock_addr_, sizeof(sock_addr_)) == 0);
+        if (!good)
             close();
     }
     /**
@@ -116,11 +137,11 @@ public:
     }
     bool setupServer(uint16_t port, const std::nothrow_t&, uint32_t address = INADDR_ANY, int backlog = 5)
     {
-        return (bind(port,std::nothrow,address) && listen(backlog, std::nothrow));
+        return (bind(port, std::nothrow, address) && listen(backlog, std::nothrow));
     }
     operator bool()
     {
-        return (sock_ >= 0);
+        return (sock_ >= 0) && good;
     }
 //    /**
 //     * Get connection information
@@ -188,8 +209,7 @@ public:
         int opt = status ? 0 : 1;
         if (::ioctl(sock_, FIONBIO, &opt) < 0)
         {
-            //  LOG(ERROR_INVALID_RESULT) << "failed to set blocking mode. ip " << sock_addr_.sin_addr.s_addr << ":" << sock_addr_.sin_port;
-            throw std::system_error(errno, std::system_category(), "ioctl");
+            throw std::system_error(errno, std::system_category(), SS() << "ioctl" << "failed to set blocking mode. ip " << sock_addr_.sin_addr.s_addr << ":" << sock_addr_.sin_port);
         }
     }
     /**
@@ -202,9 +222,16 @@ public:
         int fd = ::accept(sock_, (struct sockaddr*) &sock_addr, (socklen_t*) &size);
         if (fd < 0)
         {
-            //  LOG(ERROR_INVALID_RESULT) << "failed to accept socket. ";
             throw std::system_error(errno, std::system_category(), "accept");
         }
+        return
+        {   fd, sock_addr};
+    }
+    tcpSock accept(const std::nothrow_t&)
+    {
+        struct sockaddr_in sock_addr;
+        int size = sizeof(sock_addr);
+        int fd = ::accept(sock_, (struct sockaddr*) &sock_addr, (socklen_t*) &size);
         return
         {   fd, sock_addr};
     }
@@ -232,8 +259,7 @@ public:
         struct in_addr addr;
         if (::inet_aton(srv, &addr) == 0)
         {
-            //    LOG(ERROR_INVALID_RESULT) << "failed to get client. ip " << srv << ":" << port;
-            throw std::system_error(errno, std::system_category(), "inet_atom");
+            throw std::system_error(errno, std::system_category(), SS() << "inet_atom" << "failed to get client. ip " << srv << ":" << port);
         }
         return getClient(addr, port);
     }
@@ -327,6 +353,7 @@ public:
         auto ir = ::recv(sock_, buff, len, flags);
         if (ir <= 0)
         {
+            good = false;
             // socket is close or gracefully shutdown
             throw std::system_error(errno, std::system_category(), "read");
         }
@@ -509,6 +536,10 @@ public:
         event = fds.revents;
         return i > 0;
     }
+private:
+    int sock_ = -1;                        ///< setting as mutable will allow invalidate this handle on copy constructor and assignment
+    struct sockaddr_in sock_addr_;    ///< connection information
+    bool good = true;
     /**
      * Write a block of data to the socket
      * @param [in] b data to be written
@@ -567,5 +598,4 @@ public:
 //    }
 //
 //};
-
 #endif /* TCP_SOCKET_H_ */
