@@ -34,8 +34,13 @@ File::File(File&& f) : fd_(f.fd_),status_(f.status_)
     f.fd_ = -1;
 }
 
-File& File::operator =(const File&& )
+File& File::operator =(File&& f)
 {
+	if (fd_ != -1)
+		close();
+    fd_ = f.fd_;
+    status_ = f.status_;
+    f.fd_ = -1;
     return *this;
 }
 

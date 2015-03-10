@@ -30,12 +30,12 @@ class File
 	class map
 	{
 		void* ptr_;
-		ssize_t size_;
+		size_t size_;
 		map(const map&) = delete;
 		map& operator =(const map&) = delete;
 		map& operator =(map&&) = delete;
 	public:
-		map(void* ptr, ssize_t size) :
+		map(void* ptr, size_t size) :
 				ptr_(ptr), size_(size)
 		{
 		}
@@ -63,10 +63,23 @@ class File
 		}
 	};
 public:
+	/*
+	 * Construct from file descriptor
+	 */
+	File(int fd) : fd_(fd), status_(ok)
+	{
+
+	}
+	/*
+	 * Close previous opened file and attach to a ne one
+	 */
+//	void attach(int fd)
+//	{
+//	}
 	File(const char* name, int flag);
 	File(const char* name, int flag, const std::nothrow_t& t);
 	File(File&&);
-	File& operator=(const File&&);
+	File& operator=(File&&);
 	virtual ~File();
 	bool good();
 	bool eof();
@@ -276,7 +289,7 @@ public:
 	 * Get boolean if file is open
 	 *@return bool - true if file is open, false if not opened
 	 */
-	operator bool()
+	operator bool() const
 	{
 		return fd_ != -1;
 	}
