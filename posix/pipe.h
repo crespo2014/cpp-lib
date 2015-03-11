@@ -31,6 +31,30 @@ public:
 		else
 			good = false;
 	}
+	ssize_t spliceTo(int fd_out,size_t len)
+	{
+		auto r = ::splice(rd_fd_.getfd(),nullptr,fd_out,nullptr,len,0);
+		if (r < 0)
+			throw std::system_error(errno, std::system_category(), "splice");
+		return r;
+	}
+
+	ssize_t sendfile(int out_fd,off_t* offset,size_t count, const std::nothrow_t&)
+	{
+		return 0;
+	}
+	ssize_t sendfile(int out_fd,size_t count)
+	{
+		auto r = ::sendfile(out_fd,rd_fd_.getfd(),nullptr,count);
+		if (r < 0)
+			throw std::system_error(errno, std::system_category(), "sendfile");
+		return r;
+	}
+	ssize_t sendfile(int out_fd,size_t count,const std::nothrow_t&)
+	{
+		auto r = ::sendfile(out_fd,rd_fd_.getfd(),nullptr,count);
+		return r;
+	}
 	ssize_t writev(const struct iovec *iov, int iovcnt, const std::nothrow_t&)
 	{
 		return ::writev(wr_fd_.getfd(), iov, iovcnt);

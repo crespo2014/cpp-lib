@@ -366,11 +366,18 @@ public:
      * @param [in] flags - flags controlling the read operation
      * @return how many bytes has been read 0 mean error or eof
      */
-    size_t read_s(void* buff, size_t len, int flags = MSG_NOSIGNAL)
+    size_t read(void* buff, size_t len,const std::nothrow_t&)
     {
-        auto s = ::recv(sock_, buff, len, flags);
-        return s > 0 ? s : 0;
+    	auto r = ::recv(sock_, buff, len, 0);
+    	good = good && (r >0);
+        return r;
     }
+    size_t read(void* buff, size_t len,int flags,const std::nothrow_t&)
+   {
+	   auto r = ::recv(sock_, buff, len, flags);
+	   good = good && (r >0);
+	   return r;
+   }
     /**
      * Write data to sock exception safe
      * @param [in] buff - pointer to memory where data is hold

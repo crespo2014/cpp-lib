@@ -28,7 +28,7 @@ public:
     virtual void stop();
     bool Running() const;
     void run(enum policy pol);
-    void disableSignal(int signal);         ///< Disable specific signal catch execute from thread
+    static void disableSignal(int signal);         ///< Disable specific signal catch execute from thread
 protected:
     virtual ~Runnable() {
     }
