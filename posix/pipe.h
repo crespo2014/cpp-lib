@@ -38,6 +38,13 @@ public:
 			throw std::system_error(errno, std::system_category(), "splice");
 		return r;
 	}
+	ssize_t spliceFrom(int fd_in,size_t len)
+	{
+		auto r = ::splice(fd_in,nullptr,wr_fd_.getfd(),nullptr,len,0);
+		if (r < 0)
+			throw std::system_error(errno, std::system_category(), "splice");
+		return r;
+	}
 
 	ssize_t sendfile(int out_fd,off_t* offset,size_t count, const std::nothrow_t&)
 	{
