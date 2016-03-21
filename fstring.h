@@ -120,6 +120,25 @@ public:
 	{
 		return start + len;
 	}
+	const int alphabetical_compare(const & fstring str,bool casesensitive = true)
+	{
+		int s = str.len > len ? len : str.len;
+		int r = casesensitive ? strncmp(start,str.start,s) : strncmp(start,str.start,s);
+		if (r == 0 && len != str.len) 
+		{
+			if (len > str.len) r =1;
+			else r = -1;
+		}
+		return r;
+	}
+	// TODO . case insentive compare
+	bool operator < (const & fstring str) const
+	{
+		return alphabetical_compare(str) < 0;
+	}
+	// TODO to be implemented, and use as comparation function
+	static bool compare_case_sensitive(const &fstring str1,const &fstring str2);
+	static bool compare_case_unsensitive(const &fstring str1,const &fstring str2);
 };
 
 #endif /* FSTRING_H_ */
